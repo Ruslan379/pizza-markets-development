@@ -1,0 +1,57 @@
+/* import styled from '@emotion/styled'; */
+
+
+.homeContainer {
+    width: 90%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    font-size: 18px;
+    font-weight: 600;
+
+    border-radius: 8px;
+    background-color: #faf8e2;
+    box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23);
+
+    /* outline: 1px solid tomato; */
+}
+
+
+.shops {
+    flex-basis: 200px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    border: 2px solid rgb(120, 196, 130);
+        border-radius: 8px;
+        box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23);
+
+    /* outline: 1px solid tomato; */
+}
+
+.pizzas {
+    overflow-y: auto;
+    flex-basis: 100px;
+    height: 100%;
+    flex-grow: 1;
+
+    border: 2px solid rgb(120, 196, 130);
+        border-radius: 8px;
+        box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23);
+
+    /* outline: 1px solid tomato; */
+}
+
+
+

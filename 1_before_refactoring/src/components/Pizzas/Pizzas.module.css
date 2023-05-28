@@ -1,0 +1,55 @@
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* justify-content: center; */
+    justify-content: flex-start;
+    /* margin-left: 0; */
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+
+    margin: 0;
+    /* padding: 10px; */
+    list-style: none;
+    padding-inline-start: 3%;
+    /* padding-inline-end: auto; */
+}
+
+.listItem {
+    display: flex;
+    flex-direction: column;
+    height: 35%;
+    width: 45%;
+    /* flex-basis: 45%; */
+    padding: 1%;
+    /* flex-direction: column; */
+    /* margin-top: 20px; */
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    outline: 1px solid tomato;
+}
+
+
+.namePizza {
+    /* align-self: flex-start; */
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1.1em;
+    color: blue;
+}
+
+.pricePizza {
+    margin-left: 10%;
+    /* margin-right: auto; */
+    font-size: 1.0em;
+    color: red;
+}
+
+
+.selectPizzaButton {
+    margin-top: 10px;
+    align-self: flex-end;
+    /* text-align: right; */
+    width: 100px;
+    padding: 4px;
+}

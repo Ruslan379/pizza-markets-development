@@ -1,0 +1,39 @@
+.headerShops {
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+}
+
+.listItem {
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.selectShopButton {
+    min-width: 140px;
+    text-decoration: none;
+    padding: 8px 16px;
+    font-weight: 700;
+    border: solid 1px;
+    border-radius: 4px;
+    color: #2a363b;
+    box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23);
+}
+
+.selectShopButton:hover,
+.selectShopButton:focus {
+    background-color: #c4c4c4;
+}

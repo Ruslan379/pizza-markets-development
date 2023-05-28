@@ -1,0 +1,53 @@
+.headerShops {
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+    margin-top: 10px;
+
+
+}
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    /* margin-left: 0; */
+
+
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+    /* padding-inline-start: 20px; */
+    
+}
+
+.listItem {
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.selectShopButton1 {
+    min-width: 120px;
+    /* width: 100%;  */
+    padding: 10px;
+
+}
+
+.selectShopButton {
+    min-width: 140px;
+    /* display: inline-block; */
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 8px 16px;
+    /* padding: 12px; */
+    font-weight: 700;
+    border: solid 1px;
+    border-radius: 4px;
+    color: #2a363b;
+}
+
+.selectShopButton:hover,
+.selectShopButton:focus {
+    background-color: #c4c4c4;
+}

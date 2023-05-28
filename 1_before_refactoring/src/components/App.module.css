@@ -1,0 +1,270 @@
+/* import styled from '@emotion/styled'; */
+
+
+.Container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    /* font-size: 40px; */
+    color: #010101;
+
+    padding: 20px;
+    /* margin-bottom: 20px; */
+
+    /* border: 2px solid #ffad7a; */
+    /* border-radius: 20px; */
+    
+    /* background-color: #faebe2; */
+}
+/* ----------------------------------------------- */
+.navFlex {
+    display: flex;
+    gap: 10px;
+    /* text-decoration: none; */
+}
+
+.navLink {
+    color: black;
+    text-decoration: none;
+}
+.navLink:active {
+    color: orange;
+}
+
+.navBlock {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+
+.titleTextBase {
+    padding-bottom: 20px;
+    text-decoration: overline;
+    line-height: 1.5;
+
+    color: #b80808;
+    text-shadow: 4px 4px 8px #555555;
+
+    font-size: 36px;
+    font-weight: 700;
+    font-family: Tahoma;
+    text-align: center;
+}
+
+
+
+.titleText {
+    padding-bottom: 20px;
+    text-decoration: overline;
+    text-transform: capitalize;
+    /* text-align: justify; */
+    /* text-align: left; */
+    text-align: center;
+    text-indent: 100px;
+    line-height: 1.5;
+    letter-spacing: inherit;
+    letter-spacing: 4px;
+    word-spacing: 8px;
+    white-space: pre-wrap;
+
+    color: #b80808;
+    text-shadow: 12px 12px 12px #9e4949,
+        5px 5px 5px #696969;
+
+    font-size: 47px;
+    font-weight: 700;
+    /* font-style: oblique; */
+    font-style: italic;
+    /* font-family: Tahoma; */
+    font-family: 'Tangerine', cursive;
+}
+
+.titleText::first-letter {
+    font-family: 'Roboto', serif;
+    font-size: 40px;
+    color: #0013b9;
+}
+
+.titleText::selection {
+    color: #f5e874;
+    background-color: #e100ff;
+}
+
+.globalForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 400px;
+    height: 120px;
+    justify-content: center;
+    align-items: flex-end;
+    /* outline: 2px solid tomato; */
+    border: 2px solid blue;
+    border-radius: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.globalForm:focus-within {
+    border-color: tomato;
+    border-radius: 10px;
+}
+
+.labelForm {
+    margin-right: 10px;
+    font-weight: 700;
+    color: rgb(0, 114, 19);
+}
+
+.inputForm {
+    width: 200px;
+    margin-left: 10px;
+    font-weight: 700;
+    color: rgb(146, 95, 0);
+}
+
+/* .inputForm:required {
+    border-color: #ffee00;
+} */
+
+.inputForm:placeholder-shown {
+    border-color: blue;
+    /* color: #ff0318; */
+}
+
+.inputForm::placeholder {
+    border: 2px solid ;
+    border-color: green;
+    color: #cd03ff;
+}
+
+.inputForm:in-range {
+    border-color: #4de051;
+}
+
+.inputForm:out-of-range {
+    border-color: #ff0000;
+}
+
+.buttonSubmit {
+    margin-right: auto;
+    margin-left: auto;
+    cursor: pointer;
+    /* outline: none; */
+    border: none;
+    border-radius: 4px;
+    padding: 8px 12px;
+}
+
+.buttonSubmit:enabled {
+    background-color: rgb(0, 255, 13);
+    color: #000000;
+}
+
+.buttonSubmit:disabled {
+    background-color: rgb(255, 0, 0);
+    color: #ffffff;
+}
+
+
+
+/*! Юля (вопрос 3)  */
+.titleTextQuestion {
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(112, 112, 112);
+}
+
+/* ! --- Общие стили для всех типов оповещений --- */
+.buttonAlert {
+    display: flex;
+    border: none;
+    /* font: inherit; */
+    cursor: pointer;
+    /* cursor: cell; */
+    outline: none;
+    align-items: center;
+    /* margin-left: auto; */
+    border-radius: 4px;
+    padding: 8px 12px;
+    /* background-color: #3b3b3b; */
+    /* color: #ffffff; */
+    /* font-weight: 500; */
+
+    box-shadow: 0px 4px 4px #00000026;
+}
+
+/* .buttonAlert:visited, */
+/* .buttonAlert:focus, */
+/* .buttonAlert:active, */
+.buttonAlert:hover {
+    background-color: #cfcfcf;
+}
+
+/* .buttonAlert::before, */
+.buttonAlert::after {
+    display: none;
+    content: '';
+    width: 20px;
+    height: 20px;
+    /* margin: 0 auto; */
+    margin-left: 16px;
+    background-image: url("https://cdn-icons-png.flaticon.com/512/599/599516.png");
+    background-size: contain;
+}
+
+.buttonAlert::before {
+    display: none;
+    content: '';
+    width: 20px;
+    height: 20px;
+    /* margin: 0 auto; */
+    margin-right: 16px;
+    background-image: url("https://cdn-icons-png.flaticon.com/512/300/300516.png");
+    background-size: contain;
+}
+
+.buttonAlert:hover::after {
+    display: block;
+}
+
+.buttonAlertBefore::before {
+    display: block;
+}
+
+
+.alert {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+
+/* Специфические стили для каждого типа */
+.success {
+    color: green;
+    /* background-color:#b7ecb7 ; */
+}
+
+
+.warning {
+    padding: 10px;
+    color: orange;
+}
+
+
+.error {
+    color: red;
+    /* background-color: #eccab7; */
+}
+
+
+.successBackgroundColor {
+    background-color: #b7ecb7;
+}
+
+
+.errorBackgroundColor {
+    background-color: #eccab7;
+}
+
+/* ----------------------------- */

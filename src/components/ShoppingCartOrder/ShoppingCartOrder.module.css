@@ -1,0 +1,98 @@
+.list {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: flex-start;
+    margin: 0;
+    padding-top: 10px;
+    list-style: none;
+    padding-inline-start: 3%;
+}
+
+.listItem {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+    width: 95%;
+    padding: 1%;
+
+    border: 2px solid rgb(164, 214, 255);
+        border-radius: 8px;
+        box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23);
+
+    /* outline: 1px solid tomato; */
+}
+
+.cardContents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 95%;
+    padding: 1%;
+
+    /* outline: 1px solid rgb(71, 181, 255); */
+}
+
+.namePizza {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1.1em;
+    color: blue;
+}
+
+.pricePizza {
+    text-align: center;
+    font-size: 1.0em;
+    color: red;
+}
+
+.inputQuantity {
+    width: 100px;
+    padding: 4px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+
+
+.shoppingCartPriceSubmitContainer {
+    position: absolute;
+        bottom: 35px;
+        right: 145px;
+    /* width: 50%; */
+    /* height: 90%; */
+    /* display: flex; */
+
+    /* justify-content: flex-end; */
+    /* align-items: center; */
+    /* gap: 40px; */
+
+    /* outline: 1px solid blue; */
+}
+
+
+.totalPriceText {
+    /* display: block; */
+    /* width:30%; */
+    /* align-self: flex-start; */
+    /* margin-top: 10px; */
+    text-align: center;
+    font-size: 1.1em;
+    color: blue;
+
+    /* outline: 1px solid green; */
+}
+
+
+.totalPriceNumber {
+    /* margin-left: 1%; */
+    /* margin-right: auto; */
+    font-size: 1.0em;
+    color: red;
+
+    /* outline: 1px solid red; */
+}
