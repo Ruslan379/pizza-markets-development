@@ -1,6 +1,8 @@
 @import-normalize; /* bring in normalize.css styles */
 
 body {
+  overflow-x: hidden; 
+  overflow-y: hidden; 
   /* height: 100%; */
   margin: 0;
   padding: 0;
@@ -9,6 +11,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: rgb(230, 230, 230);
 }
 
 code {
@@ -29,4 +34,11 @@ p {
 img {
   display: block;
   max-width: 100%;
+}
+
+#root {
+  /* outline: 1px solid blue; */
+  /* background-color: rgb(140, 255, 240); */
+  margin: 0;
+  padding: 0;
 }

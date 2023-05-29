@@ -1,11 +1,19 @@
 /* import styled from '@emotion/styled'; */
 
 
-.Container {
+.mainContainer {
+    /* width: 100%;  */
+    /* height: 100%; */
+    /* width: 100vw; */
+    flex-basis: 100vw;
+    /* min-width: 800px; */
+    /* max-width: 1200px; */
     height: 100vh;
+    
     display: flex;
     flex-direction: column;
-    padding: 20px;
+
+
 }
 
 .navFlex {
