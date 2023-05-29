@@ -1,7 +1,12 @@
 
 
+
+
 /* ! 1.Стили для устройств с шириной экрана до 768px */
-@media (max-width: 768px) {
+/* ! 1.Стили для устройств с шириной экрана от 320px до 768px */
+/* @media (max-width: 767px) { */
+/* @media screen and (min-width: 320px) { */
+@media screen and (max-width: 767px) {
     .headerShops {
             font-size: 20px;
             text-align: center;
@@ -47,9 +52,9 @@
         }
     
         .selectShopButton {
-            min-width: 140px;
+            min-width: 120px;
             text-decoration: none;
-            padding: 8px 16px;
+            padding: 8px 10px;
             font-weight: 700;
             border: solid 1px;
             border-radius: 4px;
@@ -66,7 +71,8 @@
 
 
 /* ! 2.Стили для устройств с шириной экрана от 768px и выше */
-@media (min-width: 769px) {
+/* @media (min-width: 768px) { */
+@media screen and (min-width: 768px) {
     .headerShops {
         font-size: 20px;
         text-align: center;
@@ -92,9 +98,9 @@
     }
 
     .selectShopButton {
-        min-width: 140px;
+        min-width: 120px;
         text-decoration: none;
-        padding: 8px 16px;
+        padding: 8px 10px;
         font-weight: 700;
         border: solid 1px;
         border-radius: 4px;
@@ -124,49 +130,3 @@
 
 
 
-
-
-
-
-
-
-/* todo  OLD */
-.headerShops1 {
-    font-size: 20px;
-    text-align: center;
-    margin: 0;
-    margin-top: 10px;
-}
-
-.list1 {
-    /* height: 50%; */
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    justify-content: flex-start;
-    margin: 0;
-    padding: 10px;
-    list-style: none;
-}
-
-.listItem1 {
-    margin-left: auto;
-    margin-right: auto;
-    
-}
-
-.selectShopButton1 {
-    min-width: 140px;
-    text-decoration: none;
-    padding: 8px 16px;
-    font-weight: 700;
-    border: solid 1px;
-    border-radius: 4px;
-    color: #2a363b;
-    box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23);
-}
-
-.selectShopButton1:hover,
-.selectShopButton1:focus {
-    background-color: #c4c4c4;
-}

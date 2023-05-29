@@ -31,7 +31,7 @@ export const ShoppingCartOrder = () => {
                         >
                             <img
                                 className={css.imagePizza}
-                                alt={imagePizza}
+                                alt={"Pizza"}
                                 src={imagePizza}
                                 width="50%"
                             />

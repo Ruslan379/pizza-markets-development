@@ -19,7 +19,7 @@ export const Pizzas = ({ allPizzas, addPizzaToCard }) => {
                 >
                     <img
                         className={css.imagePizza}
-                        alt={imagePizza}
+                        alt={"Pizza"}
                         src={imagePizza}
                         width="100%"
                     />
