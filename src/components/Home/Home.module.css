@@ -91,9 +91,9 @@
     }
 
         .imagePizza {
-        /* flex-basis: 50vh; */
-        width: 95%;
-        height: 95%;
+        /* width: 95%; */
+        /* height: 95%; */
+        width: 50vh;
 
         /* outline: 5px solid tomato; */
     }
@@ -184,8 +184,12 @@
 
         .imagePizza {
         /* flex-basis: 50vh; */
-        width: 95%;
-        height: 95%;
+        /* width: 95%; */
+        width: 70vh;
+
+        /* height: 95%; */
+        /* height: auto; */
+        /* height: 50vh; */
 
         /* outline: 5px solid tomato; */
     }
