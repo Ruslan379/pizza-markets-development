@@ -1,11 +1,144 @@
-.headerShops {
+
+
+/* ! 1.Стили для устройств с шириной экрана до 768px */
+@media (max-width: 768px) {
+    .headerShops {
+            font-size: 20px;
+            text-align: center;
+            margin: 0;
+            margin-top: 10px;
+        }
+    
+        .list1 {
+            align-self: flex-start;
+            /* flex-grow: 1; */
+            /* height: 50%; */
+            display: flex;
+            flex-wrap: wrap;
+            /* flex-direction: column; */
+            gap: 20px;
+            /* gap: 1%; */
+
+            /* justify-content: flex-start; */
+            /* align-items: flex-start; */
+            margin: 0;
+            padding: 10px;
+            list-style: none;
+        }
+
+        .list {
+            flex-grow: 1;
+            display: grid;
+                /* ! Задаем три столбца равной ширины */
+                grid-template-columns: 1fr 1fr 1fr;
+                /* ! Отступ между элементами */
+                /* grid-gap: 20px; */
+                gap: 2%;
+                
+            margin: 0;
+            padding: 10px;
+            list-style: none;
+        }
+    
+        .listItem {
+            margin-left: auto;
+            margin-right: auto;
+    
+        }
+    
+        .selectShopButton {
+            min-width: 140px;
+            text-decoration: none;
+            padding: 8px 16px;
+            font-weight: 700;
+            border: solid 1px;
+            border-radius: 4px;
+            color: #2a363b;
+            box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23);
+        }
+    
+        .selectShopButton:hover,
+        .selectShopButton:focus {
+            background-color: #c4c4c4;
+        }
+}
+
+
+
+/* ! 2.Стили для устройств с шириной экрана от 768px и выше */
+@media (min-width: 769px) {
+    .headerShops {
+        font-size: 20px;
+        text-align: center;
+        margin: 0;
+        margin-top: 10px;
+    }
+
+    .list {
+        /* height: 50%; */
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        justify-content: flex-start;
+        margin: 0;
+        padding: 10px;
+        list-style: none;
+    }
+
+    .listItem {
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .selectShopButton {
+        min-width: 140px;
+        text-decoration: none;
+        padding: 8px 16px;
+        font-weight: 700;
+        border: solid 1px;
+        border-radius: 4px;
+        color: #2a363b;
+        box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23);
+    }
+
+    .selectShopButton:hover,
+    .selectShopButton:focus {
+        background-color: #c4c4c4;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* todo  OLD */
+.headerShops1 {
     font-size: 20px;
     text-align: center;
     margin: 0;
     margin-top: 10px;
 }
 
-.list {
+.list1 {
     /* height: 50%; */
     display: flex;
     flex-direction: column;
@@ -16,13 +149,13 @@
     list-style: none;
 }
 
-.listItem {
+.listItem1 {
     margin-left: auto;
     margin-right: auto;
     
 }
 
-.selectShopButton {
+.selectShopButton1 {
     min-width: 140px;
     text-decoration: none;
     padding: 8px 16px;
@@ -33,7 +166,7 @@
     box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23);
 }
 
-.selectShopButton:hover,
-.selectShopButton:focus {
+.selectShopButton1:hover,
+.selectShopButton1:focus {
     background-color: #c4c4c4;
 }
