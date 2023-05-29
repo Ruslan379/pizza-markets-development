@@ -5,6 +5,8 @@ import pizzaMarkets from "db/pizzaMarkets.json";
 import { Shops } from 'components/Shops/Shops';
 import { Pizzas } from 'components/Pizzas/Pizzas';
 
+import imagePizza from "images/A48382B1BEBB8CBDB0-large.webp";
+
 import css from './Home.module.css';
 
 
@@ -49,10 +51,38 @@ export const Home = () => {
                 />
             </div>
             <div className={css.pizzas}>
-                <Pizzas
+                {/* //! Так рендерится 0 после картинки: */}
+                {/* {!allPizzas.length && (
+                    <img
+                        className={css.imagePizza}
+                        alt={imagePizza}
+                        src={imagePizza}
+                        width="100%"
+                    />
+                )}
+                {allPizzas.length && (
+                    <Pizzas
                     allPizzas={allPizzas}
                     addPizzaToCard={addPizzaToCard}
                 />
+                )} */}
+
+                {allPizzas.length > 0 ? (
+                    <Pizzas
+                    allPizzas={allPizzas}
+                    addPizzaToCard={addPizzaToCard}
+                />
+                ) : (
+                        <div className={css.imagePizzaContainer}>
+                            <img
+                                className={css.imagePizza}
+                                alt={imagePizza}
+                                src={imagePizza}
+                                width="100%"
+                            />
+                        </div>
+                    
+                )}
             </div>
         </div>
     );
