@@ -1,14 +1,15 @@
 {
   "files": {
-    "main.css": "/pizza-markets-development/static/css/main.ad91c332.css",
-    "main.js": "/pizza-markets-development/static/js/main.96379615.js",
+    "main.css": "/pizza-markets-development/static/css/main.c016eaa8.css",
+    "main.js": "/pizza-markets-development/static/js/main.4407d5e0.js",
     "static/media/monopizza_pica-dyabola.jpg": "/pizza-markets-development/static/media/monopizza_pica-dyabola.cdbb5c0621040dc1eb7b.jpg",
+    "static/media/-large.webp": "/pizza-markets-development/static/media/A48382B1BEBB8CBDB0-large.467687a4c4cc774c90cc.webp",
     "index.html": "/pizza-markets-development/index.html",
-    "main.ad91c332.css.map": "/pizza-markets-development/static/css/main.ad91c332.css.map",
-    "main.96379615.js.map": "/pizza-markets-development/static/js/main.96379615.js.map"
+    "main.c016eaa8.css.map": "/pizza-markets-development/static/css/main.c016eaa8.css.map",
+    "main.4407d5e0.js.map": "/pizza-markets-development/static/js/main.4407d5e0.js.map"
   },
   "entrypoints": [
-    "static/css/main.ad91c332.css",
-    "static/js/main.96379615.js"
+    "static/css/main.c016eaa8.css",
+    "static/js/main.4407d5e0.js"
   ]
 }
