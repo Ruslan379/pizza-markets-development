@@ -1,3 +1,4 @@
+
 /* ! 1.Стили для устройств с шириной экрана от 320px до 479px */
 @media screen and (min-width: 320px) and (max-width: 479px) {
     .list1 {
@@ -176,7 +177,7 @@
     .list {
             /* flex-grow: 1; */
             display: grid;
-                /* ! Задаем два столбца равной ширины */
+                /* ! Задаем ДВА столбца равной ширины */
                 grid-template-columns: 1fr 1fr;
                 /* ! Отступ между элементами */
                 grid-gap: 20px;
@@ -242,9 +243,10 @@
     }
 }
 
-/* ! 4.Стили для устройств с шириной экрана от 1200px и выше */
+/* ! 4.Стили для устройств с шириной экрана от 1200px и до 1599px */
 /* @media (min-width: 768px) { */
-@media screen and (min-width: 1200px) {
+/* @media screen and (min-width: ) { */
+@media screen and (min-width: 1200px) and (max-width: 1599px) {
     .list {
             /* flex-grow: 1; */
             display: grid;
@@ -285,7 +287,78 @@
     }
 
     .pricePizza {
-        display: block;
+        /* display: block; */
+        margin-left: 10%;
+        font-size: 1.0em;
+        color: red;
+    }
+
+
+    .selectPizzaButton {
+        margin-top: 15px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        align-self: flex-end;
+
+        display: inline-block;
+        text-decoration: none;
+        padding: 8px 16px;
+        font-weight: 700;
+        border: solid 1px;
+        border-radius: 4px;
+        color: #2a363b;
+        box-shadow: 8px 8px 18px rgba(59, 43, 14, 0.23);
+    }
+
+    .selectPizzaButton:hover,
+    .selectPizzaButton:focus {
+        background-color: #c4c4c4;
+    }
+}
+
+/* ! 5.Стили для устройств с шириной экрана от 1600px и выше */
+@media screen and (min-width: 1600px) {
+    .list {
+        /* flex-grow: 1; */
+        display: grid;
+        /* ! Задаем 4 столбца равной ширины */
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        /* ! Отступ между элементами */
+        grid-gap: 20px;
+        /* gap: 2%; */
+
+        margin: 0;
+        padding: 10px;
+        list-style: none;
+    }
+
+    .listItem {
+        display: flex;
+        flex-direction: column;
+        /* height: 35%; */
+        /* flex-basis: 100px; */
+        /* width: 45%; */
+        padding: 1%;
+
+        border: 2px solid rgb(120, 196, 130);
+        border-radius: 8px;
+        box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23);
+
+        /* outline: 1px solid tomato; */
+    }
+
+
+    .namePizza {
+        flex-grow: 1;
+        /* width: 100%; */
+        margin-top: 10px;
+        text-align: center;
+        font-size: 1.1em;
+        color: blue;
+    }
+
+    .pricePizza {
+        /* display: block; */
         margin-left: 10%;
         font-size: 1.0em;
         color: red;
