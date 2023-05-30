@@ -1,12 +1,75 @@
 
+/* ! 1.Стили для устройств с шириной экрана от 320px до 479px */
+@media screen and (min-width: 320px) and (max-width: 479px) {
+    .headerShops {
+        font-size: 20px;
+        text-align: center;
+        margin: 0;
+        margin-top: 10px;
+    }
+
+    .list1 {
+        align-self: flex-start;
+        /* flex-grow: 1; */
+        /* height: 50%; */
+        display: flex;
+        flex-wrap: wrap;
+        /* flex-direction: column; */
+        gap: 20px;
+        /* gap: 1%; */
+
+        /* justify-content: flex-start; */
+        /* align-items: flex-start; */
+        margin: 0;
+        padding: 10px;
+        list-style: none;
+    }
+
+    .list {
+        flex-grow: 1;
+        display: grid;
+        /* ! Задаем ДВА столбца равной ширины */
+        grid-template-columns: 1fr 1fr;
+        /* ! Отступ между элементами */
+        /* grid-gap: 20px; */
+        gap: 7%;
+
+        margin: 0;
+        padding: 10px;
+        list-style: none;
+    }
+
+    .listItem {
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .selectShopButton {
+        min-width: 120px;
+        text-decoration: none;
+        padding: 8px 10px;
+        font-weight: 700;
+        border: solid 1px;
+        border-radius: 4px;
+        color: #2a363b;
+        box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23);
+    }
+
+    .selectShopButton:hover,
+    .selectShopButton:focus {
+        background-color: #c4c4c4;
+    }
+}
 
 
 
-/* ! 1.Стили для устройств с шириной экрана до 768px */
-/* ! 1.Стили для устройств с шириной экрана от 320px до 768px */
+
+/* ! 2.Стили для устройств с шириной экрана от 480px до 767px */
 /* @media (max-width: 767px) { */
 /* @media screen and (min-width: 320px) { */
-@media screen and (max-width: 767px) {
+/* @media screen and (max-width: 767px) { */
+@media screen and (min-width: 480px) and (max-width: 767px) {
     .headerShops {
             font-size: 20px;
             text-align: center;
@@ -34,7 +97,7 @@
         .list {
             flex-grow: 1;
             display: grid;
-                /* ! Задаем три столбца равной ширины */
+                /* ! Задаем ТРИ столбца равной ширины */
                 grid-template-columns: 1fr 1fr 1fr;
                 /* ! Отступ между элементами */
                 /* grid-gap: 20px; */
@@ -69,10 +132,10 @@
 }
 
 
-
-/* ! 2.Стили для устройств с шириной экрана от 768px и выше */
+/* ! 3.Стили для устройств с шириной экрана от 768px и до 1199px */
 /* @media (min-width: 768px) { */
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) { */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
     .headerShops {
         font-size: 20px;
         text-align: center;
@@ -115,6 +178,49 @@
 }
 
 
+/* ! 4.Стили для устройств с шириной экрана от 1200px и выше */
+/* @media (min-width: 768px) { */
+@media screen and (min-width: 1200px) {
+    .headerShops {
+        font-size: 20px;
+        text-align: center;
+        margin: 0;
+        margin-top: 10px;
+    }
+
+    .list {
+        /* height: 50%; */
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        justify-content: flex-start;
+        margin: 0;
+        padding: 10px;
+        list-style: none;
+    }
+
+    .listItem {
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .selectShopButton {
+        min-width: 120px;
+        text-decoration: none;
+        padding: 8px 10px;
+        font-weight: 700;
+        border: solid 1px;
+        border-radius: 4px;
+        color: #2a363b;
+        box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23);
+    }
+
+    .selectShopButton:hover,
+    .selectShopButton:focus {
+        background-color: #c4c4c4;
+    }
+}
 
 
 
