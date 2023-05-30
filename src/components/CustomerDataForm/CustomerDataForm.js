@@ -47,6 +47,7 @@ export const CustomerDataForm = () => {
                     <input
                         type="text"
                         name="name"
+                        required
                         placeholder={customerDataLocalStorage.name ? customerDataLocalStorage.name : "Input you Name"}
                         defaultValue={customerDataLocalStorage.name}
                     />
@@ -56,6 +57,7 @@ export const CustomerDataForm = () => {
                     <input
                         type="email"
                         name="email"
+                        required
                         placeholder={customerDataLocalStorage.email ? customerDataLocalStorage.email : "Input you Email"}
                         defaultValue={customerDataLocalStorage.email}
                     />
@@ -65,6 +67,7 @@ export const CustomerDataForm = () => {
                     <input
                         type="text"
                         name="phone"
+                        required
                         placeholder={customerDataLocalStorage.phone ? customerDataLocalStorage.phone : "Input you Phone"}
                         defaultValue={customerDataLocalStorage.phone}
                     />
@@ -74,6 +77,7 @@ export const CustomerDataForm = () => {
                     <input
                         type="text"
                         name="address"
+                        required
                         placeholder={customerDataLocalStorage.address ? customerDataLocalStorage.address : "Input you Address"}
                         defaultValue={customerDataLocalStorage.address}
                     />

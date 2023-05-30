@@ -1,14 +1,55 @@
-.form {
+
+
+/* ! 1.Стили для устройств с шириной экрана от 320px до 479px */
+@media screen and (min-width: 320px) and (max-width: 479px) {
+    .form {
+            width: 80%;
+        }
+    
+        .label {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 5px;
+        }
+    
+        .submitButtonForm {
+            position: absolute;
+            bottom: 33px;
+            right: 35px;
+            display: inline-block;
+            text-decoration: none;
+            margin-left: 20px;
+            padding: 8px 16px;
+            /* padding: 12px; */
+            font-weight: 700;
+            border: solid 1px;
+            border-radius: 4px;
+            color: #2a363b;
+            box-shadow: 8px 8px 18px rgba(59, 43, 14, 0.23);
+        }
+    
+        .submitButtonForm:hover,
+        .submitButtonForm:focus {
+            background-color: #c4c4c4;
+        }
+}
+
+
+
+
+
+/* todo OLD */
+.form1 {
     width: 80%;
 }
 
-.label {
+.label1 {
     display: flex;
     flex-direction: column;
     margin-bottom: 40px;
 }
 
-.submitButtonForm {
+.submitButtonForm1 {
     position: absolute;
         bottom: 33px;
         right: 35px;
@@ -23,7 +64,7 @@
     color: #2a363b;
     box-shadow: 8px 8px 18px rgba(59, 43, 14, 0.23);
 }
-.submitButtonForm:hover,
-.submitButtonForm:focus {
+.submitButtonForm1:hover,
+.submitButtonForm1:focus {
     background-color: #c4c4c4;
 }

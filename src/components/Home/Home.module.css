@@ -1,5 +1,6 @@
 /* import styled from '@emotion/styled'; */
 
+
 /* ! 1.Стили для устройств с шириной экрана от 320px до 479px */
 @media screen and (min-width: 320px) and (max-width: 479px) {
     .homeContainer {
@@ -41,7 +42,6 @@
 
         /* width: 90vw; */
         /* height: 100vh; */
-
 
         display: flex;
         flex-direction: column;
