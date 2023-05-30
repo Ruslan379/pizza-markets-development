@@ -7,14 +7,14 @@ import css from './ShoppingCart.module.css';
 export const ShoppingCart = () => {
     return (
         <div className={css.shoppingCartContainer}>
-            <div className={css.shoppingCartTaskContainer}>
+            {/* <div className={css.shoppingCartTaskContainer}> */}
                 <div className={css.сustomerData}>
                     <CustomerDataForm />
                 </div>
                 <div className={css.CustomerOrder}>
                     <ShoppingCartOrder />
                 </div>
-            </div>
+            {/* </div> */}
         </div>
     );
 };
