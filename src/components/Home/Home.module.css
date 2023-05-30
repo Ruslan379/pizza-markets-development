@@ -95,7 +95,7 @@
         width: 45vh;
 
         border-radius: 50%;
-        box-shadow: 9px 9px 12px rgba(44, 35, 18, 0.23);
+        /* box-shadow: 9px 9px 12px rgba(44, 35, 18, 0.23); */
 
         animation-name: spin;
         animation-duration: 20s;
@@ -215,7 +215,7 @@
         width: 45vh;
 
         border-radius: 50%;
-            box-shadow: 9px 9px 12px rgba(44, 35, 18, 0.23);
+        /* box-shadow: 9px 9px 12px rgba(44, 35, 18, 0.23); */
         
             animation-name: spin;
             animation-duration: 20s;
