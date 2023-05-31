@@ -35,7 +35,6 @@ export const CustomerDataForm = () => {
 
 
 
-
     return (
         <>
             <form
@@ -88,7 +87,6 @@ export const CustomerDataForm = () => {
                 </label>
                 <button className={css.submitButtonForm} type="submit">Submit</button>
             </form>
-
         </>
     );
 };
