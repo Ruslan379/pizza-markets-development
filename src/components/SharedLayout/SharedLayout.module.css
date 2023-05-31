@@ -18,7 +18,8 @@
 }
 
 .navFlex {
-    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
     display: flex;
     /* margin-left: 4%; */
     gap: 50px;
