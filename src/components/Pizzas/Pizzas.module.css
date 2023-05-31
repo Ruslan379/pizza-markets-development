@@ -30,10 +30,11 @@
     .listItem {
         display: flex;
         flex-direction: column;
+        align-items: center;
         /* height: 35%; */
         /* flex-basis: 100px; */
         /* width: 45%; */
-        padding: 1%;
+        padding: 3%;
 
         border: 2px solid rgb(120, 196, 130);
         border-radius: 8px;
@@ -42,11 +43,17 @@
         /* outline: 1px solid tomato; */
     }
 
+    .imagePizza {
+        width: 100%;
+        /* height: 80%; */
+        border-radius: 5px;
+        box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23);
+    }
 
     .namePizza {
         flex-grow: 1;
         /* width: 100%; */
-        margin-top: 10px;
+        margin-top: 16px;
         text-align: center;
         font-size: 1.1em;
         color: blue;
@@ -54,8 +61,9 @@
 
     .pricePizza {
         display: block;
-        margin-left: 10%;
-        font-size: 1.0em;
+        /* margin-left: 10%; */
+        margin-top: 7%;
+        font-size: 1.2em;
         color: red;
     }
 
@@ -87,17 +95,17 @@
 /* @media screen and (min-width: 320px) { */
 /* @media screen and (max-width: 767px) { */
     @media screen and (min-width: 480px) and (max-width: 767px) {
-    .list1 {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 15px;
-        justify-content: flex-start;
-        margin: 0;
-        padding-top: 20px;
-        list-style: none;
-        padding: 2%;
-        padding-inline-start: 3%;
-    }
+        .list1 {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: flex-start;
+            margin: 0;
+            padding-top: 20px;
+            list-style: none;
+            padding: 2%;
+            padding-inline-start: 3%;
+        }
 
         .list {
             /* flex-grow: 1; */
@@ -113,59 +121,67 @@
             list-style: none;
         }
 
-    .listItem {
-        display: flex;
-        flex-direction: column;
-        /* height: 35%; */
-        /* flex-basis: 100px; */
-        /* width: 45%; */
-        padding: 1%;
+        .listItem {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* height: 35%; */
+            /* flex-basis: 100px; */
+            /* width: 45%; */
+            padding: 3%;
 
-        border: 2px solid rgb(120, 196, 130);
-        border-radius: 8px;
-        box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23);
+            border: 2px solid rgb(120, 196, 130);
+            border-radius: 8px;
+            box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23);
 
-        /* outline: 1px solid tomato; */
-    }
+            /* outline: 1px solid tomato; */
+        }
+
+        .imagePizza {
+            width: 100%;
+            /* height: 100%; */
+            border-radius: 5px;
+            box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23);
+        }
+
+        .namePizza {
+            flex-grow: 1;
+            /* width: 100%; */
+            margin-top: 16px;
+            text-align: center;
+            font-size: 1.1em;
+            color: blue;
+        }
+
+        .pricePizza {
+            display: block;
+            /* margin-left: 10%; */
+            margin-top: 7%;
+            font-size: 1.2em;
+            color: red;
+        }
 
 
-    .namePizza {
-        flex-grow: 1;
-        /* width: 100%; */
-        margin-top: 10px;
-        text-align: center;
-        font-size: 1.1em;
-        color: blue;
-    }
+        .selectPizzaButton {
+            margin-top: 15px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            align-self: flex-end;
 
-    .pricePizza {
-        display: block;
-        margin-left: 10%;
-        font-size: 1.0em;
-        color: red;
-    }
+            display: inline-block;
+            text-decoration: none;
+            padding: 8px 16px;
+            font-weight: 700;
+            border: solid 1px;
+            border-radius: 4px;
+            color: #2a363b;
+            box-shadow: 8px 8px 18px rgba(59, 43, 14, 0.23);
+        }
 
-
-    .selectPizzaButton {
-        margin-top: 15px;
-        margin-right: 10px;
-        margin-bottom: 10px;
-        align-self: flex-end;
-
-        display: inline-block;
-        text-decoration: none;
-        padding: 8px 16px;
-        font-weight: 700;
-        border: solid 1px;
-        border-radius: 4px;
-        color: #2a363b;
-        box-shadow: 8px 8px 18px rgba(59, 43, 14, 0.23);
-    }
-
-    .selectPizzaButton:hover,
-    .selectPizzaButton:focus {
-        background-color: #c4c4c4;
-    }
+        .selectPizzaButton:hover,
+        .selectPizzaButton:focus {
+            background-color: #c4c4c4;
+        }
 }
 
 
@@ -191,10 +207,11 @@
     .listItem {
         display: flex;
         flex-direction: column;
+        align-items: center;
         /* height: 35%; */
         /* flex-basis: 100px; */
         /* width: 45%; */
-        padding: 1%;
+        padding: 3%;
 
         border: 2px solid rgb(120, 196, 130);
         border-radius: 8px;
@@ -203,11 +220,17 @@
         /* outline: 1px solid tomato; */
     }
 
+    .imagePizza {
+        width: 100%;
+        /* height: 80%; */
+        border-radius: 5px;
+        box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23);
+    }
 
     .namePizza {
         flex-grow: 1;
         /* width: 100%; */
-        margin-top: 10px;
+        margin-top: 16px;
         text-align: center;
         font-size: 1.1em;
         color: blue;
@@ -215,8 +238,9 @@
 
     .pricePizza {
         display: block;
-        margin-left: 10%;
-        font-size: 1.0em;
+        /* margin-left: 10%; */
+        margin-top: 7%;
+        font-size: 1.2em;
         color: red;
     }
 
@@ -264,10 +288,11 @@
     .listItem {
         display: flex;
         flex-direction: column;
+        /* align-items: center; */
         /* height: 35%; */
         /* flex-basis: 100px; */
         /* width: 45%; */
-        padding: 1%;
+        padding: 3%;
 
         border: 2px solid rgb(120, 196, 130);
         border-radius: 8px;
@@ -277,19 +302,26 @@
     }
 
 
+    .imagePizza {
+        width: 100%;
+        /* height: 80%; */
+        border-radius: 5px;
+        box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23);
+    }
+
     .namePizza {
         flex-grow: 1;
         /* width: 100%; */
-        margin-top: 10px;
+        margin-top: 16px;
         text-align: center;
-        font-size: 1.1em;
+        font-size: 1.0em;
         color: blue;
     }
 
     .pricePizza {
         /* display: block; */
-        margin-left: 10%;
-        font-size: 1.0em;
+        margin-left: 3%;
+        font-size: 1.1em;
         color: red;
     }
 
@@ -338,7 +370,7 @@
         /* height: 35%; */
         /* flex-basis: 100px; */
         /* width: 45%; */
-        padding: 1%;
+        padding: 3%;
 
         border: 2px solid rgb(120, 196, 130);
         border-radius: 8px;
@@ -347,20 +379,27 @@
         /* outline: 1px solid tomato; */
     }
 
+    .imagePizza {
+        width: 100%;
+        /* height: 80%; */
+        border-radius: 5px;
+        box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23);
+    }
 
     .namePizza {
         flex-grow: 1;
         /* width: 100%; */
-        margin-top: 10px;
+        margin-top: 16px;
         text-align: center;
-        font-size: 1.1em;
+        font-size: 1.0em;
         color: blue;
     }
 
     .pricePizza {
         /* display: block; */
-        margin-left: 10%;
-        font-size: 1.0em;
+        /* margin-left: 10%; */
+        margin-left: 7%;
+        font-size: 1.1em;
         color: red;
     }
 
