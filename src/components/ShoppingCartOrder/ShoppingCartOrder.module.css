@@ -68,14 +68,14 @@
             /* flex-grow: 1; */
             margin-top: 10px;
             text-align: center;
-            font-size: 1.0em;
+            font-size: 0.9em;
             color: blue;
             /* outline: 1px solid rgb(71, 181, 255); */
         }
     
         .pricePizza {
             text-align: center;
-            font-size: 0.9em;
+            font-size: 0.8em;
             color: red;
         }
     
@@ -148,7 +148,7 @@
     .list {
         /* flex-grow: 1; */
         display: grid;
-        /* ! Задаем ОДИН столбец */
+        /* ! Задаем ДВА столбца */
         grid-template-columns: 1fr 1fr;
         /* ! Отступ между элементами */
         grid-gap: 10px;
@@ -264,6 +264,370 @@
 }
 
 
+/* ! 3.Стили для устройств с шириной экрана от 768px и до 1199px */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .list1 {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            justify-content: flex-start;
+            margin: 0;
+            padding-top: 10px;
+            list-style: none;
+            padding-inline-start: 3%;
+        }
+    
+        .list {
+            /* flex-grow: 1; */
+            display: grid;
+            /* ! Задаем ОДИН столбец */
+            grid-template-columns: 1fr;
+            /* ! Отступ между элементами */
+            grid-gap: 10px;
+            /* gap: 2%; */
+
+            margin: 0;
+            padding: 10px;
+            list-style: none;
+        }
+
+        .listItem {
+            /* height: 80%; */
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            gap: 10px;
+            width: 95%;
+            padding: 2%;
+    
+            border: 2px solid rgb(164, 214, 255);
+            border-radius: 8px;
+            box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23);
+    
+            /* outline: 1px solid tomato; */
+        }
+    
+        .imagePizza {
+            width: 50%;
+            height: 80%;
+            border-radius: 5px;
+            box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23);
+        }
+    
+    
+        .cardContents {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            width: 95%;
+            padding: 1%;
+    
+            /* outline: 1px solid rgb(71, 181, 255); */
+        }
+    
+        .namePizza {
+            /* height: 50px; */
+            height: 2.2em;
+            /* flex-grow: 1; */
+            margin-top: 10px;
+            text-align: center;
+            font-size: 1.0em;
+            color: blue;
+            /* outline: 1px solid rgb(71, 181, 255); */
+        }
+    
+        .pricePizza {
+            text-align: center;
+            font-size: 0.9em;
+            color: red;
+        }
+    
+        .inputQuantity {
+            /* width: 100px; */
+            width: 77%;
+            padding: 4px;
+            margin-top: 5px;
+            text-align: center;
+            border-radius: 5px;
+            border: 1px solid rgb(71, 181, 255);
+        }
+    
+
+        .shoppingCartPriceSubmitContainer {
+            position: absolute;
+            bottom: 35px;
+            /* right: 145px; */
+            right: 65%;
+
+            /* outline: 1px solid blue; */
+        }
+
+
+        .totalPriceText {
+            /* display: inline-block; */
+            width: 110%;
+            /* align-self: flex-start; */
+            /* margin-top: 10px; */
+            /* text-align: center; */
+            font-size: 1.1em;
+            color: blue;
+
+            /* outline: 1px solid green; */
+        }
+
+
+        .totalPriceNumber {
+            /* display: block; */
+            /* margin-top: 5px; */
+            margin-left: 3%;
+            /* margin-right: auto; */
+            font-size: 1.0em;
+            color: red;
+
+            /* outline: 1px solid red; */
+        }
+}
+
+
+/* ! 4.Стили для устройств с шириной экрана от 1200px и до 1599px */
+@media screen and (min-width: 1200px) and (max-width: 1599px) {
+
+    .list {
+        /* flex-grow: 1; */
+        display: grid;
+        /* ! Задаем ДВА столбца */
+        grid-template-columns: 1fr 1fr;
+        /* ! Отступ между элементами */
+        grid-gap: 10px;
+        /* gap: 2%; */
+
+        margin: 0;
+        padding: 10px;
+        list-style: none;
+    }
+
+    .listItem {
+        /* height: 80%; */
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 10px;
+        width: 95%;
+        padding: 2%;
+
+        border: 2px solid rgb(164, 214, 255);
+        border-radius: 8px;
+        box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23);
+
+        /* outline: 1px solid tomato; */
+    }
+
+    .imagePizza {
+        width: 50%;
+        height: 80%;
+        border-radius: 5px;
+        box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23);
+    }
+
+
+    .cardContents {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        width: 95%;
+        padding: 1%;
+
+        /* outline: 1px solid rgb(71, 181, 255); */
+    }
+
+    .namePizza {
+        /* height: 50px; */
+        height: 2.2em;
+        /* flex-grow: 1; */
+        margin-top: 10px;
+        text-align: center;
+        font-size: 1.0em;
+        color: blue;
+        /* outline: 1px solid rgb(71, 181, 255); */
+    }
+
+    .pricePizza {
+        text-align: center;
+        font-size: 0.9em;
+        color: red;
+    }
+
+    .inputQuantity {
+        /* width: 100px; */
+        width: 77%;
+        padding: 4px;
+        margin-top: 5px;
+        text-align: center;
+        border-radius: 5px;
+        border: 1px solid rgb(71, 181, 255);
+    }
+
+
+    .shoppingCartPriceSubmitContainer {
+        position: absolute;
+        bottom: 35px;
+        /* right: 145px; */
+        right: 75%;
+
+        /* outline: 1px solid blue; */
+    }
+
+
+    .totalPriceText {
+        /* display: inline-block; */
+        width: 110%;
+        /* align-self: flex-start; */
+        /* margin-top: 10px; */
+        /* text-align: center; */
+        font-size: 1.1em;
+        color: blue;
+
+        /* outline: 1px solid green; */
+    }
+
+
+    .totalPriceNumber {
+        /* display: block; */
+        /* margin-top: 5px; */
+        margin-left: 3%;
+        /* margin-right: auto; */
+        font-size: 1.0em;
+        color: red;
+
+        /* outline: 1px solid red; */
+    }
+}
+
+/* ! 5.Стили для устройств с шириной экрана от 1600px и выше */
+@media screen and (min-width: 1600px) {
+
+    .list {
+        /* flex-grow: 1; */
+        display: grid;
+        /* ! Задаем ТРИ столбца */
+        grid-template-columns: 1fr 1fr 1fr;
+        /* ! Отступ между элементами */
+        grid-gap: 10px;
+        /* gap: 2%; */
+
+        margin: 0;
+        padding: 10px;
+        list-style: none;
+    }
+
+
+    .listItem {
+        /* height: 80%; */
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 10px;
+        width: 95%;
+        padding: 2%;
+
+        border: 2px solid rgb(164, 214, 255);
+        border-radius: 8px;
+        box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23);
+
+        /* outline: 1px solid tomato; */
+    }
+
+
+    .imagePizza {
+        width: 50%;
+        height: 80%;
+        border-radius: 5px;
+        box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23);
+    }
+
+
+    .cardContents {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        width: 95%;
+        padding: 1%;
+
+        /* outline: 1px solid rgb(71, 181, 255); */
+    }
+
+
+    .namePizza {
+        /* height: 50px; */
+        height: 2.2em;
+        /* flex-grow: 1; */
+        margin-top: 10px;
+        text-align: center;
+        font-size: 1.0em;
+        color: blue;
+        /* outline: 1px solid rgb(71, 181, 255); */
+    }
+
+
+    .pricePizza {
+        text-align: center;
+        font-size: 0.9em;
+        color: red;
+    }
+
+
+    .inputQuantity {
+        /* width: 100px; */
+        width: 77%;
+        padding: 4px;
+        margin-top: 5px;
+        text-align: center;
+        border-radius: 5px;
+        border: 1px solid rgb(71, 181, 255);
+    }
+
+
+    .shoppingCartPriceSubmitContainer {
+        position: absolute;
+        bottom: 35px;
+        /* right: 145px; */
+        right: 80%;
+
+        /* outline: 1px solid blue; */
+    }
+
+
+    .totalPriceText {
+        /* display: inline-block; */
+        width: 110%;
+        /* align-self: flex-start; */
+        /* margin-top: 10px; */
+        /* text-align: center; */
+        font-size: 1.1em;
+        color: blue;
+
+        /* outline: 1px solid green; */
+    }
+
+
+    .totalPriceNumber {
+        /* display: block; */
+        /* margin-top: 5px; */
+        margin-left: 3%;
+        /* margin-right: auto; */
+        font-size: 1.0em;
+        color: red;
+
+        /* outline: 1px solid red; */
+    }
+}
 
 
 
@@ -307,12 +671,6 @@
     box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23);
 }
 
-.imagePizza1 {
-    /* display: block; */
-    height: 95%;
-    border-radius: 5px;
-
-}
 
 .cardContents1 {
     display: flex;

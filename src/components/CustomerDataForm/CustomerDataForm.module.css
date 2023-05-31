@@ -33,9 +33,9 @@
             padding: 8px 16px;
             /* padding: 12px; */
             font-weight: 700;
-            border: solid 1px;
+            border: 1px solid rgb(71, 181, 255);
             border-radius: 4px;
-            color: #2a363b;
+            color: #ac1d99;
             box-shadow: 8px 8px 18px rgba(59, 43, 14, 0.23);
         }
     
@@ -79,9 +79,9 @@
         padding: 8px 16px;
         /* padding: 12px; */
         font-weight: 700;
-        border: solid 1px;
+        border: 1px solid rgb(71, 181, 255);
         border-radius: 4px;
-        color: #2a363b;
+        color: #ac1d99;
         box-shadow: 8px 8px 18px rgba(59, 43, 14, 0.23);
     }
 
@@ -93,20 +93,81 @@
 
 
 
+/* ! 3.Стили для устройств с шириной экрана от 768px и до 1199px */
+/* @media screen and (min-width: 768px) and (max-width: 1199px) { */
+@media screen and (min-width: 768px) {
+    .form {
+            width: 80%;
+        }
+    
+        .label {
+            font-size: 0.9em;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 40px;
+        }
+
+        .input {
+            /* width: 100px; */
+            padding: 4px;
+            margin-top: 2px;
+            /* text-align: center; */
+            color: rgb(95, 0, 0);
+            border-radius: 5px;
+            border: 1px solid rgb(71, 181, 255);
+        }
+    
+        .submitButtonForm {
+            position: absolute;
+            bottom: 33px;
+            right: 35px;
+            display: inline-block;
+            text-decoration: none;
+            margin-left: 20px;
+            padding: 8px 16px;
+            /* padding: 12px; */
+            font-weight: 700;
+            border: 1px solid rgb(71, 181, 255);
+            border-radius: 4px;
+            color: #ac1d99;
+            box-shadow: 8px 8px 18px rgba(59, 43, 14, 0.23);
+        }
+    
+        .submitButtonForm:hover,
+        .submitButtonForm:focus {
+            background-color: #c4c4c4;
+        }
+}
+
+
+
 
 
 
 /* todo OLD */
 .form1 {
     width: 80%;
+    /* width: 70vw; */
 }
 
 .label1 {
+    font-size: 0.9em;
     display: flex;
     flex-direction: column;
     margin-bottom: 40px;
+    /* margin-bottom: 6px; */
 }
 
+
+.input1 {
+    /* width: 100px; */
+    padding: 4px;
+    margin-top: 2px;
+    /* text-align: center; */
+    color: rgb(95, 0, 0);
+    border-radius: 5px;
+    border: 1px solid rgb(71, 181, 255);
+}
 .submitButtonForm1 {
     position: absolute;
         bottom: 33px;
@@ -117,9 +178,9 @@
     padding: 8px 16px;
     /* padding: 12px; */
     font-weight: 700;
-    border: solid 1px;
+    border: 1px solid rgb(71, 181, 255);
     border-radius: 4px;
-    color: #2a363b;
+    color: #ac1d99;
     box-shadow: 8px 8px 18px rgba(59, 43, 14, 0.23);
 }
 .submitButtonForm1:hover,

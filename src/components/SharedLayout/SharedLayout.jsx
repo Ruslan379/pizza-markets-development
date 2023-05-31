@@ -1,3 +1,6 @@
+import styled from '@emotion/styled'; 
+
+
 import {
   NavLink,
   Outlet 
@@ -5,13 +8,22 @@ import {
 
 import css from './SharedLayout.module.css';
 
+const StyledLink = styled(NavLink)`
+  color: #1b1111;
+
+  &.active {
+    color: #d38e0f;
+    text-decoration: underline;
+  }
+`;
+
 export const SharedLayout = () => {
   return (
     <div className={css.mainContainer}>
       <nav className={css.navFlex}>
-        <NavLink className={css.navLink} to="/">Shop</NavLink>
-        <NavLink className={css.navLink} to="/cart">Shopping Cart</NavLink>
-        <NavLink className={css.navLink} to="/history">Order History</NavLink>
+        <StyledLink className={css.navLink} to="/" end>Shop</StyledLink>
+        <StyledLink className={css.navLink} to="/cart">Shopping Cart</StyledLink>
+        <StyledLink className={css.navLink} to="/history">Order History</StyledLink>
       </nav>
       <Outlet />
     </div>

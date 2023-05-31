@@ -86,7 +86,7 @@ export const CustomerDataForm = () => {
                         defaultValue={customerDataLocalStorage.address}
                     />
                 </label>
-                <button className={css.submitButtonForm} type="submit">SUBMIT</button>
+                <button className={css.submitButtonForm} type="submit">Submit</button>
             </form>
 
         </>
