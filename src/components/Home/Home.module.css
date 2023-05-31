@@ -10,65 +10,41 @@
         flex-direction: column;
         align-items: center;
         gap: 20px;
-
         padding: 20px;
         margin-left: auto;
         margin-right: auto;
         margin-top: 20px;
         margin-bottom: 20px;
-
         font-size: 18px;
         font-weight: 600;
-
         border-radius: 8px;
         background-color: #faf8e2;
         box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23);
-
         /* outline: 1px solid tomato; */
     }
 
-
     .shops {
         overflow-y: auto;
-        /* overflow-x: hidden; */
         width: 95%;
         height: 30vh;
-        /* min-height: 35%; */
         min-height: 200px;
-        /* flex-basis: 90%; */
-        /* min-width: 15%; */
-        /* height: 20%; */
-        /* flex-grow: 1; */
-
-        /* width: 90vw; */
-        /* height: 100vh; */
-
         display: flex;
         flex-direction: column;
-        /* justify-content: center; */
-        /* align-items: center; */
         gap: 20px;
-
         border: 2px solid rgb(120, 196, 130);
         border-radius: 8px;
         box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23);
-
         /* outline: 1px solid tomato; */
     }
 
     .pizzas {
         overflow-y: auto;
         width: 95%;
-        /* height: 20%; */
-        /* flex-basis: 483px; */
-        /* height: 100%; */
         flex-grow: 1;
         align-items: center;
-
         border: 2px solid rgb(120, 196, 130);
         border-radius: 8px;
         box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23);
-
         /* outline: 1px solid tomato; */
     }
 
@@ -76,148 +52,15 @@
         width: 100%;
         height: 100%;
         display: flex;
-
         align-items: center;
         justify-content: center;
-
-        /* padding: 10px; */
-        /* border: 2px solid rgb(120, 196, 130); */
-
-        /* border-radius: 8px; */
-        /* box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23); */
-
         /* outline: 5px solid tomato; */
     }
 
     .imageBackgroundPizza {
-        /* width: 95%; */
-        /* height: 95%; */
         width: 45vh;
-
         border-radius: 50%;
-        /* box-shadow: 9px 9px 12px rgba(44, 35, 18, 0.23); */
-
         animation-name: spin;
-        animation-duration: 20s;
-        animation-timing-function: linear;
-        animation-iteration-count: infinite;
-        animation-direction: alternate;
-        /* outline: 5px solid tomato; */
-    }
-    @keyframes spin {
-        0% {
-            transform: rotate(0deg);
-        }
-        100% {
-            transform: rotate(360deg);
-        }
-    }
-}
-
-
-
-
-/* ! 2.Стили для устройств с шириной экрана от 480px до 767px */
-/* @media (max-width: 767px) { */
-/* @media screen and (min-width: 320px) { */
-/* @media screen and (max-width: 767px) { */
-@media screen and (min-width: 480px) and (max-width: 767px) {
-    .homeContainer {
-        width: 90vw;
-        height: 80vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-
-        padding: 20px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 20px;
-        margin-bottom: 20px;
-
-        font-size: 18px;
-        font-weight: 600;
-
-        border-radius: 8px;
-        background-color: #faf8e2;
-        box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23);
-
-        /* outline: 1px solid tomato; */
-        }
-    
-    
-    .shops {
-        overflow-y: auto;
-        /* overflow-x: hidden; */
-        width: 95%;
-        height: 25vh;
-        /* min-height: 35%; */
-        min-height: 170px;
-        /* flex-basis: 90%; */
-        /* min-width: 15%; */
-        /* height: 20%; */
-        /* flex-grow: 1; */
-
-        /* width: 90vw; */
-        /* height: 100vh; */
-
-
-        display: flex;
-        flex-direction: column;
-        /* justify-content: center; */
-        /* align-items: center; */
-        gap: 20px;
-
-        border: 2px solid rgb(120, 196, 130);
-        border-radius: 8px;
-        box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23);
-
-        /* outline: 1px solid tomato; */
-    }
-    
-    .pizzas {
-        overflow-y: auto;
-        width: 95%;
-        /* height: 20%; */
-        /* flex-basis: 483px; */
-        /* height: 100%; */
-        flex-grow: 1;
-        align-items: center;
-
-        border: 2px solid rgb(120, 196, 130);
-        border-radius: 8px;
-        box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23);
-
-        /* outline: 1px solid tomato; */
-    }
-
-    .imagePizzaContainer {
-        width: 100%;
-        height: 100%;
-        display: flex;
-
-        align-items: center;
-        justify-content: center;
-
-        /* padding: 10px; */
-        /* border: 2px solid rgb(120, 196, 130); */
-
-            /* border-radius: 8px; */
-            /* box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23); */
-
-        /* outline: 5px solid tomato; */
-    }
-
-    .imageBackgroundPizza {
-        /* width: 95%; */
-        /* height: 95%; */
-        width: 45vh;
-
-        border-radius: 50%;
-        /* box-shadow: 9px 9px 12px rgba(44, 35, 18, 0.23); */
-        
-            animation-name: spin;
             animation-duration: 20s;
             animation-timing-function: linear;
             animation-iteration-count: infinite;
@@ -235,70 +78,50 @@
 }
 
 
-
-
-/* ! 3.Стили для устройств с шириной экрана от 768px и до 1199px */
-/* @media (min-width: 768px) { */
-/* @media screen and (min-width: 768px) { */
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+/* ! 2.Стили для устройств с шириной экрана от 480px до 767px */
+@media screen and (min-width: 480px) and (max-width: 767px) {
     .homeContainer {
         width: 90vw;
         height: 80vh;
         display: flex;
+        flex-direction: column;
         align-items: center;
         gap: 20px;
-
         padding: 20px;
         margin-left: auto;
         margin-right: auto;
         margin-top: 20px;
         margin-bottom: 20px;
-
         font-size: 18px;
         font-weight: 600;
-
         border-radius: 8px;
         background-color: #faf8e2;
         box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23);
-
         /* outline: 1px solid tomato; */
-    }
-
-
+        }
+    
     .shops {
         overflow-y: auto;
-        /* overflow-x: hidden; */
-        flex-basis: 180px;
-        /* min-width: 15%; */
-        height: 100%;
-        /* flex-grow: 1; */
-
-        /* width: 90vw; */
-        /* height: 100vh; */
-
-
+        width: 95%;
+        height: 25vh;
+        min-height: 170px;
         display: flex;
         flex-direction: column;
-        align-items: center;
         gap: 20px;
-
         border: 2px solid rgb(120, 196, 130);
         border-radius: 8px;
         box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23);
-
         /* outline: 1px solid tomato; */
     }
-
+    
     .pizzas {
-        overflow-y: auto;
-        flex-basis: 483px;
-        height: 100%;
         flex-grow: 1;
-
+        overflow-y: auto;
+        width: 95%;
+        align-items: center;
         border: 2px solid rgb(120, 196, 130);
         border-radius: 8px;
         box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23);
-
         /* outline: 1px solid tomato; */
     }
 
@@ -308,28 +131,90 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        /* padding: 10px; */
-
-        /* border: 2px solid rgb(120, 196, 130); */
-            /* border-radius: 50%; */
-            /* box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23); */
-
         /* outline: 5px solid tomato; */
     }
 
     .imageBackgroundPizza {
-    /* flex-basis: 50vh; */
-    /* width: 95%; */
-    width: 70vh;
-
-    /* height: 95%; */
-    /* height: auto; */
-    /* height: 50vh; */
-    border-radius: 50%;
-    
-    /* box-shadow: 9px 9px 12px rgba(44, 35, 18, 0.23); */
-    
+        width: 45vh;
+        border-radius: 50%;
         animation-name: spin;
+            animation-duration: 20s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        /* outline: 5px solid tomato; */
+    }
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+}
+
+
+/* ! 3.Стили для устройств с шириной экрана от 768px и до 1199px */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .homeContainer {
+        width: 90vw;
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 18px;
+        font-weight: 600;
+        border-radius: 8px;
+        background-color: #faf8e2;
+        box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23);
+        /* outline: 1px solid tomato; */
+    }
+
+
+    .shops {
+        overflow-y: auto;
+        flex-basis: 180px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        border: 2px solid rgb(120, 196, 130);
+        border-radius: 8px;
+        box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23);
+        /* outline: 1px solid tomato; */
+    }
+
+    .pizzas {
+        flex-grow: 1;
+        overflow-y: auto;
+        flex-basis: 483px;
+        height: 100%;
+        border: 2px solid rgb(120, 196, 130);
+        border-radius: 8px;
+        box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23);
+        /* outline: 1px solid tomato; */
+    }
+
+    .imagePizzaContainer {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* outline: 5px solid tomato; */
+    }
+
+    .imageBackgroundPizza {
+    width: 70vh;
+    border-radius: 50%;
+    animation-name: spin;
         animation-duration: 20s;
         animation-timing-function: linear;
         animation-iteration-count: infinite;
@@ -346,8 +231,8 @@
     }
 }
 
+
 /* ! 4.Стили для устройств с шириной экрана от 1200px и выше */
-/* @media (min-width: 768px) { */
 @media screen and (min-width: 1200px) {
     .homeContainer {
         width: 90vw;
@@ -355,58 +240,42 @@
         display: flex;
         align-items: center;
         gap: 20px;
-
         padding: 20px;
         margin-left: auto;
         margin-right: auto;
         margin-top: 20px;
         margin-bottom: 20px;
-
         font-size: 18px;
         font-weight: 600;
-
         border-radius: 8px;
         background-color: #faf8e2;
         box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23);
-
         /* outline: 1px solid tomato; */
     }
 
 
     .shops {
         overflow-y: auto;
-        /* overflow-x: hidden; */
         flex-basis: 180px;
-        /* min-width: 15%; */
         height: 100%;
-        /* flex-grow: 1; */
-
-        /* width: 90vw; */
-        /* height: 100vh; */
-
-
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 20px;
-
         border: 2px solid rgb(120, 196, 130);
         border-radius: 8px;
         box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23);
-
         /* outline: 1px solid tomato; */
     }
 
     .pizzas {
+        flex-grow: 1;
         overflow-y: auto;
         flex-basis: 483px;
         height: 100%;
-        flex-grow: 1;
-
         border: 2px solid rgb(120, 196, 130);
         border-radius: 8px;
         box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23);
-
         /* outline: 1px solid tomato; */
     }
 
@@ -416,40 +285,23 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        /* padding: 10px; */
-
-        /* border: 2px solid rgb(120, 196, 130); */
-        /* border-radius: 50%; */
-        /* box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23); */
-
         /* outline: 5px solid tomato; */
     }
 
     .imageBackgroundPizza {
-        /* flex-basis: 50vh; */
-        /* width: 95%; */
         width: 70vh;
-
-        /* height: 95%; */
-        /* height: auto; */
-        /* height: 50vh; */
         border-radius: 50%;
-
-        /* box-shadow: 9px 9px 12px rgba(44, 35, 18, 0.23); */
-
         animation-name: spin;
-        animation-duration: 20s;
-        animation-timing-function: linear;
-        animation-iteration-count: infinite;
-        animation-direction: alternate;
+            animation-duration: 20s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
         /* outline: 5px solid tomato; */
     }
-
     @keyframes spin {
         0% {
             transform: rotate(0deg);
         }
-
         100% {
             transform: rotate(360deg);
         }

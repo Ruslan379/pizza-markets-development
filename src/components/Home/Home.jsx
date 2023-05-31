@@ -51,28 +51,16 @@ export const Home = () => {
                 />
             </div>
             <div className={css.pizzas}>
-                {/* //! Так рендерится 0 после картинки: */}
-                {/* {!allPizzas.length && (
-                    <img
-                        className={css.imageBackgroundPizza}
-                        alt={imageBackgroundPizza}
-                        src={imageBackgroundPizza}
-                        width="100%"
-                    />
-                )}
-                {allPizzas.length && (
-                    <Pizzas
-                    allPizzas={allPizzas}
-                    addPizzaToCard={addPizzaToCard}
-                />
-                )} */}
-
-                {allPizzas.length > 0 ? (
-                    <Pizzas
-                    allPizzas={allPizzas}
-                    addPizzaToCard={addPizzaToCard}
-                />
-                ) : (
+                {allPizzas.length > 0
+                    ?
+                    (
+                        <Pizzas
+                        allPizzas={allPizzas}
+                        addPizzaToCard={addPizzaToCard}
+                        />
+                    )
+                    :
+                    (
                         <div className={css.imagePizzaContainer}>
                             <img
                                 className={css.imageBackgroundPizza}

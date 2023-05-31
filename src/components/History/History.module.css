@@ -8,38 +8,30 @@
     flex-direction: column;
     align-items: center;
     gap: 20px;
-
     padding: 20px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
     margin-bottom: 20px;
-
     font-size: 16px;
     font-weight: 600;
-
     border-radius: 8px;
     background-color: #e3fae2;
     box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23);
-
     /* outline: 1px solid blue; */
 }
-
 
 .historyData {
     width: 100%;
     height: 35%;
-
     display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 2%;
-    
     border: 2px solid rgb(252, 162, 162);
         border-radius: 8px;
-        box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23);
-
+    box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23);
     /* outline: 1px solid blue; */
 }
 
@@ -51,8 +43,6 @@
 }
 
 .textKey {
-    /* font-size: 1.2em; */
-    /* font-weight: bold; */
     color: rgb(0, 27, 150);
 }
 
@@ -65,22 +55,18 @@
 .historyOrder {
     width: 100%;
     height: 50%;
-
     display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 8%;
-
     border: 2px solid rgb(252, 162, 162);
         border-radius: 8px;
-        box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23);
-
+    box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23);
     /* outline: 1px solid blue; */
 }
 
 .linkButton {
-    /* width: 80px; */
     display: inline-block;
     text-decoration: none;
     text-align: center;
@@ -92,7 +78,6 @@
     color: #1a3b10;
     box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23);
 }
-
 .linkButton:hover,
 .linkButton:focus {
     background-color: #c4c4c4;
