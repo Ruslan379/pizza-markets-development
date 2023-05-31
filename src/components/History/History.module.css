@@ -43,6 +43,25 @@
     /* outline: 1px solid blue; */
 }
 
+.header {
+    font-size: 1.3em;
+    font-weight: bold;
+    padding-bottom: 20px;
+    text-decoration: underline;
+}
+
+.textKey {
+    /* font-size: 1.2em; */
+    /* font-weight: bold; */
+    color: rgb(0, 27, 150);
+}
+
+.textValue {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: rgb(150, 0, 0);
+}
+
 .historyOrder {
     width: 100%;
     height: 50%;

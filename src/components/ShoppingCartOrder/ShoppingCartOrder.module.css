@@ -1,6 +1,6 @@
-/* ! 1.Стили для устройств с шириной экрана от 320px до 479px */
-@media screen and (min-width: 320px) and (max-width: 479px) {
-    .list {
+/* ! 1.Стили для устройств с шириной экрана от 320px до 599px */
+@media screen and (min-width: 320px) and (max-width: 599px) {
+    .list1 {
             height: 100%;
             display: flex;
             flex-direction: column;
@@ -10,6 +10,20 @@
             padding-top: 10px;
             list-style: none;
             padding-inline-start: 3%;
+        }
+
+        .list {
+            /* flex-grow: 1; */
+            display: grid;
+            /* ! Задаем ОДИН столбец */
+            grid-template-columns: 1fr;
+            /* ! Отступ между элементами */
+            grid-gap: 10px;
+            /* gap: 2%; */
+
+            margin: 0;
+            padding: 10px;
+            list-style: none;
         }
     
         .listItem {
@@ -61,7 +75,7 @@
     
         .pricePizza {
             text-align: center;
-            font-size: 0.8em;
+            font-size: 0.9em;
             color: red;
         }
     
@@ -116,7 +130,138 @@
 
 
 
+/* ! 2.Стили для устройств с шириной экрана от 600px до 767px */
+@media screen and (min-width: 600px) and (max-width: 767px) {
+    .list1 {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: flex-start;
+        margin: 0;
+        padding-top: 10px;
+        list-style: none;
+        padding-inline-start: 3%;
+    }
 
+
+    .list {
+        /* flex-grow: 1; */
+        display: grid;
+        /* ! Задаем ОДИН столбец */
+        grid-template-columns: 1fr 1fr;
+        /* ! Отступ между элементами */
+        grid-gap: 10px;
+        /* gap: 2%; */
+
+        margin: 0;
+        padding: 10px;
+        list-style: none;
+    }
+
+
+    .listItem {
+        /* height: 80%; */
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 10px;
+        width: 95%;
+        padding: 2%;
+
+        border: 2px solid rgb(164, 214, 255);
+        border-radius: 8px;
+        box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23);
+
+        /* outline: 1px solid tomato; */
+    }
+
+
+    .imagePizza {
+        width: 50%;
+        height: 80%;
+        border-radius: 5px;
+        box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23);
+    }
+
+
+    .cardContents {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        width: 95%;
+        padding: 1%;
+
+        /* outline: 1px solid rgb(71, 181, 255); */
+    }
+
+
+    .namePizza {
+        /* height: 50px; */
+        height: 2.2em;
+        /* flex-grow: 1; */
+        margin-top: 10px;
+        text-align: center;
+        font-size: 0.7em;
+        color: blue;
+        /* outline: 1px solid rgb(71, 181, 255); */
+    }
+
+
+    .pricePizza {
+        text-align: center;
+        font-size: 0.7em;
+        color: red;
+    }
+
+
+    .inputQuantity {
+        /* width: 100px; */
+        width: 77%;
+        padding: 4px;
+        margin-top: 5px;
+        text-align: center;
+        border-radius: 5px;
+        border: 1px solid rgb(71, 181, 255);
+    }
+
+
+    .shoppingCartPriceSubmitContainer {
+        position: absolute;
+        bottom: 35px;
+        /* right: 145px; */
+        right: 50%;
+
+        /* outline: 1px solid blue; */
+    }
+
+
+    .totalPriceText {
+        /* display: inline-block; */
+        width:110%;
+        /* align-self: flex-start; */
+        /* margin-top: 10px; */
+        /* text-align: center; */
+        font-size: 1.1em;
+        color: blue;
+
+        /* outline: 1px solid green; */
+    }
+
+
+    .totalPriceNumber {
+        /* display: block; */
+        /* margin-top: 5px; */
+        margin-left: 3%;
+        /* margin-right: auto; */
+        font-size: 1.0em;
+        color: red;
+
+        /* outline: 1px solid red; */
+    }
+}
 
 
 
@@ -155,7 +300,7 @@
     /* outline: 1px solid tomato; */
 }
 
-.imagePizza {
+.imagePizza1 {
     /* width: 50%; */
     /* height: 80%; */
     border-radius: 5px;

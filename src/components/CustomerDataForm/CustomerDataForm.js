@@ -45,6 +45,7 @@ export const CustomerDataForm = () => {
                 <label className={css.label}>
                     Name:
                     <input
+                        className={css.input}
                         type="text"
                         name="name"
                         required
@@ -55,6 +56,7 @@ export const CustomerDataForm = () => {
                 <label className={css.label}>
                     Email:
                     <input
+                        className={css.input}
                         type="email"
                         name="email"
                         required
@@ -65,6 +67,7 @@ export const CustomerDataForm = () => {
                 <label className={css.label}>
                     Phone:
                     <input
+                        className={css.input}
                         type="text"
                         name="phone"
                         required
@@ -75,6 +78,7 @@ export const CustomerDataForm = () => {
                 <label className={css.label}>
                     Address:
                     <input
+                        className={css.input}
                         type="text"
                         name="address"
                         required

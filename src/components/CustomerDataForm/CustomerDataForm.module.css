@@ -7,11 +7,22 @@
         }
     
         .label {
+            font-size: 0.9em;
             display: flex;
             flex-direction: column;
-            margin-bottom: 5px;
+            margin-bottom: 6px;
         }
     
+        .input {
+            /* width: 100px; */
+            padding: 4px;
+            margin-top: 2px;
+            /* text-align: center; */
+            color: rgb(95, 0, 0);
+            border-radius: 5px;
+            border: 1px solid rgb(71, 181, 255);
+        }
+
         .submitButtonForm {
             position: absolute;
             bottom: 33px;
@@ -42,9 +53,20 @@
     }
 
     .label {
+        font-size: 0.9em;
         display: flex;
         flex-direction: column;
-        margin-bottom: 5px;
+        margin-bottom: 6px;
+    }
+
+    .input {
+        /* width: 100px; */
+        padding: 4px;
+        margin-top: 2px;
+        /* text-align: center; */
+        color: rgb(95, 0, 0);
+        border-radius: 5px;
+        border: 1px solid rgb(71, 181, 255);
     }
 
     .submitButtonForm {

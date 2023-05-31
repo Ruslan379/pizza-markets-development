@@ -19,7 +19,7 @@
         /* ! Задаем ОДИН столбец */
         grid-template-columns: 1fr;
         /* ! Отступ между элементами */
-        grid-gap: 20px;
+        grid-gap: 10px;
         /* gap: 2%; */
 
         margin: 0;
@@ -113,7 +113,7 @@
                 /* ! Задаем ДВА столбца равной ширины */
                 grid-template-columns: 1fr 1fr;
                 /* ! Отступ между элементами */
-                grid-gap: 20px;
+                grid-gap: 10px;
                 /* gap: 2%; */
                 
             margin: 0;
@@ -196,7 +196,7 @@
                 /* ! Задаем ДВА столбца равной ширины */
                 grid-template-columns: 1fr 1fr;
                 /* ! Отступ между элементами */
-                grid-gap: 20px;
+                grid-gap: 10px;
                 /* gap: 2%; */
                 
             margin: 0;
@@ -277,7 +277,7 @@
                 /* ! Задаем ТРИ столбца равной ширины */
                 grid-template-columns: 1fr 1fr 1fr;
                 /* ! Отступ между элементами */
-                grid-gap: 20px;
+                grid-gap: 10px;
                 /* gap: 2%; */
                 
             margin: 0;
@@ -356,7 +356,7 @@
         /* ! Задаем 4 столбца равной ширины */
         grid-template-columns: 1fr 1fr 1fr 1fr;
         /* ! Отступ между элементами */
-        grid-gap: 20px;
+        grid-gap: 10px;
         /* gap: 2%; */
 
         margin: 0;
