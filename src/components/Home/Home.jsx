@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+import { toast } from 'react-toastify';
+
 // import pizzaMarkets from "db/pizzaMarkets.json"; //todo OLD
 import pizzaMarkets from "db/pizzaMarketsMongoDB.json";
 
@@ -40,6 +42,7 @@ export const Home = () => {
             setAllChoicePizzas([...allChoicePizzas]);
             localStorage.setItem("allChoicePizzas", JSON.stringify([...allChoicePizzas]));
         }
+        toast.success(`Pizza "${pizza.pizza}" has been added to your shopping cart`, { theme: "colored", position: "top-center", autoClose: 2000 });
     }
 
 
