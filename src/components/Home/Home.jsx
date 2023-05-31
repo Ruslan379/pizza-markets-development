@@ -1,6 +1,7 @@
 import { useState } from "react";
 
-import pizzaMarkets from "db/pizzaMarkets.json";
+// import pizzaMarkets from "db/pizzaMarkets.json"; //todo OLD
+import pizzaMarkets from "db/pizzaMarketsMongoDB.json";
 
 import { Shops } from 'components/Shops/Shops';
 import { Pizzas } from 'components/Pizzas/Pizzas';

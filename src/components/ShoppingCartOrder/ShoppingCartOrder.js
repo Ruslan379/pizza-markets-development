@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import imagePizza from "images/monopizza_pica-dyabola.jpg";
+// import imagePizza from "images/monopizza_pica-dyabola.jpg";
 
 import css from "./ShoppingCartOrder.module.css";
 
@@ -32,7 +32,8 @@ export const ShoppingCartOrder = () => {
                             <img
                                 className={css.imagePizza}
                                 alt={"Pizza"}
-                                src={imagePizza}
+                                // src={imagePizza}
+                                src={item.picture}
                                 width="100%"
                             />
                             <div className={css.cardContents}>

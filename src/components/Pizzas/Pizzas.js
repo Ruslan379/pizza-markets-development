@@ -1,4 +1,4 @@
-import imagePizza from "images/monopizza_pica-dyabola.jpg";
+// import imagePizza from "images/monopizza_pica-dyabola.jpg";
 
 import css from "./Pizzas.module.css";
 
@@ -15,7 +15,8 @@ export const Pizzas = ({ allPizzas, addPizzaToCard }) => {
                     <img
                         className={css.imagePizza}
                         alt={"Pizza"}
-                        src={imagePizza}
+                        // src={imagePizza}
+                        src={item.picture}
                         width="100%"
                     />
                     <p className={css.namePizza}
