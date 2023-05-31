@@ -12,6 +12,7 @@
             padding-inline-start: 3%;
         }
 
+
         .list {
             /* flex-grow: 1; */
             display: grid;
@@ -50,6 +51,7 @@
             box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23);
         }
     
+
         .cardContents {
             display: flex;
             flex-direction: column;
@@ -62,6 +64,7 @@
             /* outline: 1px solid rgb(71, 181, 255); */
         }
     
+
         .namePizza {
             /* height: 50px; */
             height: 2.2em;
@@ -73,12 +76,14 @@
             /* outline: 1px solid rgb(71, 181, 255); */
         }
     
+
         .pricePizza {
             text-align: center;
             font-size: 0.8em;
             color: red;
         }
     
+
         .inputQuantity {
             /* width: 100px; */
             width: 77%;
@@ -87,17 +92,15 @@
             text-align: center;
             border-radius: 5px;
             border: 1px solid rgb(71, 181, 255);
+            background-color: rgb(236, 247, 255);
         }
     
-    
-    
+
         .shoppingCartPriceSubmitContainer {
             position: absolute;
             bottom: 35px;
             /* right: 145px; */
             right: 50%;
-
-
 
             /* outline: 1px solid blue; */
         }
@@ -225,6 +228,7 @@
         text-align: center;
         border-radius: 5px;
         border: 1px solid rgb(71, 181, 255);
+        background-color: rgb(236, 247, 255);
     }
 
 
@@ -353,6 +357,7 @@
             text-align: center;
             border-radius: 5px;
             border: 1px solid rgb(71, 181, 255);
+            background-color: rgb(236, 247, 255);
         }
     
 
@@ -470,6 +475,7 @@
         text-align: center;
         border-radius: 5px;
         border: 1px solid rgb(71, 181, 255);
+        background-color: rgb(236, 247, 255);
     }
 
 
@@ -591,6 +597,7 @@
         text-align: center;
         border-radius: 5px;
         border: 1px solid rgb(71, 181, 255);
+        background-color: rgb(236, 247, 255);
     }
 
 
