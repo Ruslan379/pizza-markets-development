@@ -4,225 +4,186 @@
 /* ! 1.Стили для устройств с шириной экрана от 320px до 479px */
 @media screen and (min-width: 320px) and (max-width: 479px) {
     .shoppingCartContainer {
-            position: relative;
-            /* width: 90%; */
-            /* height: 80%; */
-            width: 90vw;
-            height: 80vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 20px;
-    
-            padding: 20px;
-            padding: 20px 20px 30px 20px;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 20px;
-            margin-bottom: 20px;
-    
-            font-size: 18px;
-            font-weight: 600;
-    
-            border-radius: 8px;
-            background-color: #fae2e2;
-            box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23);
-    
-            /* outline: 1px solid blue; */
-        }
+        position: relative;
+        
+        width: 90vw;
+        height: 80vh;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+        padding: 20px;
+        padding: 20px 20px 30px 20px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+        font-size: 18px;
+        font-weight: 600;
+
+        border-radius: 8px;
+        background-color: #fae2e2;
+        box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23);
+
+        /* outline: 1px solid blue; */
+    }
     
 
-    
-        .сustomerData {
-            /* width: 50%; */
-                /* height: 100%; */
-                /* height: 88%; */
-            /* height: 83%; */
+    .сustomerData {
+        width: 95%;
+        height: 20vh;
+        min-height: 220px;
 
-            width: 95%;
-            height: 20vh;
-            min-height: 220px;
-    
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-    
-            border: 2px solid rgb(164, 214, 255);
-            border-radius: 8px;
-            box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23);
-    
-            /* outline: 1px solid blue; */
-        }
-    
-        .CustomerOrder {
-            overflow-y: auto;
-            /* width: 50%; */
-            width: 95%;
-                /* height: 100%; */
-                /* height: 88%; */
-                /* height: 65vh; */
-            /* height: 83%; */
-            height: 40vh;
-            /* height: 60%; */
-            /* flex-grow: 1; */
-            /* align-items: center; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
-            /* margin-bottom: 10px; */
-    
-            border: 2px solid rgb(164, 214, 255);
-            border-radius: 8px;
-            box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23);
-    
-            /* outline: 1px solid blue; */
-        }
+        border: 2px solid rgb(164, 214, 255);
+        border-radius: 8px;
+        box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23);
+
+        /* outline: 1px solid blue; */
+    }
+
+    .CustomerOrder {
+        overflow-y: auto;
+        width: 95%;
+        height: 40vh;
+
+        border: 2px solid rgb(164, 214, 255);
+        border-radius: 8px;
+        box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23);
+
+        /* outline: 1px solid blue; */
+    }
 }
-
 
 
 /* ! 2.Стили для устройств с шириной экрана от 480px до 767px */
 @media screen and (min-width: 480px) and (max-width: 767px) {
     .shoppingCartContainer {
-            position: relative;
-            /* width: 90%; */
-            /* height: 80%; */
-            width: 90vw;
-            height: 80vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 20px;
+        position: relative;
+
+        width: 90vw;
+        height: 80vh;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+
+        padding: 20px;
+        padding: 20px 20px 30px 20px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+        font-size: 18px;
+        font-weight: 600;
+
+        border-radius: 8px;
+        background-color: #fae2e2;
+        box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23);
+
+        /* outline: 1px solid blue; */
+    }
     
-            padding: 20px;
-            padding: 20px 20px 30px 20px;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 20px;
-            margin-bottom: 20px;
-    
-            font-size: 18px;
-            font-weight: 600;
-    
-            border-radius: 8px;
-            background-color: #fae2e2;
-            box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23);
-    
-            /* outline: 1px solid blue; */
-        }
-    
-    
-    
-        .сustomerData {
-            /* width: 50%; */
-            /* height: 100%; */
-            /* height: 88%; */
-            /* height: 83%; */
-    
-            width: 95%;
-            height: 20vh;
-            min-height: 220px;
-    
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-    
-            border: 2px solid rgb(164, 214, 255);
-            border-radius: 8px;
-            box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23);
-    
-            /* outline: 1px solid blue; */
-        }
-    
-        .CustomerOrder {
-            overflow-y: auto;
-            /* width: 50%; */
-            width: 95%;
-            /* height: 100%; */
-            /* height: 88%; */
-            /* height: 65vh; */
-            /* height: 83%; */
-            height: 40vh;
-            /* height: 60%; */
-            /* flex-grow: 1; */
-            /* align-items: center; */
-    
-            /* margin-bottom: 10px; */
-    
-            border: 2px solid rgb(164, 214, 255);
-            border-radius: 8px;
-            box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23);
-    
-            /* outline: 1px solid blue; */
-        }
+    .сustomerData {
+        width: 95%;
+        height: 20vh;
+        min-height: 220px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        border: 2px solid rgb(164, 214, 255);
+        border-radius: 8px;
+        box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23);
+
+        /* outline: 1px solid blue; */
+    }
+
+    .CustomerOrder {
+        overflow-y: auto;
+        width: 95%;
+        height: 40vh;
+
+        border: 2px solid rgb(164, 214, 255);
+        border-radius: 8px;
+        box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23);
+
+        /* outline: 1px solid blue; */
+    }
 }
 
 
-
-/* ! 3.Стили для устройств с шириной экрана от 768px и до 1199px */
-/* @media screen and (min-width: 768px) and (max-width: 1199px) { */
+/* ! 3.Стили для устройств с шириной экрана от 768px и выше */
 @media screen and (min-width: 768px) {
     .shoppingCartContainer {
-            position: relative;
-            width: 90%;
-            height: 80%;
-            display: flex;
-            /* flex-direction: column; */
-    
-            gap: 20px;
-    
-            padding: 20px;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 20px;
-            margin-bottom: 20px;
-    
-            font-size: 18px;
-            font-weight: 600;
-    
-            border-radius: 8px;
-            background-color: #fae2e2;
-            box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23);
-    
-            /* outline: 1px solid blue; */
-        }
+        position: relative;
+
+        width: 90%;
+        height: 80%;
+
+        display: flex;
+        gap: 20px;
+
+        padding: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+        font-size: 18px;
+        font-weight: 600;
+
+        border-radius: 8px;
+        background-color: #fae2e2;
+        box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23);
+
+        /* outline: 1px solid blue; */
+    }
     
 
-        .сustomerData {
-            /* width: 40%; */
-            flex-basis: 30vw;
-            min-width: 300px;
-            height: 100%;
-            /* height: 88%; */
-            height: 83%;
-    
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-    
-            border: 2px solid rgb(164, 214, 255);
-            border-radius: 8px;
-            box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23);
-    
-            /* outline: 1px solid blue; */
-        }
-    
-        .CustomerOrder {
-            flex-grow: 1;
-            overflow-y: auto;
-            width: 60%;
-            /* height: 100%; */
-            /* height: 88%; */
-            /* height: 65vh; */
-            height: 83%;
-    
-            border: 2px solid rgb(164, 214, 255);
-            border-radius: 8px;
-            box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23);
-    
-            /* outline: 1px solid blue; */
-        }
+    .сustomerData {
+        flex-basis: 30vw;
+        min-width: 300px;
+
+        height: 100%;
+        height: 83%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        border: 2px solid rgb(164, 214, 255);
+        border-radius: 8px;
+        box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23);
+
+        /* outline: 1px solid blue; */
+    }
+
+    .CustomerOrder {
+        flex-grow: 1;
+        overflow-y: auto;
+
+        width: 60%;
+        height: 83%;
+
+        border: 2px solid rgb(164, 214, 255);
+        border-radius: 8px;
+        box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23);
+
+        /* outline: 1px solid blue; */
+    }
 }
 
 
