@@ -55,7 +55,6 @@
         color: red;
     }
 
-
     .selectPizzaButton {
         display: inline-block;
         align-self: flex-end;
@@ -65,6 +64,7 @@
         padding: 8px 16px;
         text-decoration: none;
         font-weight: 700;
+        cursor: pointer;
         color: #739b16;
         border: 1px solid rgb(120, 196, 130);
         border-radius: 4px;
@@ -72,7 +72,8 @@
     }
     .selectPizzaButton:hover,
     .selectPizzaButton:focus {
-        background-color: #c4c4c4;
+        background-color: #fffbcf;
+        color: #9b1616;
     }
 }
 
@@ -130,6 +131,7 @@
         padding: 8px 16px;
         text-decoration: none;
         font-weight: 700;
+        cursor: pointer;
         color: #739b16;
         border: 1px solid rgb(120, 196, 130);
         border-radius: 4px;
@@ -137,7 +139,8 @@
     }
     .selectPizzaButton:hover,
     .selectPizzaButton:focus {
-        background-color: #c4c4c4;
+        background-color: #fffbcf;
+        color: #9b1616;
     }
 }
 
@@ -195,6 +198,7 @@
         padding: 8px 16px;
         text-decoration: none;
         font-weight: 700;
+        cursor: pointer;
         color: #739b16;
         border: 1px solid rgb(120, 196, 130);
         border-radius: 4px;
@@ -202,7 +206,8 @@
     }
     .selectPizzaButton:hover,
     .selectPizzaButton:focus {
-        background-color: #c4c4c4;
+        background-color: #fffbcf;
+        color: #9b1616;
     }
 }
 
@@ -258,6 +263,7 @@
         padding: 8px 16px;
         text-decoration: none;
         font-weight: 700;
+        cursor: pointer;
         color: #739b16;
         border: 1px solid rgb(120, 196, 130);
         border-radius: 4px;
@@ -265,7 +271,8 @@
     }
     .selectPizzaButton:hover,
     .selectPizzaButton:focus {
-        background-color: #c4c4c4;
+        background-color: #fffbcf;
+        color: #9b1616;
     }
 }
 
@@ -321,6 +328,7 @@
         padding: 8px 16px;
         text-decoration: none;
         font-weight: 700;
+        cursor: pointer;
         color: #739b16;
         border: 1px solid rgb(120, 196, 130);
         border-radius: 4px;
@@ -328,6 +336,7 @@
     }
     .selectPizzaButton:hover,
     .selectPizzaButton:focus {
-        background-color: #c4c4c4;
+        background-color: #fffbcf;
+        color: #9b1616;
     }
 }

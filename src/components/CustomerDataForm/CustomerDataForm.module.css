@@ -20,25 +20,31 @@
             border: 1px solid rgb(71, 181, 255);
         }
 
+        .submitButtonFormOpacity {
+            opacity: 0.3;
+        }
+
         .submitButtonForm {
             position: absolute;
-            bottom: 33px;
-            right: 35px;
+            bottom: 50px;
+            right: 60px;
             display: inline-block;
             text-decoration: none;
             margin-left: 20px;
             padding: 8px 16px;
             /* padding: 12px; */
             font-weight: 700;
+            cursor: pointer;
             border: 1px solid rgb(71, 181, 255);
             border-radius: 4px;
-            color: #ac1d99;
+            color: #29aaff;
             box-shadow: 8px 8px 18px rgba(59, 43, 14, 0.23);
         }
     
         .submitButtonForm:hover,
         .submitButtonForm:focus {
-            background-color: #c4c4c4;
+            color: #ac1d99;
+            background-color: rgb(255, 220, 220);
         }
 }
 
@@ -65,24 +71,30 @@
         border: 1px solid rgb(71, 181, 255);
     }
 
+    .submitButtonFormOpacity {
+        opacity: 0.3;
+    }
+
     .submitButtonForm {
         position: absolute;
-        bottom: 33px;
-        right: 35px;
+        bottom: 50px;
+        right: 60px;
         display: inline-block;
         text-decoration: none;
         margin-left: 20px;
         padding: 8px 16px;
         font-weight: 700;
+        cursor: pointer;
         border: 1px solid rgb(71, 181, 255);
         border-radius: 4px;
-        color: #ac1d99;
+        color: #29aaff;
         box-shadow: 8px 8px 18px rgba(59, 43, 14, 0.23);
     }
 
     .submitButtonForm:hover,
     .submitButtonForm:focus {
-        background-color: #c4c4c4;
+        color: #ac1d99;
+        background-color: rgb(255, 220, 220);
     }
 }
 
@@ -108,24 +120,30 @@
             border-radius: 5px;
             border: 1px solid rgb(71, 181, 255);
         }
+
+        .submitButtonFormOpacity {
+            opacity: 0.3;
+        }
     
         .submitButtonForm {
             position: absolute;
-            bottom: 33px;
+            bottom: 35px;
             right: 35px;
             display: inline-block;
             text-decoration: none;
             margin-left: 20px;
             padding: 8px 16px;
             font-weight: 700;
+            cursor: pointer;
             border: 1px solid rgb(71, 181, 255);
             border-radius: 4px;
-            color: #ac1d99;
+            color: #29aaff;
             box-shadow: 8px 8px 18px rgba(59, 43, 14, 0.23);
         }
     
         .submitButtonForm:hover,
         .submitButtonForm:focus {
-            background-color: #c4c4c4;
+            color: #ac1d99;
+            background-color: rgb(255, 220, 220);
         }
 }

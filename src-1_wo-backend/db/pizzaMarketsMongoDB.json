@@ -1,0 +1,172 @@
+[
+  {
+    "_id": {
+      "$oid": "64776b0a8d991227a64cf448"
+    },
+    "id": "1",
+    "shop": "Pizza Mexico",
+    "pizzas": [
+      {
+        "pizza": "ВРЕМЕНА ГОДА",
+        "price": 337,
+        "picture": "https://pizzamexico.com.ua/wp-content/uploads/2020/02/4seasons.png"
+      },
+      {
+        "pizza": "ГАВАЙИ",
+        "price": 177,
+        "picture": "https://pizzamexico.com.ua/wp-content/uploads/2020/02/hawaii.png"
+      },
+      {
+        "pizza": "НОСТРАНО",
+        "price": 177,
+        "picture": "https://pizzamexico.com.ua/wp-content/uploads/2020/02/nostrano.jpg"
+      },
+      {
+        "pizza": "ОШИБКА ПОВАРА",
+        "price": 187,
+        "picture": "https://pizzamexico.com.ua/wp-content/uploads/2020/02/mistake.png"
+      },
+      {
+        "pizza": "ПРИМАВЕРА",
+        "price": 167,
+        "picture": "https://pizzamexico.com.ua/wp-content/uploads/2020/02/primavera.jpg"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "64776b0a8d991227a64cf449"
+    },
+    "id": "2",
+    "shop": "Mono Pizza",
+    "pizzas": [
+      {
+        "pizza": "BBQ",
+        "price": 239,
+        "picture": "https://x100-venus-mp-ua.gumlet.io/SKU/SUSHI-MASTER/%D0%9F%D1%96%D1%86%D0%B0/4D378661-463C-11ED-8926-418E5ACF9DBD-1969%D1%851100_0030_BBQ.jpg?alt=media&token=d268b973-1673-465c-bcbd-6f1ce2f87c6d&w=991&h=700&format=webp&mode=fit&q=60"
+      },
+      {
+        "pizza": "ЦЕЗАР",
+        "price": 279,
+        "picture": "https://x100-venus-mp-ua.gumlet.io/SKU/SUSHI-MASTER/%D0%9F%D1%96%D1%86%D0%B0/37F9BF11-4647-11ED-ADC4-85958ECA5C47-1969%D1%851100_0001_%D0%A6%D0%B5%D0%B7%D0%B0%D1%80.jpg?alt=media&token=3b652abc-d4c9-4146-99f9-e38527d50d8f&w=991&h=700&format=webp&mode=fit&q=60"
+      },
+      {
+        "pizza": "МАРГАРИТА",
+        "price": 219,
+        "picture": "https://x100-venus-mp-ua.gumlet.io/SKU/SUSHI-MASTER/%D0%9F%D1%96%D1%86%D0%B0/394F6D61-462E-11ED-AD1C-036E3025CB4C-1969%D1%851100_0020_%D0%9C%D0%B0%D1%80%D0%B3%D0%B0%D1%80%D0%B8%D1%82%D0%B0.jpg?alt=media&token=836178cd-27c0-4281-9f98-20476c21ed5f&w=991&h=700&format=webp&mode=fit&q=60"
+      },
+      {
+        "pizza": "4 СИРИ",
+        "price": 249,
+        "picture": "https://x100-venus-mp-ua.gumlet.io/SKU/SUSHI-MASTER/%D0%9F%D1%96%D1%86%D0%B0/A4243DD1-462B-11ED-8926-418E5ACF9DBD-1969%D1%851100_0032_4%20%D1%81%D0%B8%D1%80%D0%B8.jpg?alt=media&token=5aedc690-399d-4089-abab-3f6e87705e57&w=991&h=700&format=webp&mode=fit&q=60"
+      },
+      {
+        "pizza": "ДЬЯБОЛА",
+        "price": 279,
+        "picture": "https://x100-venus-mp-ua.gumlet.io/SKU/SUSHI-MASTER/%D0%9F%D1%96%D1%86%D0%B0/291D63E1-4857-11ED-ADC4-85958ECA5C47-1969%D1%851100_0026_%D0%94%D1%8C%D1%8F%D0%B1%D0%BE%D0%BB%D0%B0.jpg?alt=media&token=2bc627f2-585e-40a7-98bf-780d89769876&w=991&h=700&format=webp&mode=fit&q=60"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "64776b0a8d991227a64cf44a"
+    },
+    "id": "3",
+    "shop": "Story Pizza",
+    "pizzas": [
+      {
+        "pizza": "Чеддер Стріпс",
+        "price": 249,
+        "picture": "https://storypizza.com.ua/_next/image?url=https%3A%2F%2Fimg.postershop.me%2F9520%2FProducts%2F3630033_1675809419.5092_original.png&w=600&q=75"
+      },
+      {
+        "pizza": "Мисливська мрія",
+        "price": 219,
+        "picture": "https://storypizza.com.ua/_next/image?url=https%3A%2F%2Fimg.postershop.me%2F9520%2FProducts%2F2656982_1640871067.8491_original.png&w=600&q=75"
+      },
+      {
+        "pizza": "Жульєн",
+        "price": 229,
+        "picture": "https://storypizza.com.ua/_next/image?url=https%3A%2F%2Fimg.postershop.me%2F9520%2FProducts%2F3044358_1653639696.3446_original.png&w=600&q=75"
+      },
+      {
+        "pizza": "Міт Х5",
+        "price": 289,
+        "picture": "https://storypizza.com.ua/_next/image?url=https%3A%2F%2Fimg.postershop.me%2F9520%2FProducts%2F3758992_1684769995.8608_original.png&w=600&q=75"
+      },
+      {
+        "pizza": "Мексико",
+        "price": 239,
+        "picture": "https://storypizza.com.ua/_next/image?url=https%3A%2F%2Fimg.postershop.me%2F9520%2FProducts%2F3230805_1661791427.4578_original.png&w=600&q=75"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "64776b0a8d991227a64cf44b"
+    },
+    "id": "4",
+    "shop": "Domino's Pizza",
+    "pizzas": [
+      {
+        "pizza": "Діабло",
+        "price": 310,
+        "picture": "https://dominos.ua/_next/image?url=https%3A%2F%2Fmedia-v3.dominos.ua%2FProducts%2FPitsa%2FPitsy%2Fdiabolo-fullpizza.webp&w=600&q=75"
+      },
+      {
+        "pizza": "Чорізо",
+        "price": 296,
+        "picture": "https://dominos.ua/_next/image?url=https%3A%2F%2Fmedia-v3.dominos.ua%2FProducts%2FPitsa%2FPitsy%2Fchorizo-pizza-plate.webp&w=600&q=75"
+      },
+      {
+        "pizza": "Техас",
+        "price": 233,
+        "picture": "https://dominos.ua/_next/image?url=https%3A%2F%2Fmedia-v3.dominos.ua%2FProducts%2Ftekhas-min.webp&w=600&q=75"
+      },
+      {
+        "pizza": "Карбонара",
+        "price": 285,
+        "picture": "https://dominos.ua/_next/image?url=https%3A%2F%2Fmedia-v3.dominos.ua%2FProducts%2Fkarbonara.webp&w=600&q=75"
+      },
+      {
+        "pizza": "Кантрі",
+        "price": 287,
+        "picture": "https://dominos.ua/_next/image?url=https%3A%2F%2Fmedia-v3.dominos.ua%2FProducts%2Fkantry-min.webp&w=600&q=75"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "64776b0a8d991227a64cf44c"
+    },
+    "id": "5",
+    "shop": "Pizza House",
+    "pizzas": [
+      {
+        "pizza": "Барбекю",
+        "price": 265,
+        "picture": "https://pizzahouse.ua/_next/image?url=https%3A%2F%2Fapi.pizzahouse.ua%2Fmedia%2F292%2Fconversions%2F%D0%B1%D0%B0%D1%80%D0%B1%D0%B5%D0%BA%D1%8E-large.png&w=1920&q=85"
+      },
+      {
+        "pizza": "Чотири сезони",
+        "price": 260,
+        "picture": "https://pizzahouse.ua/_next/image?url=https%3A%2F%2Fapi.pizzahouse.ua%2Fmedia%2F2787%2Fconversions%2F5-large.png&w=1920&q=85"
+      },
+      {
+        "pizza": "Баварская",
+        "price": 245,
+        "picture": "https://pizzahouse.ua/_next/image?url=https%3A%2F%2Fapi.pizzahouse.ua%2Fmedia%2F291%2Fconversions%2F%D0%B1%D0%B0%D0%B2%D0%B0%D1%80%D1%81%D1%8C%D0%BA%D0%B0-large.png&w=1920&q=85"
+      },
+      {
+        "pizza": "Мюнхенська",
+        "price": 250,
+        "picture": "https://pizzahouse.ua/_next/image?url=https%3A%2F%2Fapi.pizzahouse.ua%2Fmedia%2F970%2Fconversions%2F%D0%9C%D1%8E%D0%BD%D1%85%D0%B5%D0%BD%D1%81%D1%8C%D0%BA%D0%B0-large.png&w=1920&q=85"
+      },
+      {
+        "pizza": "Американо",
+        "price": 280,
+        "picture": "https://pizzahouse.ua/_next/image?url=https%3A%2F%2Fapi.pizzahouse.ua%2Fmedia%2F2777%2Fconversions%2F1-large.png&w=1920&q=85"
+      }
+    ]
+  }
+]

@@ -4,9 +4,12 @@ import css from './CustomerDataForm.module.css';
 
 
 
+
 export const CustomerDataForm = () => {
     const navigate = useNavigate();
+
     let customerDataLocalStorage = JSON.parse(localStorage.getItem("customerData"));
+    const allChoicePizzasLocalStorage = JSON.parse(localStorage.getItem("allChoicePizzas"));
 
     if (!customerDataLocalStorage) {
         const customerData = {
@@ -33,7 +36,8 @@ export const CustomerDataForm = () => {
         navigate("/history", { replace: true });
     };
 
-
+    // console.log("allChoicePizzasLocalStorage:", allChoicePizzasLocalStorage); //!
+    // console.log("allChoicePizzasLocalStorage.length:", allChoicePizzasLocalStorage.length); //!
 
     return (
         <>
@@ -85,7 +89,21 @@ export const CustomerDataForm = () => {
                         defaultValue={customerDataLocalStorage.address}
                     />
                 </label>
-                <button className={css.submitButtonForm} type="submit">Submit</button>
+                <button
+                    className={
+                        `${allChoicePizzasLocalStorage && allChoicePizzasLocalStorage.length > 0
+                            ?
+                            `${css.submitButtonForm}`
+                            :
+                            `${css.submitButtonForm} ${css.submitButtonFormOpacity}`
+                        }
+                        `
+                    }
+                    type="submit"
+                    disabled={!allChoicePizzasLocalStorage || !(allChoicePizzasLocalStorage.length > 0)}
+                >
+                    Submit
+                </button>
             </form>
         </>
     );

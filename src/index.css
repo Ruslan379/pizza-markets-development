@@ -13,7 +13,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   margin-right: auto;
   margin-left: auto;
-  background-color: rgb(230, 230, 230);
+  background-color: hsl(60, 100%, 96%);
 }
 
 code {

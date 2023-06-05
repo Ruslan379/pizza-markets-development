@@ -7,9 +7,9 @@ import {
 
 import css from './SharedLayout.module.css';
 
+//! Стилизация NavLink
 const StyledLink = styled(NavLink)`
   color: #1b1111;
-
   &.active {
     color: #d38e0f;
     text-decoration: underline;

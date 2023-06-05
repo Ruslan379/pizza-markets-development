@@ -1,10 +1,8 @@
-// import imagePizza from "images/monopizza_pica-dyabola.jpg";
-
 import css from "./Pizzas.module.css";
 
 
 
-export const Pizzas = ({ allPizzas, addPizzaToCard }) => {
+export const Pizzas = ({ allPizzas, addPizzaToCart }) => {
     return (
         <ul className={css.list}>
             {allPizzas.map((item, index) => (
@@ -29,7 +27,7 @@ export const Pizzas = ({ allPizzas, addPizzaToCard }) => {
                     <button
                         className={css.selectPizzaButton}
                         type="button"
-                        onClick={() => addPizzaToCard(allPizzas[index])}
+                        onClick={() => addPizzaToCart(allPizzas[index])}
                     >
                         add to Card
                     </button>

@@ -39,6 +39,7 @@
         text-decoration: none;
         padding: 8px 10px;
         font-weight: 700;
+        cursor: pointer;
         border: 1px solid rgb(120, 196, 130);
         border-radius: 4px;
         color: #16739b;
@@ -46,7 +47,8 @@
     }
     .selectShopButton:hover,
     .selectShopButton:focus {
-        background-color: #c4c4c4;
+        background-color: #fffbcf;
+        color: #9b1616;
     }
 }
 
@@ -91,6 +93,7 @@
         text-decoration: none;
         padding: 8px 10px;
         font-weight: 700;
+        cursor: pointer;
         border: 1px solid rgb(120, 196, 130);
         border-radius: 4px;
         color: #16739b;
@@ -98,7 +101,8 @@
     }
     .selectShopButton:hover,
     .selectShopButton:focus {
-        background-color: #c4c4c4;
+        background-color: #fffbcf;
+        color: #9b1616;
     }
 }
 
@@ -133,6 +137,7 @@
         text-decoration: none;
         padding: 8px 10px;
         font-weight: 700;
+        cursor: pointer;
         border: 1px solid rgb(120, 196, 130);
         border-radius: 4px;
         color: #16739b;
@@ -141,7 +146,8 @@
 
     .selectShopButton:hover,
     .selectShopButton:focus {
-        background-color: #c4c4c4;
+        background-color: #fffbcf;
+        color: #9b1616;
     }
 }
 
@@ -182,7 +188,8 @@
     }
     .selectShopButton:hover,
     .selectShopButton:focus {
-        background-color: #c4c4c4;
+        background-color: #fffbcf;
+        color: #9b1616;
     }
 }
 
