@@ -62,7 +62,7 @@ export const Home = () => {
                             <div className={css.informationTextContainer}>
                                 <div className={css.informationText}
                                 >
-                                    Please wait, our shops are loading......
+                                    Please wait, our shops are loading...
                                     <Loader />
                                 </div>
                             </div>

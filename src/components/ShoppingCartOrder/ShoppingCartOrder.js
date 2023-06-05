@@ -16,6 +16,21 @@ export const ShoppingCartOrder = () => {
     //     setValue1(value1 + 1);
     // };
 
+    const handleDecrement = (index) => {
+        let changeItemQuantity = allChoicePizzasLocalStorage[index].quantity - 1;
+        if (changeItemQuantity < 1) changeItemQuantity = 1; //! МИНИМАЛЬНОЕ значение quantity
+        allChoicePizzasLocalStorage[index].quantity = changeItemQuantity;
+        localStorage.setItem("allChoicePizzas", JSON.stringify([...allChoicePizzasLocalStorage]));
+        togle();
+    };
+
+    const handleIncrement = (index) => {
+        let changeItemQuantity = allChoicePizzasLocalStorage[index].quantity + 1;
+        if (changeItemQuantity > 50) changeItemQuantity = 50; //! МАКСИМАЛЬНОЕ значение quantity
+        allChoicePizzasLocalStorage[index].quantity = changeItemQuantity;
+        localStorage.setItem("allChoicePizzas", JSON.stringify([...allChoicePizzasLocalStorage]));
+        togle();
+    };
 
     const allChoicePizzasLocalStorage = JSON.parse(localStorage.getItem("allChoicePizzas"));
 
@@ -60,14 +75,18 @@ export const ShoppingCartOrder = () => {
                                         <div className={css.inputContainer}>
                                             <button
                                                 className="decrementButton"
+                                                //! Тест кнопоки Decrement
                                                 // onClick={handleDecrement}
-                                                onClick={() => {
-                                                    let changeItemQuantity = item.quantity - 1;
-                                                    if (changeItemQuantity < 1) changeItemQuantity = 1; //! VBYBVFKMYJT значение quantity
-                                                    allChoicePizzasLocalStorage[index].quantity = changeItemQuantity;
-                                                    localStorage.setItem("allChoicePizzas", JSON.stringify([...allChoicePizzasLocalStorage]));
-                                                    togle();
-                                                }}
+                                                //! Local variant Decrement
+                                                // onClick={() => {
+                                                //     let changeItemQuantity = item.quantity - 1;
+                                                //     if (changeItemQuantity < 1) changeItemQuantity = 1; //! МИНИМАЛЬНОЕ значение quantity
+                                                //     allChoicePizzasLocalStorage[index].quantity = changeItemQuantity;
+                                                //     localStorage.setItem("allChoicePizzas", JSON.stringify([...allChoicePizzasLocalStorage]));
+                                                //     togle();
+                                                // }}
+                                                //! New Remote variant Increment Decrement
+                                                onClick={() => { handleDecrement(index) }}
                                             >
                                                 -
                                             </button>
@@ -79,14 +98,18 @@ export const ShoppingCartOrder = () => {
                                             />
                                             <button
                                                 className="incrementButton"
+                                                //! Тест кнопки Increment
                                                 // onClick={handleIncrement}
-                                                onClick={() => {
-                                                    let changeItemQuantity = item.quantity + 1;
-                                                    if (changeItemQuantity > 50) changeItemQuantity = 50; //! МАКСИМАЛЬНОЕ значение quantity
-                                                    allChoicePizzasLocalStorage[index].quantity = changeItemQuantity;
-                                                    localStorage.setItem("allChoicePizzas", JSON.stringify([...allChoicePizzasLocalStorage]));
-                                                    togle();
-                                                }}
+                                                //! Local variant Increment
+                                                // onClick={() => {
+                                                //     let changeItemQuantity = item.quantity + 1;
+                                                //     if (changeItemQuantity > 50) changeItemQuantity = 50; //! МАКСИМАЛЬНОЕ значение quantity
+                                                //     allChoicePizzasLocalStorage[index].quantity = changeItemQuantity;
+                                                //     localStorage.setItem("allChoicePizzas", JSON.stringify([...allChoicePizzasLocalStorage]));
+                                                //     togle();
+                                                // }}
+                                                //! New Remote variant Increment
+                                                onClick={() => { handleIncrement(index) }}
                                             >
                                                 +
                                             </button>
