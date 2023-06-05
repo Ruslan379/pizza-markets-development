@@ -73,8 +73,7 @@ export const ShoppingCartOrder = () => {
 
                                     <div className={css.inputDeleteButtonContainer}>
                                         <div className={css.inputContainer}>
-                                            <button
-                                                className="decrementButton"
+                                            <button className={`${css.quantityButton} ${css.decrementButton}`}
                                                 //! Тест кнопоки Decrement
                                                 // onClick={handleDecrement}
                                                 //! Local variant Decrement
@@ -96,8 +95,7 @@ export const ShoppingCartOrder = () => {
                                                 value={item.quantity}
                                                 readOnly
                                             />
-                                            <button
-                                                className="incrementButton"
+                                            <button className={`${css.quantityButton} ${css.incrementButton}`}
                                                 //! Тест кнопки Increment
                                                 // onClick={handleIncrement}
                                                 //! Local variant Increment

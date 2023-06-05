@@ -96,8 +96,16 @@
         /* outline: 1px solid rgb(71, 181, 255); */
     }
 
+    .inputContainer {
+        width: 95%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        /* outline: 1px solid rgb(71, 181, 255); */
+    }
+
     .inputQuantity {
-        width: 30px;
+        width: 40%;
         padding: 4px;
         text-align: center;
         border-radius: 5px;
@@ -105,6 +113,34 @@
         background-color: rgb(236, 247, 255);
     }
 
+    .quantityButton {
+        display: inline-block;
+        padding: 0 10px;
+        font-size: 1.0em;
+        cursor: pointer;
+        border: 1px solid rgb(71, 181, 255);
+        border-radius: 4px;
+        box-shadow: 8px 8px 18px rgba(59, 43, 14, 0.23);
+    }
+
+    .decrementButton {
+        color: #ff0000;
+    }
+    .decrementButton:hover,
+    .decrementButton:focus {
+        border: 1px solid #ff00dd;
+        background-color: rgb(255, 220, 220);
+    }
+
+    .incrementButton {
+        color: #168300;
+    }
+    .incrementButton:hover,
+    .incrementButton:focus {
+        border: 1px solid #168300;
+        background-color: #c0fabe;
+    }
+    
     .pizzaDeleteButton {
         display: inline-block;
         padding: 4px 8px;
@@ -233,13 +269,49 @@
         /* outline: 1px solid rgb(71, 181, 255); */
     }
 
+    .inputContainer {
+        width: 95%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        /* outline: 1px solid rgb(71, 181, 255); */
+    }
+
     .inputQuantity {
-        width: 30px;
+        width: 40%;
         padding: 4px;
         text-align: center;
         border-radius: 5px;
         border: 1px solid rgb(71, 181, 255);
         background-color: rgb(236, 247, 255);
+    }
+
+    .quantityButton {
+        display: inline-block;
+        padding: 0 10px;
+        font-size: 1.0em;
+        cursor: pointer;
+        border: 1px solid rgb(71, 181, 255);
+        border-radius: 4px;
+        box-shadow: 8px 8px 18px rgba(59, 43, 14, 0.23);
+    }
+
+    .decrementButton {
+        color: #ff0000;
+    }
+    .decrementButton:hover,
+    .decrementButton:focus {
+        border: 1px solid #ff00dd;
+        background-color: rgb(255, 220, 220);
+    }
+
+    .incrementButton {
+        color: #168300;
+    }
+    .incrementButton:hover,
+    .incrementButton:focus {
+        border: 1px solid #168300;
+        background-color: #c0fabe;
     }
 
     .pizzaDeleteButton {
@@ -367,13 +439,49 @@
         /* outline: 1px solid rgb(71, 181, 255); */
     }
 
+    .inputContainer {
+        width: 95%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        /* outline: 1px solid rgb(71, 181, 255); */
+    }
+
     .inputQuantity {
-        width: 30px;
+        width: 40%;
         padding: 4px;
         text-align: center;
         border-radius: 5px;
         border: 1px solid rgb(71, 181, 255);
         background-color: rgb(236, 247, 255);
+    }
+
+    .quantityButton {
+        display: inline-block;
+        padding: 0 10px;
+        font-size: 1.0em;
+        cursor: pointer;
+        border: 1px solid rgb(71, 181, 255);
+        border-radius: 4px;
+        box-shadow: 8px 8px 18px rgba(59, 43, 14, 0.23);
+    }
+
+    .decrementButton {
+        color: #ff0000;
+    }
+    .decrementButton:hover,
+    .decrementButton:focus {
+        border: 1px solid #ff00dd;
+        background-color: rgb(255, 220, 220);
+    }
+
+    .incrementButton {
+        color: #168300;
+    }
+    .incrementButton:hover,
+    .incrementButton:focus {
+        border: 1px solid #168300;
+        background-color: #c0fabe;
     }
 
     .pizzaDeleteButton {
@@ -501,13 +609,49 @@
         /* outline: 1px solid rgb(71, 181, 255); */
     }
 
+    .inputContainer {
+        width: 95%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        /* outline: 1px solid rgb(71, 181, 255); */
+    }
+
     .inputQuantity {
-        width: 30px;
+        width: 40%;
         padding: 4px;
         text-align: center;
         border-radius: 5px;
         border: 1px solid rgb(71, 181, 255);
         background-color: rgb(236, 247, 255);
+    }
+
+    .quantityButton {
+        display: inline-block;
+        padding: 0 10px;
+        font-size: 1.0em;
+        cursor: pointer;
+        border: 1px solid rgb(71, 181, 255);
+        border-radius: 4px;
+        box-shadow: 8px 8px 18px rgba(59, 43, 14, 0.23);
+    }
+
+    .decrementButton {
+        color: #ff0000;
+    }
+    .decrementButton:hover,
+    .decrementButton:focus {
+        border: 1px solid #ff00dd;
+        background-color: rgb(255, 220, 220);
+    }
+
+    .incrementButton {
+        color: #168300;
+    }
+    .incrementButton:hover,
+    .incrementButton:focus {
+        border: 1px solid #168300;
+        background-color: #c0fabe;
     }
 
     .pizzaDeleteButton {
@@ -637,8 +781,16 @@
         /* outline: 1px solid rgb(71, 181, 255); */
     }
 
+    .inputContainer {
+        width: 95%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        /* outline: 1px solid rgb(71, 181, 255); */
+    }
+
     .inputQuantity {
-        width: 30px;
+        width: 40%;
         padding: 4px;
         text-align: center;
         border-radius: 5px;
@@ -646,6 +798,35 @@
         background-color: rgb(236, 247, 255);
     }
 
+    .quantityButton {
+        display: inline-block;
+        padding: 0 10px;
+        font-size: 1.0em;
+        cursor: pointer;
+        border: 1px solid rgb(71, 181, 255);
+        border-radius: 4px;
+        box-shadow: 8px 8px 18px rgba(59, 43, 14, 0.23);
+    }
+
+    .decrementButton {
+        color: #ff0000;
+    }
+    .decrementButton:hover,
+    .decrementButton:focus {
+        border: 1px solid #ff00dd;
+        background-color: rgb(255, 220, 220);
+    }
+
+    .incrementButton {
+        color: #168300;
+    }
+    .incrementButton:hover,
+    .incrementButton:focus {
+        /* color: #154407; */
+        border: 1px solid #168300;
+        background-color: #c0fabe;
+    }
+    
     .pizzaDeleteButton {
         display: inline-block;
         padding: 4px 8px;
