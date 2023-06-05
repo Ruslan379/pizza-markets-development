@@ -131,6 +131,6 @@
 
 //! axios defaults baseURL
 
-//! local backend 
+//! remote backend 
 
 //! Очистка localStorage
