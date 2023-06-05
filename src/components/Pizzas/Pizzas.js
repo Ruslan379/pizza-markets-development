@@ -29,7 +29,7 @@ export const Pizzas = ({ allPizzas, addPizzaToCart }) => {
                         type="button"
                         onClick={() => addPizzaToCart(allPizzas[index])}
                     >
-                        add to Card
+                        add to Cart
                     </button>
                 </li>
             ))}
