@@ -129,12 +129,12 @@
 
 //! POST @ /orders
 
-//! VBYBVFKMYJT значение quantity
-
 //! axios defaults baseURL
 
 //! remote backend 
 
 //! МАКСИМАЛЬНОЕ значение quantity
+
+//! МИНИМАЛЬНОЕ значение quantity
 
 //! Очистка localStorage
