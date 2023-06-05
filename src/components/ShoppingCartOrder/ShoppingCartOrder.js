@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 
+import imageTrash from "images/trash.png";
+
 import css from "./ShoppingCartOrder.module.css";
 
 
@@ -128,14 +130,20 @@ export const ShoppingCartOrder = () => {
                                             }}
                                         /> */}
 
-                                        <button
-                                            type="button"
+                                        <div
+                                            // type="button"
                                             className={css.pizzaDeleteButton}
                                             // onClick={toggleModal}
                                             onClick={() => deletePizza(index)}
                                         >
-                                            Delete
-                                        </button>
+                                            <img
+                                                className={css.trashImage}
+                                                alt={"Trash"}
+                                                src={imageTrash}
+                                                width="100%"
+                                            />
+                                            {/* Delete */}
+                                        </div>
                                     </div>
                                 </div>
                             </li>

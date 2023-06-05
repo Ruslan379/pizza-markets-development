@@ -141,7 +141,8 @@
         background-color: #c0fabe;
     }
     
-    .pizzaDeleteButton {
+    /* //! OLD  */
+    /* .pizzaDeleteButton {
         display: inline-block;
         padding: 4px 8px;
         text-decoration: none;
@@ -157,6 +158,27 @@
         color: #ff00dd;
         border: 1px solid #ff00dd;
         background-color: rgb(255, 220, 220);
+    } */
+
+    .pizzaDeleteButton{
+        opacity: 0.5;
+        width: 25px;
+        /* width: 20%; */
+        margin-top: 2vw;
+        padding: 8px 9px;
+        cursor: pointer;
+        border: none;
+        border-radius: 50%;
+        /* outline: 1px solid rgb(71, 181, 255); */
+    }
+    .pizzaDeleteButton:hover,
+    .pizzaDeleteButton:focus {
+        opacity: 1;
+        /* background-color: rgb(255, 220, 220); */
+    }
+
+    .trashImage {
+        background-color: inherit
     }
 
     .shoppingCartPriceSubmitContainer {
@@ -314,22 +336,25 @@
         background-color: #c0fabe;
     }
 
-    .pizzaDeleteButton {
-        display: inline-block;
-        padding: 4px 8px;
-        text-decoration: none;
-        font-weight: 700;
+    .pizzaDeleteButton{
+        opacity: 0.5;
+        width: 25px;
+        /* width: 20%; */
+        margin-top: 0.5vw;
+        padding: 8px 9px;
         cursor: pointer;
-        color: #9b1616;
-        border: 1px solid rgb(71, 181, 255);
-        border-radius: 4px;
-        box-shadow: 8px 8px 18px rgba(59, 43, 14, 0.23);
+        border: none;
+        border-radius: 50%;
+        /* outline: 1px solid rgb(71, 181, 255); */
     }
     .pizzaDeleteButton:hover,
     .pizzaDeleteButton:focus {
-        color: #ff00dd;
-        border: 1px solid #ff00dd;
-        background-color: rgb(255, 220, 220);
+        opacity: 1;
+        /* background-color: rgb(255, 220, 220); */
+    }
+
+    .trashImage {
+        background-color: inherit
     }
 
     .shoppingCartPriceSubmitContainer {
@@ -484,22 +509,25 @@
         background-color: #c0fabe;
     }
 
-    .pizzaDeleteButton {
-        display: inline-block;
-        padding: 4px 8px;
-        text-decoration: none;
-        font-weight: 700;
+    .pizzaDeleteButton{
+        opacity: 0.5;
+        width: 25px;
+        /* width: 20%; */
+        margin-top: 2vw;
+        padding: 8px 9px;
         cursor: pointer;
-        color: #9b1616;
-        border: 1px solid rgb(71, 181, 255);
-        border-radius: 4px;
-        box-shadow: 8px 8px 18px rgba(59, 43, 14, 0.23);
+        border: none;
+        border-radius: 50%;
+        /* outline: 1px solid rgb(71, 181, 255); */
     }
     .pizzaDeleteButton:hover,
     .pizzaDeleteButton:focus {
-        color: #ff00dd;
-        border: 1px solid #ff00dd;
-        background-color: rgb(255, 220, 220);
+        opacity: 1;
+        /* background-color: rgb(255, 220, 220); */
+    }
+
+    .trashImage {
+        background-color: inherit
     }
 
     .shoppingCartPriceSubmitContainer {
@@ -654,22 +682,25 @@
         background-color: #c0fabe;
     }
 
-    .pizzaDeleteButton {
-        display: inline-block;
-        padding: 4px 8px;
-        text-decoration: none;
-        font-weight: 700;
+    .pizzaDeleteButton{
+        opacity: 0.5;
+        width: 25px;
+        /* width: 20%; */
+        margin-top: 0.7vw;
+        padding: 8px 9px;
         cursor: pointer;
-        color: #9b1616;
-        border: 1px solid rgb(71, 181, 255);
-        border-radius: 4px;
-        box-shadow: 8px 8px 18px rgba(59, 43, 14, 0.23);
+        border: none;
+        border-radius: 50%;
+        /* outline: 1px solid rgb(71, 181, 255); */
     }
     .pizzaDeleteButton:hover,
     .pizzaDeleteButton:focus {
-        color: #ff00dd;
-        border: 1px solid #ff00dd;
-        background-color: rgb(255, 220, 220);
+        opacity: 1;
+        /* background-color: rgb(255, 220, 220); */
+    }
+
+    .trashImage {
+        background-color: inherit
     }
 
     .shoppingCartPriceSubmitContainer {
@@ -679,14 +710,12 @@
         /* outline: 1px solid blue; */
     }
 
-
     .totalPriceText {
         width: 110%;
         font-size: 1.1em;
         color: blue;
         /* outline: 1px solid green; */
     }
-
 
     .totalPriceNumber {
         margin-left: 3%;
@@ -827,22 +856,25 @@
         background-color: #c0fabe;
     }
     
-    .pizzaDeleteButton {
-        display: inline-block;
-        padding: 4px 8px;
-        text-decoration: none;
-        font-weight: 700;
+    .pizzaDeleteButton{
+        opacity: 0.5;
+        width: 25px;
+        /* width: 20%; */
+        margin-top: 0.5vw;
+        padding: 8px 9px;
         cursor: pointer;
-        color: #9b1616;
-        border: 1px solid rgb(71, 181, 255);
-        border-radius: 4px;
-        box-shadow: 8px 8px 18px rgba(59, 43, 14, 0.23);
+        border: none;
+        border-radius: 50%;
+        /* outline: 1px solid rgb(71, 181, 255); */
     }
     .pizzaDeleteButton:hover,
     .pizzaDeleteButton:focus {
-        color: #ff00dd;
-        border: 1px solid #ff00dd;
-        background-color: rgb(255, 220, 220);
+        opacity: 1;
+        /* background-color: rgb(255, 220, 220); */
+    }
+
+    .trashImage {
+        background-color: inherit
     }
 
     .shoppingCartPriceSubmitContainer {
