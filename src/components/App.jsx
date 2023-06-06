@@ -11,11 +11,11 @@ import 'react-toastify/dist/ReactToastify.css';
 import { getAllMarkets } from 'redux/market/marketOperations'; //!!!
 
 import { SharedLayout } from 'components/SharedLayout/SharedLayout';
-import { NotFound } from "page/NotFoundPage/NotFoundPage";
-import { Home } from 'components/Home/Home';
-import { ShoppingCart } from 'page/CartPage/CartPage';
-import { History } from 'components/History/History';
-import { OrderCompletion } from 'components/OrderCompletion/OrderCompletion';
+import { NotFoundPage } from "page/NotFoundPage/NotFoundPage";
+import { HomePage } from 'page/HomePage/HomePage';
+import { CartPage } from 'page/CartPage/CartPage';
+import { HistoryPage } from 'page/HistoryPage/HistoryPage';
+import { OrderCompletionPage } from 'page/OrderCompletionPage/OrderCompletionPage';
 
 
 export const App = () => {
@@ -28,12 +28,12 @@ export const App = () => {
   return (
     <>
       <Routes>
-        <Route path="*" element={<NotFound />} />
+        <Route path="*" element={<NotFoundPage />} />
         <Route path="/" element={<SharedLayout />} >
-          <Route index element={<Home />} />
-          <Route path="/cart" element={<ShoppingCart />} ></Route>
-          <Route path="/history" element={<History />} ></Route>
-          <Route path="/order" element={<OrderCompletion/>} ></Route>
+          <Route index element={<HomePage />} />
+          <Route path="/cart" element={<CartPage />} ></Route>
+          <Route path="/history" element={<HistoryPage />} ></Route>
+          <Route path="/order" element={<OrderCompletionPage/>} ></Route>
         </Route> 
       </Routes>
       <ToastContainer />  

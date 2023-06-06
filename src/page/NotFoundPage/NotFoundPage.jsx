@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import css from './NotFoundPage.module.css';
 
 
-export const NotFound = () => {
+export const NotFoundPage = () => {
     const navigate = useNavigate();
 
     const handleSubmit = () => {

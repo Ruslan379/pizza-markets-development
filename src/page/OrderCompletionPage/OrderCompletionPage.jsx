@@ -3,11 +3,11 @@ import { useSelector } from "react-redux";
 
 import { selectAllOrders, selectLastOrderNumber } from 'redux/orders/ordersSelectors';
 
-import css from './OrderCompletion.module.css';
+import css from './OrderCompletionPage.module.css';
 
 
 
-export const OrderCompletion = () => {
+export const OrderCompletionPage = () => {
     let lastOrder = null
 
     const allOrders = useSelector(selectAllOrders);

@@ -7,11 +7,11 @@ import { selectLoading } from 'redux/orders/ordersSelectors';
 
 import { Loader } from 'components/Loader/Loader.jsx';
 
-import css from './History.module.css';
+import css from './HistoryPage.module.css';
 
 
 
-export const History = () => {
+export const HistoryPage = () => {
     const dispatch = useDispatch();
     const navigate = useNavigate();
     const isLoading = useSelector(selectLoading);

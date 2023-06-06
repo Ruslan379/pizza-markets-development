@@ -14,10 +14,10 @@ import { Loader } from 'components/Loader/Loader.jsx';
 
 import imageBackgroundPizza from "images/A48382B1BEBB8CBDB0-large.webp";
 
-import css from './Home.module.css';
+import css from './HomePage.module.css';
 
 
-export const Home = () => {
+export const HomePage = () => {
     const allChoicePizzasLocalStorage = JSON.parse(localStorage.getItem("allChoicePizzas"));
 
     const [allPizzas, setAllPizzas] = useState([]);

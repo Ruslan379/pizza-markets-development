@@ -4,7 +4,7 @@ import { CustomerDataForm } from 'components/CustomerDataForm/CustomerDataForm';
 import css from './CartPage.module.css';
 
 
-export const ShoppingCart = () => {
+export const CartPage = () => {
     return (
         <div className={css.shoppingCartContainer}>
             <div className={css.сustomerData}>
