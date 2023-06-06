@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 
 import imageTrash from "images/trash.png";
 
-import css from "./ShoppingCartOrder.module.css";
+import css from "./CartOrderList.module.css";
 
 
-export const ShoppingCartOrder = () => {
+export const CartOrderList = () => {
     const [value, setValue] = useState(true);
     const togle = () => setValue(!value);
 

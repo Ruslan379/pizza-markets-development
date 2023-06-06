@@ -2,12 +2,12 @@ import { useSelector } from "react-redux";
 
 import { selectAllMarkets } from 'redux/market/marketSelectors';
 
-import css from "./Shops.module.css";
+import css from "./HomeShopsList.module.css";
 
 
 
 
-export const Shops = ({ selectShop }) => {
+export const HomeShopsList = ({ selectShop }) => {
     const pizzaMarkets = useSelector(selectAllMarkets);
 
     return (

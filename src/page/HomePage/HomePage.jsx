@@ -7,8 +7,8 @@ import { selectLoadingMarkets, selectAllMarkets } from 'redux/market/marketSelec
 
 // import pizzaMarkets from "db/pizzaMarkets.json"; //!!! Уже не надо
 
-import { Shops } from 'components/Shops/Shops';
-import { Pizzas } from 'components/Pizzas/Pizzas';
+import { HomeShopsList } from 'components/HomeShopsList/HomeShopsList';
+import { HomePizzasList } from 'components/HomePizzasList/HomePizzasList';
 
 import { Loader } from 'components/Loader/Loader.jsx';
 
@@ -69,7 +69,7 @@ export const HomePage = () => {
                         )
                         :
                         (
-                            <Shops selectShop={selectShop}/>
+                            <HomeShopsList selectShop={selectShop}/>
                         )
                     }
                 </>
@@ -78,7 +78,7 @@ export const HomePage = () => {
                 {allPizzas.length > 0
                     ?
                     (
-                        <Pizzas
+                        <HomePizzasList
                         allPizzas={allPizzas}
                         addPizzaToCart={addPizzaToCart}
                         />

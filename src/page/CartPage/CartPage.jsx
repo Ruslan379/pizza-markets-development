@@ -1,5 +1,5 @@
-import { ShoppingCartOrder } from 'components/ShoppingCartOrder/ShoppingCartOrder';
-import { CustomerDataForm } from 'components/CustomerDataForm/CustomerDataForm';
+import { CartCustomerDataForm } from 'components/CartCustomerDataForm/CartCustomerDataForm';
+import { CartOrderList } from 'components/CartOrderList/CartOrderList';
 
 import css from './CartPage.module.css';
 
@@ -8,10 +8,10 @@ export const CartPage = () => {
     return (
         <div className={css.shoppingCartContainer}>
             <div className={css.сustomerData}>
-                <CustomerDataForm />
+                <CartCustomerDataForm />
             </div>
             <div className={css.CustomerOrder}>
-                <ShoppingCartOrder />
+                <CartOrderList />
             </div>
         </div>
     );

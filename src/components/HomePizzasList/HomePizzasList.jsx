@@ -1,8 +1,8 @@
-import css from "./Pizzas.module.css";
+import css from "./HomePizzasList.module.css";
 
 
 
-export const Pizzas = ({ allPizzas, addPizzaToCart }) => {
+export const HomePizzasList = ({ allPizzas, addPizzaToCart }) => {
     return (
         <ul className={css.list}>
             {allPizzas.map((item, index) => (

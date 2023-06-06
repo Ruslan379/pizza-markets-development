@@ -1,11 +1,11 @@
 import { useNavigate } from "react-router-dom";
 
-import css from './CustomerDataForm.module.css';
+import css from './CartCustomerDataForm.module.css';
 
 
 
 
-export const CustomerDataForm = () => {
+export const CartCustomerDataForm = () => {
     const navigate = useNavigate();
 
     let customerDataLocalStorage = JSON.parse(localStorage.getItem("customerData"));
