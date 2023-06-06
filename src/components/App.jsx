@@ -11,9 +11,9 @@ import 'react-toastify/dist/ReactToastify.css';
 import { getAllMarkets } from 'redux/market/marketOperations'; //!!!
 
 import { SharedLayout } from 'components/SharedLayout/SharedLayout';
-import { NotFound } from "page/NotFound";
+import { NotFound } from "page/NotFoundPage/NotFoundPage";
 import { Home } from 'components/Home/Home';
-import { ShoppingCart } from 'components/ShoppingCart/ShoppingCart';
+import { ShoppingCart } from 'page/CartPage/CartPage';
 import { History } from 'components/History/History';
 import { OrderCompletion } from 'components/OrderCompletion/OrderCompletion';
 

@@ -1,7 +1,7 @@
 import { ShoppingCartOrder } from 'components/ShoppingCartOrder/ShoppingCartOrder';
 import { CustomerDataForm } from 'components/CustomerDataForm/CustomerDataForm';
 
-import css from './ShoppingCart.module.css';
+import css from './CartPage.module.css';
 
 
 export const ShoppingCart = () => {
