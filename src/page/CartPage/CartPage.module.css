@@ -60,7 +60,8 @@
     
     .сustomerDataForm {
         flex-basis: 30vw;
-            min-width: 300px;
+            min-width: 200px;
+            max-width: 350px;
             height: 83%;
     }
 
