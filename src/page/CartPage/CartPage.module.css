@@ -23,6 +23,7 @@
 }
 
 .сustomerDataForm {
+    overflow-y: auto;
     width: 100%;
         height: 20vh;
         min-height: 220px;
