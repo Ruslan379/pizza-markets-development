@@ -1,7 +1,4 @@
-/* import styled from '@emotion/styled'; */
-
-/* ! 1.ОБЩИЕ Стили для устройств с шириной экрана от 0 до 599px */
-/* ? 1.Стили для устройств с шириной экрана от 320px до 599px */
+/* ! 1.Стили для устройств с шириной экрана от 320px до 599px */
 @media screen and (min-width: 320px) and (max-width: 599px) {
     .list_OLD {
         /* todo Пока не нужен */
@@ -58,7 +55,7 @@
 
     .imagePizza {
         width: 50%;
-        /* height: 80%; */
+        height: 80%;
         border-radius: 5px;
         box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23);
     }
@@ -84,8 +81,6 @@
     }
 
     .pricePizza {
-        /* margin-bottom: 30px; */
-        margin-bottom: 8%;
         text-align: center;
         font-size: 0.8em;
         color: red;
