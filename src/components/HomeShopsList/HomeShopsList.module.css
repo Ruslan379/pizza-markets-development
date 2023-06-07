@@ -15,7 +15,8 @@
             grid-template-columns: 1fr 1fr;
             justify-items:center;
             /* align-items:center; */
-        gap: 7%;
+            grid-gap: 7%;
+            /* gap: 7%; */
         margin: 0;
         padding: 10px;
         list-style: none;
@@ -49,7 +50,8 @@
     .list {
         /* ! Задаем 3 столбца равной ширины */
         grid-template-columns: 1fr 1fr 1fr;
-        gap: 2%;
+        grid-gap: 2%;
+        /* gap: 2%; */
     }
 }
 
