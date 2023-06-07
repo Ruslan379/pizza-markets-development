@@ -10,7 +10,7 @@
 
     .list {
         flex-grow: 1;
-            display: grid;
+        display: grid;
             /* ! Задаем 2 столбца равной ширины */
             grid-template-columns: 1fr 1fr;
             justify-items:center;
@@ -58,10 +58,10 @@
 @media screen and (min-width: 768px) {
     .list {
         display: flex;
-        flex-direction: column;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
         /* gap: 40px; */
-        justify-content: space-evenly;
-        align-items: center;
     }
 }
 
