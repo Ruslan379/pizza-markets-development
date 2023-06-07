@@ -40,7 +40,8 @@
 .customerOrder {
     overflow-y: auto;
     width: 100%;
-        height: 38vh;
+        /* height: 38vh; */
+        height: 40vh;
     margin-bottom: 80px;
     border: 2px solid rgb(164, 214, 255);
         border-radius: 8px;
