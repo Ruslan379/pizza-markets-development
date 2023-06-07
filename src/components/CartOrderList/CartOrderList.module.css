@@ -188,7 +188,8 @@
 
     .shoppingCartPriceSubmitContainer {
         position: absolute;
-        bottom: 45px;
+        /* bottom: 45px; */
+        bottom: 36px;
         left: 20%;
         /* outline: 1px solid blue; */
     }
@@ -364,7 +365,8 @@
 
     .shoppingCartPriceSubmitContainer {
         position: absolute;
-        bottom: 55px;
+        /* bottom: 55px; */
+        bottom: 36px;
         left: 15%;
         /* outline: 1px solid blue; */
     }
