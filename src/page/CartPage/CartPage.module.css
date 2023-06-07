@@ -4,7 +4,8 @@
 .cartContainer {
     position: relative;
     width: 90vw;
-        height: 80vh;
+        /* height: 80vh; */
+        height: 79vh;
     display: flex;
         flex-direction: column;
         align-items: center;
