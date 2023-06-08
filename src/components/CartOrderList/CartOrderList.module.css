@@ -2,9 +2,9 @@
 
 /* ! 1.ОБЩИЕ Стили для устройств с шириной экрана от 0 до 599px */
 /* ? 1.Стили для устройств с шириной экрана от 320px до 599px */
-@media screen and (min-width: 320px) and (max-width: 599px) {
-    .list_OLD {
-        /* todo Пока не нужен */
+/* @media screen and (min-width: 320px) and (max-width: 599px) { */
+    /* todo Пока не нужен */
+    /* .list_OLD {
         height: 100%;
         display: flex;
         flex-direction: column;
@@ -14,42 +14,41 @@
         padding-top: 10px;
         list-style: none;
         padding-inline-start: 3%;
-    }
+    } */
 
     .list {  
         display: grid;
         /* ! Задаем 1 столбец */
         grid-template-columns: 1fr;
-        grid-gap: 10px;
+            grid-gap: 10px;
         margin: 0;
-        padding: 10px;
+            padding: 10px;
         list-style: none;
     }
 
-        .informationTextContainer {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+    .informationTextContainer {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-        .informationText {
-            margin-left: 8vw;
-            margin-right: 8vw;
-            color: rgb(99, 24, 24);
-            font-size: 4vw;
-            text-align: center;
-        }
+    .informationText {
+        margin-left: 8vw;
+        margin-right: 8vw;
+        color: rgb(99, 24, 24);
+        font-size: 4vw;
+        text-align: center;
+    }
 
     .listItem {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        gap: 10px;
         width: 95%;
+        display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            gap: 10px;
         padding: 2%;
-
         border: 2px solid rgb(164, 214, 255);
         border-radius: 8px;
         box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23);
@@ -64,12 +63,13 @@
     }
 
     .cardContents {
-        display: flex;
-        flex-direction: column;
-        /* justify-content: center; */
-        align-items: center;
-        gap: 10px;
         width: 95%;
+        display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            align-items: center;
+            gap: 10px;
+        
         padding: 1%;
         /* outline: 1px solid rgb(71, 181, 255); */
     }
@@ -78,7 +78,7 @@
         height: 2.2em;
         margin-top: 10px;
         text-align: center;
-        font-size: 0.9em;
+            font-size: 0.9em;
         color: blue;
         /* outline: 1px solid rgb(71, 181, 255); */
     }
@@ -87,25 +87,25 @@
         /* margin-bottom: 30px; */
         margin-bottom: 8%;
         text-align: center;
-        font-size: 0.8em;
+            font-size: 0.8em;
         color: red;
     }
 
     .inputDeleteButtonContainer {
         width: 100%;
-        height: 100%;
+            height: 100%;
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
         /* outline: 1px solid rgb(71, 181, 255); */
     }
 
     .inputContainer {
         width: 95%;
         display: flex;
-        justify-content: space-around;
-        align-items: center;
+            justify-content: space-around;
+            align-items: center;
         /* outline: 1px solid rgb(71, 181, 255); */
     }
 
@@ -114,7 +114,7 @@
         padding: 4px;
         text-align: center;
         border-radius: 5px;
-        border: 1px solid rgb(71, 181, 255);
+            border: 1px solid rgb(71, 181, 255);
         background-color: rgb(236, 247, 255);
     }
 
@@ -124,7 +124,7 @@
         font-size: 1.0em;
         cursor: pointer;
         border: 1px solid rgb(71, 181, 255);
-        border-radius: 4px;
+            border-radius: 4px;
         box-shadow: 8px 8px 18px rgba(59, 43, 14, 0.23);
     }
 
@@ -146,25 +146,6 @@
         background-color: #c0fabe;
     }
     
-    /* //! OLD  */
-    /* .pizzaDeleteButton {
-        display: inline-block;
-        padding: 4px 8px;
-        text-decoration: none;
-        font-weight: 700;
-        cursor: pointer;
-        color: #9b1616;
-        border: 1px solid rgb(71, 181, 255);
-        border-radius: 4px;
-        box-shadow: 8px 8px 18px rgba(59, 43, 14, 0.23);
-    }
-    .pizzaDeleteButton:hover,
-    .pizzaDeleteButton:focus {
-        color: #ff00dd;
-        border: 1px solid #ff00dd;
-        background-color: rgb(255, 220, 220);
-    } */
-
     .pizzaDeleteButton{
         opacity: 0.5;
         width: 25px;
@@ -188,13 +169,13 @@
 
     .shoppingCartPriceSubmitContainer {
         position: absolute;
-        /* bottom: 45px; */
         bottom: 36px;
         left: 20%;
         /* outline: 1px solid blue; */
     }
 
     .totalPriceText {
+        width: 110%;
         text-align: center;
         font-size: 1.1em;
         color: blue;
@@ -208,113 +189,111 @@
         color: red;
         /* outline: 1px solid red; */
     }
-}
+/* } */
 
 
 
 /* ! 2.Стили для устройств с шириной экрана от 600px до 767px */
 @media screen and (min-width: 600px) and (max-width: 767px) {
     .list {
-        display: grid;
-        /* ! Задаем 2 столбца */
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 10px;
-        margin: 0;
-        padding: 10px;
-        list-style: none;
+        /* display: grid; */
+                /* ! Задаем 2 столбца */
+                grid-template-columns: 1fr 1fr;
+        /* grid-gap: 10px; */
+        /* margin: 0; */
+        /* padding: 10px; */
+        /* list-style: none; */
     }
 
-    .informationTextContainer {
+    /* .informationTextContainer {
         width: 100%;
         height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
+    } */
 
-    }
-    .informationText {
+    /* .informationText {
         margin-left: 8vw;
         margin-right: 8vw;
         color: rgb(99, 24, 24);
         font-size: 4vw;
         text-align: center;
-    }
+    } */
 
-    .listItem {
+    /* .listItem {
+        width: 95%;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
         gap: 10px;
-        width: 95%;
         padding: 2%;
         border: 2px solid rgb(164, 214, 255);
         border-radius: 8px;
         box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23);
-        /* outline: 1px solid tomato; */
-    }
+        outline: 1px solid tomato;
+    } */
 
-    .imagePizza {
+    /* .imagePizza {
         width: 50%;
         height: 80%;
         border-radius: 5px;
         box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23);
-    }
+    } */
 
-    .cardContents {
+    /* .cardContents {
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
         gap: 10px;
         width: 95%;
         padding: 1%;
-        /* outline: 1px solid rgb(71, 181, 255); */
-    }
+        outline: 1px solid rgb(71, 181, 255);
+    } */
 
-    .namePizza {
+    /* .namePizza {
         height: 2.2em;
-        /* flex-grow: 1; */
         margin-top: 10px;
         text-align: center;
-        font-size: 0.7em;
+                font-size: 0.8em;
         color: blue;
-        /* outline: 1px solid rgb(71, 181, 255); */
-    }
+        outline: 1px solid rgb(71, 181, 255);
+    } */
 
-    .pricePizza {
+    /* .pricePizza {
         text-align: center;
-        font-size: 0.7em;
+                font-size: 0.7em;
         color: red;
-    }
+    } */
 
-    .inputDeleteButtonContainer {
+    /* .inputDeleteButtonContainer {
         width: 100%;
         height: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 10px;
-        /* outline: 1px solid rgb(71, 181, 255); */
-    }
+        outline: 1px solid rgb(71, 181, 255);
+    } */
 
-    .inputContainer {
+    /* .inputContainer {
         width: 95%;
         display: flex;
         justify-content: space-around;
         align-items: center;
-        /* outline: 1px solid rgb(71, 181, 255); */
-    }
+        outline: 1px solid rgb(71, 181, 255);
+    } */
 
-    .inputQuantity {
+    /* .inputQuantity {
         width: 40%;
         padding: 4px;
         text-align: center;
         border-radius: 5px;
         border: 1px solid rgb(71, 181, 255);
         background-color: rgb(236, 247, 255);
-    }
+    } */
 
-    .quantityButton {
+    /* .quantityButton {
         display: inline-block;
         padding: 0 10px;
         font-size: 1.0em;
@@ -322,68 +301,65 @@
         border: 1px solid rgb(71, 181, 255);
         border-radius: 4px;
         box-shadow: 8px 8px 18px rgba(59, 43, 14, 0.23);
-    }
+    } */
 
-    .decrementButton {
+    /* .decrementButton {
         color: #ff0000;
-    }
-    .decrementButton:hover,
+    } */
+    /* .decrementButton:hover,
     .decrementButton:focus {
         border: 1px solid #ff00dd;
         background-color: rgb(255, 220, 220);
-    }
+    } */
 
-    .incrementButton {
+    /* .incrementButton {
         color: #168300;
-    }
-    .incrementButton:hover,
+    } */
+    /* .incrementButton:hover,
     .incrementButton:focus {
         border: 1px solid #168300;
         background-color: #c0fabe;
-    }
+    } */
 
     .pizzaDeleteButton{
-        opacity: 0.5;
-        width: 25px;
-        /* width: 20%; */
-        margin-top: 0.5vw;
-        padding: 8px 9px;
-        cursor: pointer;
-        border: none;
-        border-radius: 50%;
+        /* opacity: 0.5; */
+        /* width: 25px; */
+                margin-top: 0.5vw;
+        /* padding: 8px 9px; */
+        /* cursor: pointer; */
+        /* border: none; */
+        /* border-radius: 50%; */
         /* outline: 1px solid rgb(71, 181, 255); */
     }
-    .pizzaDeleteButton:hover,
+    /* .pizzaDeleteButton:hover,
     .pizzaDeleteButton:focus {
         opacity: 1;
-        /* background-color: rgb(255, 220, 220); */
-    }
+    } */
 
-    .trashImage {
+    /* .trashImage {
         background-color: inherit
-    }
+    } */
 
-    .shoppingCartPriceSubmitContainer {
+    /* .shoppingCartPriceSubmitContainer {
         position: absolute;
-        /* bottom: 55px; */
         bottom: 36px;
         left: 15%;
-        /* outline: 1px solid blue; */
-    }
+        outline: 1px solid blue;
+    } */
 
-    .totalPriceText {
+    /* .totalPriceText {
         width:110%;
         font-size: 1.1em;
         color: blue;
-        /* outline: 1px solid green; */
-    }
+        outline: 1px solid green;
+    } */
 
-    .totalPriceNumber {
+    /* .totalPriceNumber {
         margin-left: 3%;
         font-size: 1.0em;
         color: red;
-        /* outline: 1px solid red; */
-    }
+        outline: 1px solid red;
+    } */
 }
 
 
@@ -544,19 +520,19 @@
         /* outline: 1px solid blue; */
     }
 
-    .totalPriceText {
+    /* .totalPriceText {
         width: 110%;
         font-size: 1.1em;
         color: blue;
-        /* outline: 1px solid green; */
-    }
+        outline: 1px solid green;
+    } */
 
-    .totalPriceNumber {
+    /* .totalPriceNumber {
         margin-left: 3%;
         font-size: 1.0em;
         color: red;
-        /* outline: 1px solid red; */
-    }
+        outline: 1px solid red;
+    } */
 }
 
 
@@ -717,19 +693,19 @@
         /* outline: 1px solid blue; */
     }
 
-    .totalPriceText {
+    /* .totalPriceText {
         width: 110%;
         font-size: 1.1em;
         color: blue;
-        /* outline: 1px solid green; */
-    }
+        outline: 1px solid green;
+    } */
 
-    .totalPriceNumber {
+    /* .totalPriceNumber {
         margin-left: 3%;
         font-size: 1.0em;
         color: red;
-        /* outline: 1px solid red; */
-    }
+        outline: 1px solid red;
+    } */
 }
 
 
@@ -891,17 +867,17 @@
         /* outline: 1px solid blue; */
     }
 
-    .totalPriceText {
+    /* .totalPriceText {
         width: 110%;
         font-size: 1.1em;
         color: blue;
-        /* outline: 1px solid green; */
-    }
+        outline: 1px solid green;
+    } */
 
-    .totalPriceNumber {
+    /* .totalPriceNumber {
         margin-left: 3%;
         font-size: 1.0em;
         color: red;
-        /* outline: 1px solid red; */
-    }
+        outline: 1px solid red;
+    } */
 }
