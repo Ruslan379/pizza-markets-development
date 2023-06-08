@@ -1,15 +1,16 @@
 [
   {
-    "_id": {
+    "_id-": {
       "$oid": "64776b0a8d991227a64cf448"
     },
-    "id": "1",
+    "_id": "1",
     "shop": "Pizza Mexico",
     "pizzas": [
       {
         "pizza": "ВРЕМЕНА ГОДА",
         "price": 337,
-        "picture": "https://pizzamexico.com.ua/wp-content/uploads/2020/02/4seasons.png"
+        "picture": "https://pizzamexico.com.ua/wp-content/uploads/2020/02/4seasons.png",
+        "defaultPicture": "../images/PizzasImages/01-01.PizzaMexico_VremenaGoda.png"
       },
       {
         "pizza": "ГАВАЙИ",
@@ -34,10 +35,10 @@
     ]
   },
   {
-    "_id": {
+    "_id-": {
       "$oid": "64776b0a8d991227a64cf449"
     },
-    "id": "2",
+    "_id": "2",
     "shop": "Mono Pizza",
     "pizzas": [
       {
@@ -68,10 +69,10 @@
     ]
   },
   {
-    "_id": {
+    "_id-": {
       "$oid": "64776b0a8d991227a64cf44a"
     },
-    "id": "3",
+    "_id": "3",
     "shop": "Story Pizza",
     "pizzas": [
       {
@@ -102,10 +103,10 @@
     ]
   },
   {
-    "_id": {
+    "_id-": {
       "$oid": "64776b0a8d991227a64cf44b"
     },
-    "id": "4",
+    "_id": "4",
     "shop": "Domino's Pizza",
     "pizzas": [
       {
@@ -136,10 +137,10 @@
     ]
   },
   {
-    "_id": {
+    "_id-": {
       "$oid": "64776b0a8d991227a64cf44c"
     },
-    "id": "5",
+    "_id": "5",
     "shop": "Pizza House",
     "pizzas": [
       {

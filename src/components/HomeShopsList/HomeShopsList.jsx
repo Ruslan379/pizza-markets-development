@@ -2,13 +2,17 @@ import { useSelector } from "react-redux";
 
 import { selectAllMarkets } from 'redux/market/marketSelectors';
 
+import pizzaMarketsJson from "db/pizzaMarketsMongoDB.json"; //!!! 
+
 import css from "./HomeShopsList.module.css";
 
 
 
 
 export const HomeShopsList = ({ selectShop }) => {
-    const pizzaMarkets = useSelector(selectAllMarkets);
+    let pizzaMarkets = useSelector(selectAllMarkets);
+    if (pizzaMarkets.length === 0) pizzaMarkets = [...pizzaMarketsJson]
+
 
     return (
         <>

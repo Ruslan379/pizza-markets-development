@@ -5,7 +5,7 @@ import { toast } from 'react-toastify';
 
 import { selectLoadingMarkets, selectAllMarkets } from 'redux/market/marketSelectors';
 
-// import pizzaMarkets from "db/pizzaMarkets.json"; //!!! Уже не надо
+import pizzaMarketsJson from "db/pizzaMarketsMongoDB.json"; //!!! 
 
 import { HomeShopsList } from 'components/HomeShopsList/HomeShopsList';
 import { HomePizzasList } from 'components/HomePizzasList/HomePizzasList';
@@ -24,7 +24,8 @@ export const HomePage = () => {
     const [allChoicePizzas, setAllChoicePizzas] = useState(allChoicePizzasLocalStorage || []);
 
     const isLoading = useSelector(selectLoadingMarkets);
-    const pizzaMarkets = useSelector(selectAllMarkets);
+    let pizzaMarkets = useSelector(selectAllMarkets);
+    if (pizzaMarkets.length === 0) pizzaMarkets = [...pizzaMarketsJson]
     const selectShop = id => {
         const [selectShopPizzas] = pizzaMarkets.filter(pizzaMarket => pizzaMarket._id === id);
         setAllPizzas(selectShopPizzas.pizzas);
