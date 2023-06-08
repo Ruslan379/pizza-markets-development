@@ -1,4 +1,7 @@
+import pizzaMarketsJson from "db/pizzaMarketsMongoDB.json"; //!!! 
+
 import css from "./HomePizzasList.module.css";
+
 
 
 
@@ -14,7 +17,8 @@ export const HomePizzasList = ({ allPizzas, addPizzaToCart }) => {
                         className={css.imagePizza}
                         alt={"Pizza"}
                         // src={imagePizza}
-                        src={item.picture}
+                        // src={item.picture}
+                        src={item.picture || pizzaMarketsJson[index].defaultPicture}
                         width="100%"
                     />
                     <p className={css.namePizza}
