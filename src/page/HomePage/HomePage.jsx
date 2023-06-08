@@ -22,13 +22,16 @@ export const HomePage = () => {
 
     const [allPizzas, setAllPizzas] = useState([]);
     const [allChoicePizzas, setAllChoicePizzas] = useState(allChoicePizzasLocalStorage || []);
+    const [shopIndex, setShopIndex] = useState(null);
 
     const isLoading = useSelector(selectLoadingMarkets);
     let pizzaMarkets = useSelector(selectAllMarkets);
-    if (pizzaMarkets.length === 0) pizzaMarkets = [...pizzaMarketsJson]
-    const selectShop = id => {
-        const [selectShopPizzas] = pizzaMarkets.filter(pizzaMarket => pizzaMarket._id === id);
+    if (pizzaMarkets.length === 0) pizzaMarkets = [...pizzaMarketsJson];
+
+    const selectShop = (idShop, indexShop) => {
+        const [selectShopPizzas] = pizzaMarkets.filter(pizzaMarket => pizzaMarket._id === idShop);
         setAllPizzas(selectShopPizzas.pizzas);
+        setShopIndex(indexShop);
     };
 
     const addPizzaToCart = pizza => {
@@ -52,6 +55,8 @@ export const HomePage = () => {
         }
     }
 
+
+    console.log("shopIndex:", shopIndex); //!
 
     return (
         <div className={css.homeContainer}>
@@ -80,6 +85,7 @@ export const HomePage = () => {
                     ?
                     (
                         <HomePizzasList
+                        shopIndex={shopIndex}
                         allPizzas={allPizzas}
                         addPizzaToCart={addPizzaToCart}
                         />

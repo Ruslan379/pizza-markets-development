@@ -18,7 +18,7 @@ export const HomeShopsList = ({ selectShop }) => {
         <>
             <p className={css.headerShops}>Shops:</p>
             <ul className={css.list}>
-                {pizzaMarkets.map(pizzaMarket => (
+                {pizzaMarkets.map((pizzaMarket, index) => (
                     <li
                         className={css.listItem}
                         key={pizzaMarket._id}
@@ -26,7 +26,7 @@ export const HomeShopsList = ({ selectShop }) => {
                         <button
                             className={css.selectShopButton}
                             type="button"
-                            onClick={() => selectShop(pizzaMarket._id)}
+                            onClick={() => selectShop(pizzaMarket._id, index)}
                         >
                             {pizzaMarket.shop}
                         </button>
