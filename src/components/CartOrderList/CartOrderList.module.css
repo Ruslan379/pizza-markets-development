@@ -69,7 +69,6 @@
             /* justify-content: center; */
             align-items: center;
             gap: 10px;
-        
         padding: 1%;
         /* outline: 1px solid rgb(71, 181, 255); */
     }
@@ -366,105 +365,105 @@
 /* ! 3.Стили для устройств с шириной экрана от 768px и до 1199px */
 @media screen and (min-width: 768px) and (max-width: 1199px) {
     .list {
-        display: grid;
-        /* ! Задаем 1 столбец */
-        grid-template-columns: 1fr;
-        grid-gap: 10px;
+        /* display: grid; */
+            /* ! Задаем 1 столбец */
+            grid-template-columns: 1fr;
+        /* grid-gap: 10px;
         margin: 0;
         padding: 10px;
-        list-style: none;
+        list-style: none; */
     }
 
-    .informationTextContainer {
+    /* .informationTextContainer {
         width: 100%;
         height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
+    } */
 
-    }
     .informationText {
-        margin-left: 7vw;
-        margin-right: 7vw;
-        color: rgb(99, 24, 24);
-        font-size: 3.5vw;
-        text-align: center;
+                margin-left: 7vw;
+                margin-right: 7vw;
+        /* color: rgb(99, 24, 24); */
+                font-size: 3.5vw;
+        /* text-align: center; */
     }
 
-    .listItem {
+    /* .listItem {
+        width: 95%;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
         gap: 10px;
-        width: 95%;
+        
         padding: 2%;
         border: 2px solid rgb(164, 214, 255);
         border-radius: 8px;
         box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23);
-        /* outline: 1px solid tomato; */
-    }
+        outline: 1px solid tomato;
+    } */
 
-    .imagePizza {
+    /* .imagePizza {
         width: 50%;
         height: 80%;
         border-radius: 5px;
         box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23);
-    }
+    } */
 
-    .cardContents {
+    /* .cardContents {
+        width: 95%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
         gap: 10px;
-        width: 95%;
         padding: 1%;
-        /* outline: 1px solid rgb(71, 181, 255); */
-    }
+        outline: 1px solid rgb(71, 181, 255);
+    } */
 
     .namePizza {
-        height: 2.2em;
-        margin-top: 10px;
-        text-align: center;
-        font-size: 1.0em;
-        color: blue;
+        /* height: 2.2em; */
+        /* margin-top: 10px; */
+        /* text-align: center; */
+                font-size: 1.0em;
+        /* color: blue; */
         /* outline: 1px solid rgb(71, 181, 255); */
     }
 
     .pricePizza {
-        text-align: center;
-        font-size: 0.9em;
-        color: red;
+        /* text-align: center; */
+                font-size: 0.9em;
+        /* color: red; */
     }
 
-    .inputDeleteButtonContainer {
+    /* .inputDeleteButtonContainer {
         width: 100%;
         height: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 10px;
-        /* outline: 1px solid rgb(71, 181, 255); */
-    }
+        outline: 1px solid rgb(71, 181, 255);
+    } */
 
-    .inputContainer {
+    /* .inputContainer {
         width: 95%;
         display: flex;
         justify-content: space-around;
         align-items: center;
-        /* outline: 1px solid rgb(71, 181, 255); */
-    }
+        outline: 1px solid rgb(71, 181, 255);
+    } */
 
-    .inputQuantity {
+    /* .inputQuantity {
         width: 40%;
         padding: 4px;
         text-align: center;
         border-radius: 5px;
         border: 1px solid rgb(71, 181, 255);
         background-color: rgb(236, 247, 255);
-    }
+    } */
 
-    .quantityButton {
+    /* .quantityButton {
         display: inline-block;
         padding: 0 10px;
         font-size: 1.0em;
@@ -472,51 +471,50 @@
         border: 1px solid rgb(71, 181, 255);
         border-radius: 4px;
         box-shadow: 8px 8px 18px rgba(59, 43, 14, 0.23);
-    }
+    } */
 
-    .decrementButton {
+    /* .decrementButton {
         color: #ff0000;
-    }
-    .decrementButton:hover,
+    } */
+    /* .decrementButton:hover,
     .decrementButton:focus {
         border: 1px solid #ff00dd;
         background-color: rgb(255, 220, 220);
-    }
+    } */
 
-    .incrementButton {
+    /* .incrementButton {
         color: #168300;
-    }
-    .incrementButton:hover,
+    } */
+    /* .incrementButton:hover,
     .incrementButton:focus {
         border: 1px solid #168300;
         background-color: #c0fabe;
-    }
+    } */
 
-    .pizzaDeleteButton{
+    /* .pizzaDeleteButton{
         opacity: 0.5;
         width: 25px;
-        /* width: 20%; */
         margin-top: 2vw;
         padding: 8px 9px;
         cursor: pointer;
         border: none;
         border-radius: 50%;
-        /* outline: 1px solid rgb(71, 181, 255); */
-    }
-    .pizzaDeleteButton:hover,
+        outline: 1px solid rgb(71, 181, 255);
+    } */
+    /* .pizzaDeleteButton:hover,
     .pizzaDeleteButton:focus {
         opacity: 1;
-        /* background-color: rgb(255, 220, 220); */
-    }
+        background-color: rgb(255, 220, 220);
+    } */
 
-    .trashImage {
+    /* .trashImage {
         background-color: inherit
-    }
+    } */
 
     .shoppingCartPriceSubmitContainer {
-        position: absolute;
-        bottom: 35px;
-        left: 15%;
+        /* position: absolute; */
+        /* bottom: 36px; */
+                left: 15%;
         /* outline: 1px solid blue; */
     }
 
@@ -687,9 +685,9 @@
     }
 
     .shoppingCartPriceSubmitContainer {
-        position: absolute;
-        bottom: 35px;
-        left: 15%;
+        /* position: absolute; */
+        /* bottom: 36px; */
+                left: 15%;
         /* outline: 1px solid blue; */
     }
 
@@ -861,9 +859,9 @@
     }
 
     .shoppingCartPriceSubmitContainer {
-        position: absolute;
-        bottom: 35px;
-        left: 15%;
+        /* position: absolute; */
+        /* bottom: 36px; */
+                left: 10%;
         /* outline: 1px solid blue; */
     }
 
