@@ -66,7 +66,6 @@
         width: 95%;
         display: flex;
             flex-direction: column;
-            /* justify-content: center; */
             align-items: center;
             gap: 10px;
         padding: 1%;
@@ -734,7 +733,7 @@
         /* text-align: center; */
     }
 
-    .listItem {
+    /* .listItem {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
@@ -744,70 +743,69 @@
         border: 2px solid rgb(164, 214, 255);
         border-radius: 8px;
         box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23);
-        /* outline: 1px solid tomato; */
-    }
+        outline: 1px solid tomato;
+    } */
 
-    .imagePizza {
+    /* .imagePizza {
         width: 50%;
         height: 80%;
         border-radius: 5px;
         box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23);
-    }
+    } */
 
-    .cardContents {
+    /* .cardContents {
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
         gap: 10px;
         width: 95%;
         padding: 1%;
-        /* outline: 1px solid rgb(71, 181, 255); */
-    }
+        outline: 1px solid rgb(71, 181, 255);
+    } */
 
     .namePizza {
-        height: 2.2em;
-        margin-top: 10px;
-        text-align: center;
-        font-size: 1.0em;
-        color: blue;
+        /* height: 2.2em; */
+        /* margin-top: 10px; */
+        /* text-align: center; */
+                font-size: 1.0em;
+        /* color: blue; */
         /* outline: 1px solid rgb(71, 181, 255); */
     }
 
     .pricePizza {
-        text-align: center;
-        font-size: 0.9em;
-        color: red;
+        /* text-align: center; */
+                font-size: 0.9em;
+        /* color: red; */
     }
 
-    .inputDeleteButtonContainer {
+    /* .inputDeleteButtonContainer {
         width: 100%;
         height: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 10px;
-        /* outline: 1px solid rgb(71, 181, 255); */
-    }
+        outline: 1px solid rgb(71, 181, 255);
+    } */
 
-    .inputContainer {
+    /* .inputContainer {
         width: 95%;
         display: flex;
         justify-content: space-around;
         align-items: center;
-        /* outline: 1px solid rgb(71, 181, 255); */
-    }
+        outline: 1px solid rgb(71, 181, 255);
+    } */
 
-    .inputQuantity {
+    /* .inputQuantity {
         width: 40%;
         padding: 4px;
         text-align: center;
         border-radius: 5px;
         border: 1px solid rgb(71, 181, 255);
         background-color: rgb(236, 247, 255);
-    }
+    } */
 
-    .quantityButton {
+    /* .quantityButton {
         display: inline-block;
         padding: 0 10px;
         font-size: 1.0em;
@@ -815,47 +813,46 @@
         border: 1px solid rgb(71, 181, 255);
         border-radius: 4px;
         box-shadow: 8px 8px 18px rgba(59, 43, 14, 0.23);
-    }
+    } */
 
-    .decrementButton {
+    /* .decrementButton {
         color: #ff0000;
-    }
-    .decrementButton:hover,
+    } */
+    /* .decrementButton:hover,
     .decrementButton:focus {
         border: 1px solid #ff00dd;
         background-color: rgb(255, 220, 220);
-    }
+    } */
 
-    .incrementButton {
+    /* .incrementButton {
         color: #168300;
-    }
-    .incrementButton:hover,
+    } */
+    /* .incrementButton:hover,
     .incrementButton:focus {
-        /* color: #154407; */
         border: 1px solid #168300;
         background-color: #c0fabe;
-    }
+    } */
     
     .pizzaDeleteButton{
-        opacity: 0.5;
-        width: 25px;
+        /* opacity: 0.5; */
+        /* width: 25px; */
         /* width: 20%; */
-        margin-top: 0.5vw;
-        padding: 8px 9px;
-        cursor: pointer;
-        border: none;
-        border-radius: 50%;
+            margin-top: 0.5vw;
+        /* padding: 8px 9px; */
+        /* cursor: pointer; */
+        /* border: none; */
+        /* border-radius: 50%; */
         /* outline: 1px solid rgb(71, 181, 255); */
     }
-    .pizzaDeleteButton:hover,
+    /* .pizzaDeleteButton:hover,
     .pizzaDeleteButton:focus {
         opacity: 1;
-        /* background-color: rgb(255, 220, 220); */
-    }
+        background-color: rgb(255, 220, 220);
+    } */
 
-    .trashImage {
+    /* .trashImage {
         background-color: inherit
-    }
+    } */
 
     .shoppingCartPriceSubmitContainer {
         /* position: absolute; */
