@@ -1,14 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.0c7f0406.css",
-    "main.js": "/static/js/main.e8109e04.js",
-    "static/media/-large.webp": "/static/media/A48382B1BEBB8CBDB0-large.467687a4c4cc774c90cc.webp",
-    "index.html": "/index.html",
-    "main.0c7f0406.css.map": "/static/css/main.0c7f0406.css.map",
-    "main.e8109e04.js.map": "/static/js/main.e8109e04.js.map"
+    "main.css": "/pizza-markets-development/static/css/main.0c7f0406.css",
+    "main.js": "/pizza-markets-development/static/js/main.9cac91fa.js",
+    "static/media/01-01.PizzaMexico_VremenaGoda.png": "/pizza-markets-development/static/media/01-01.PizzaMexico_VremenaGoda.f93b81d5cae259b8db78.png",
+    "static/media/-large.webp": "/pizza-markets-development/static/media/A48382B1BEBB8CBDB0-large.467687a4c4cc774c90cc.webp",
+    "index.html": "/pizza-markets-development/index.html",
+    "main.0c7f0406.css.map": "/pizza-markets-development/static/css/main.0c7f0406.css.map",
+    "main.9cac91fa.js.map": "/pizza-markets-development/static/js/main.9cac91fa.js.map"
   },
   "entrypoints": [
     "static/css/main.0c7f0406.css",
-    "static/js/main.e8109e04.js"
+    "static/js/main.9cac91fa.js"
   ]
 }
