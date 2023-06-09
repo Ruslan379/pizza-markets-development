@@ -15,6 +15,7 @@ export const HomePizzasList = ({ shopIndex, allPizzas, addPizzaToCart }) => {
 
     const imgRelativeURL = pizzaMarketsJson[shopIndex].pizzas[0].defaultPicture
     // console.log("imgRelativeURL:", imgRelativeURL); //!
+    
 
     const imgSrc = `https://github.com/Ruslan379/pizza-markets-development/blob/main/src/images/PizzasImages/${imgRelativeURL}`;
     // const imgSrc = `https://github.com/Ruslan379/pizza-markets-development/blob/main/src/images/${imgRelativeURL}`;
@@ -44,7 +45,7 @@ export const HomePizzasList = ({ shopIndex, allPizzas, addPizzaToCart }) => {
                                 // src={item.picture}
                                 // src={picture}
                                 // src={pictureDefault}
-                                src={picture || pictureDefault}
+                                // src={picture || pictureDefault}
                                 // src={picture || pizzaMarketsJson[shopIndex].pizzas[index].defaultPicture}
 
                                 // src="../../images/PizzasImages/01-01.PizzaMexico_VremenaGoda.png"
@@ -55,6 +56,8 @@ export const HomePizzasList = ({ shopIndex, allPizzas, addPizzaToCart }) => {
                                 // src={imagePath}
                                 // src={imgSrc}
                                 // src="VremenaGoda.png"
+                                src="src/images/PizzasImages/01-01.PizzaMexico_VremenaGoda.png"
+                               
                                 width="100%"
                             />
                             <p className={css.namePizza}
