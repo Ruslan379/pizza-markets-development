@@ -54,6 +54,7 @@ export const HomePizzasList = ({ shopIndex, allPizzas, addPizzaToCart }) => {
                                 // src={process.env.REACT_APP_PUBLIC_URL + 'images/PizzasImages/01-01.PizzaMexico_VremenaGoda.png'}
                                 // src={imagePath}
                                 // src={imgSrc}
+                                // src="VremenaGoda.png"
                                 width="100%"
                             />
                             <p className={css.namePizza}
