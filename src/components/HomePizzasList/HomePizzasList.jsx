@@ -45,7 +45,7 @@ export const HomePizzasList = ({ shopIndex, allPizzas, addPizzaToCart }) => {
                                 // src={item.picture}
                                 // src={picture}
                                 // src={pictureDefault}
-                                // src={picture || pictureDefault}
+                                src={picture || pictureDefault}
                                 // src={picture || pizzaMarketsJson[shopIndex].pizzas[index].defaultPicture}
 
                                 // src="../../images/PizzasImages/01-01.PizzaMexico_VremenaGoda.png"
@@ -56,7 +56,7 @@ export const HomePizzasList = ({ shopIndex, allPizzas, addPizzaToCart }) => {
                                 // src={imagePath}
                                 // src={imgSrc}
                                 // src="VremenaGoda.png"
-                                src="src/images/PizzasImages/01-01.PizzaMexico_VremenaGoda.png"
+                                // src="src/images/PizzasImages/01-01.PizzaMexico_VremenaGoda.png"
                                
                                 width="100%"
                             />
