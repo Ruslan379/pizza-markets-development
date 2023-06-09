@@ -21,6 +21,10 @@ export const HomePizzasList = ({ shopIndex, allPizzas, addPizzaToCart }) => {
     const publicURL = process.env.REACT_APP_PUBLIC_URL;
     console.log("publicURL:", publicURL); //!
 
+    const imagePath = process.env.REACT_APP_PUBLIC_URL + 'images/PizzasImages/01-01.PizzaMexico_VremenaGoda.png'; 
+    console.log("imagePath:", imagePath); //!
+
+
     return (
         <ul className={css.list}>
             {/* {allPizzas.map((item, index) => ( */}
@@ -35,7 +39,7 @@ export const HomePizzasList = ({ shopIndex, allPizzas, addPizzaToCart }) => {
                         alt={"Pizza"}
                         // src={imagePizza}
                         // src={item.picture}
-                        // src={picture}
+                        src={picture}
                         // src={pictureDefault}
                         // src={picture || pictureDefault}
                         // src={item.picture || pizzaMarketsJson[shopIndex].pizzas[index].defaultPicture}
@@ -45,7 +49,8 @@ export const HomePizzasList = ({ shopIndex, allPizzas, addPizzaToCart }) => {
                         // src="https://pizzamexico.com.ua/wp-content/uploads/2020/02/4seasons.png"
                         // src={pizzaMarketsJson[shopIndex].pizzas[index].picture}
                         // src={pizzaMarketsJson[shopIndex].pizzas[index].defaultPicture}
-                        src={process.env.REACT_APP_PUBLIC_URL + 'images/PizzasImages/01-01.PizzaMexico_VremenaGoda.png'}
+                        // src={process.env.REACT_APP_PUBLIC_URL + 'images/PizzasImages/01-01.PizzaMexico_VremenaGoda.png'}
+                        // src={imagePath}
                         // src={imgSrc}
                         width="100%"
                     />
