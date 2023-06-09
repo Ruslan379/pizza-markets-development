@@ -47,7 +47,6 @@ export const HomePizzasList = ({ shopIndex, allPizzas, addPizzaToCart }) => {
                                 // src={pictureDefault}
                                 src={picture || pictureDefault}
                                 // src={picture || pizzaMarketsJson[shopIndex].pizzas[index].defaultPicture}
-
                                 // src="../../images/PizzasImages/01-01.PizzaMexico_VremenaGoda.png"
                                 // src="https://pizzamexico.com.ua/wp-content/uploads/2020/02/4seasons.png"
                                 // src={pizzaMarketsJson[shopIndex].pizzas[index].picture}
@@ -57,7 +56,6 @@ export const HomePizzasList = ({ shopIndex, allPizzas, addPizzaToCart }) => {
                                 // src={imgSrc}
                                 // src="VremenaGoda.png"
                                 // src="src/images/PizzasImages/01-01.PizzaMexico_VremenaGoda.png"
-                               
                                 width="100%"
                             />
                             <p className={css.namePizza}
