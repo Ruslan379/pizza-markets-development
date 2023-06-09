@@ -10,8 +10,8 @@
         "pizza": "ВРЕМЕНА ГОДА",
         "price": 337,
         "picture": "https://pizzamexico.com.ua/wp-content/uploads/2020/02/4seasons.png",
-        "defaultPicture1": "VremenaGoda.png",
-        "defaultPicture": "images/PizzasImages/01-01.PizzaMexico_VremenaGoda.png"
+        "defaultPicture": "images/PizzasImages/01-01.PizzaMexico_VremenaGoda.png",
+        "defaultPicture1": "VremenaGoda.png"
       },
       {
         "pizza": "ГАВАЙИ",

@@ -1,7 +1,8 @@
-import pizzaMarketsJson from "db/pizzaMarketsMongoDB.json"; //!!! 
-
 // import pictureDefault from "../../images/PizzasImages/01-01.PizzaMexico_VremenaGoda.png"; //!!! 
 import pictureDefault from "../../images/free-icon-pizza-512-7467230.png"; //!!! 
+
+import pizzaMarketsJson from "db/pizzaMarketsMongoDB.json"; //!!! 
+
 
 import css from "./HomePizzasList.module.css";
 
@@ -14,25 +15,25 @@ export const HomePizzasList = ({ shopIndex, allPizzas, addPizzaToCart }) => {
     // console.log("pizzaMarketsJson[shopIndex]:", pizzaMarketsJson[shopIndex]); //!
 
     const imgRelativeURL = pizzaMarketsJson[shopIndex].pizzas[0].defaultPicture
-    // console.log("imgRelativeURL:", imgRelativeURL); //!
+    console.log("imgRelativeURL:", imgRelativeURL); //!
     
 
-    const imgSrc = `https://github.com/Ruslan379/pizza-markets-development/blob/main/src/images/PizzasImages/${imgRelativeURL}`;
+    // const imgSrc = `https://github.com/Ruslan379/pizza-markets-development/blob/main/src/images/PizzasImages/${imgRelativeURL}`;
     // const imgSrc = `https://github.com/Ruslan379/pizza-markets-development/blob/main/src/images/${imgRelativeURL}`;
-    console.log("imgSrc:", imgSrc); //!
+    // console.log("imgSrc:", imgSrc); //!
 
-    const publicURL = process.env.REACT_APP_PUBLIC_URL;
-    console.log("publicURL:", publicURL); //!
+    // const publicURL = process.env.REACT_APP_PUBLIC_URL;
+    // console.log("publicURL:", publicURL); //!
 
-    const imagePath = process.env.REACT_APP_PUBLIC_URL + 'images/PizzasImages/01-01.PizzaMexico_VremenaGoda.png'; 
-    console.log("imagePath:", imagePath); //!
+    // const imagePath = process.env.REACT_APP_PUBLIC_URL + 'images/PizzasImages/01-01.PizzaMexico_VremenaGoda.png'; 
+    // console.log("imagePath:", imagePath); //!
 
 
     return (
         <ul className={css.list}>
             {/* {allPizzas.map((item, index) => ( */}
             {allPizzas.map(({ pizza, picture = pictureDefault, price }, index) => {
-                console.log("picture:", picture); //!
+                // console.log("picture:", picture); //!
                 return <li
                             className={css.listItem}
                             // key={item.pizza}

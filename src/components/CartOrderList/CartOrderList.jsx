@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 import imageTrash from "images/trash.png";
+import pictureDefault from "../../images/free-icon-pizza-512-7467230.png"; //!!!
 
 import css from "./CartOrderList.module.css";
 
@@ -66,7 +67,8 @@ export const CartOrderList = () => {
                                     className={css.imagePizza}
                                     alt={"Pizza"}
                                     // src={imagePizza}
-                                    src={item.picture}
+                                    // src={item.picture}
+                                    src={item.picture || pictureDefault}
                                     width="100%"
                                 />
                                 <div className={css.cardContents}>

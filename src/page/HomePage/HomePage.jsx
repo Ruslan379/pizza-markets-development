@@ -56,7 +56,7 @@ export const HomePage = () => {
     }
 
 
-    // console.log("shopIndex:", shopIndex); //!
+    // console.log("HomePage-->shopIndex:", shopIndex); //!
 
     return (
         <div className={css.homeContainer}>
