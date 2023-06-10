@@ -85,7 +85,7 @@
         width: 45vh;
         border-radius: 50%;
         animation-name: spin;
-            animation-duration: 20s;
+            animation-duration: 30s;
             animation-timing-function: linear;
             animation-iteration-count: infinite;
             animation-direction: alternate;
