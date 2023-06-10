@@ -11,6 +11,10 @@ import css from "./HomeShopsList.module.css";
 
 
 export const HomeShopsList = ({ selectShop }) => {
+    const allChoicePizzasLocalStorage = JSON.parse(localStorage.getItem("allChoicePizzas"));
+    const conditionallChoicePizzasLocalStorage = !(!allChoicePizzasLocalStorage || !(allChoicePizzasLocalStorage.length > 0));
+    console.log("conditionallChoicePizzasLocalStorage:", conditionallChoicePizzasLocalStorage); //!
+
     let pizzaMarkets = useSelector(selectAllMarkets);
     if (pizzaMarkets.length === 0) pizzaMarkets = [...pizzaMarketsJson]
 
@@ -29,22 +33,39 @@ export const HomeShopsList = ({ selectShop }) => {
                     >
                         <button
                             // className={css.selectShopButton}
+                            // className={
+                            //     `${(shopIndexSelection === null || index === shopIndexSelection)
+                            //         ?
+                            //         `${css.selectShopButton}`
+                            //         :
+                            //         `${css.selectShopButton} ${css.selectShopButtonOpacity}`
+                            //     }`
+                            // }
+
+                            // className={!conditionallChoicePizzasLocalStorage && (`${css.selectShopButton}`) conditionallChoicePizzasLocalStorage 
+                            //     && (`${css.selectShopButton} ${css.selectShopButtonOpacity}`}
+                            
+                            // className={!conditionallChoicePizzasLocalStorage && css.selectShopButton}
+
                             className={
-                        `${(shopIndexSelection === null || index === shopIndexSelection)
-                            ?
-                            `${css.selectShopButton}`
-                            :
-                            `${css.selectShopButton} ${css.selectShopButtonFormOpacity}`
-                        }
-                        `
-                    }
+                                `
+                                    ${(shopIndexSelection === null || index === shopIndexSelection)
+                                        ?
+                                        `${css.selectShopButton}`
+                                        :
+                                        `${css.selectShopButton} ${css.selectShopButtonOpacity}`
+                                    }
+                                `
+                            }
                             type="button"
                             onClick={() => {
                                 selectShop(pizzaMarket._id, index);
                                 setShopIndexSelection(index);
                                 console.log("index:", index); //!
                             }}
-                            disabled={!(shopIndexSelection === null || index === shopIndexSelection)}
+                            // disabled={!(shopIndexSelection === null || index === shopIndexSelection)}
+                            // disabled={conditionallChoicePizzasLocalStorage}
+                            disabled={conditionallChoicePizzasLocalStorage && !(shopIndexSelection === null || index === shopIndexSelection)}
                         >
                             {pizzaMarket.shop}
                         </button>

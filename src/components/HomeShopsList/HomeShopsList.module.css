@@ -27,9 +27,6 @@
         margin-right: auto;
     } */
 
-    .selectShopButtonFormOpacity {
-        opacity: 0.3;
-    }
     .selectShopButton {
         min-width: 120px;
         text-decoration: none;
@@ -45,6 +42,18 @@
     .selectShopButton:focus {
         background-color: #fffbcf;
         color: #9b1616;
+    }
+
+    .selectShopButtonOpacity {
+        opacity: 0.6;
+        /* color: rgb(110, 110, 110); */
+        /* border: 1px solid rgb(110, 110, 110); */
+    }
+
+    .selectOnlyOneShopButtonOpacity {
+        opacity: 0.3;
+        color: rgb(110, 110, 110);
+        border: 1px solid rgb(110, 110, 110);
     }
 
 
