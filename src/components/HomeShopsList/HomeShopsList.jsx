@@ -26,7 +26,7 @@ export const HomeShopsList = ({ selectShop }) => {
 
 
     console.log("HomeShopsList-->allChoicePizzasLocalStorage:", allChoicePizzasLocalStorage); //!
-    // if (allChoicePizzasLocalStorage && allChoicePizzasLocalStorage.length > 0) 
+
 
     return (
         <>
