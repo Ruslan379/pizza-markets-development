@@ -1,8 +1,8 @@
 import { useState } from "react"; 
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
-import { selectAllMarkets } from 'redux/market/marketSelectors';
-
+import { selectAllMarkets, selectIsOneShop } from 'redux/market/marketSelectors';
+import { togleIsOneShop } from 'redux/market/marketOperations';
 import pizzaMarketsJson from "db/pizzaMarketsMongoDB.json"; //!!! 
 
 import css from "./HomeShopsList.module.css";
@@ -11,8 +11,17 @@ import css from "./HomeShopsList.module.css";
 
 
 export const HomeShopsList = ({ selectShop }) => {
+    const dispatch = useDispatch();
     const [shopIndexSelection, setShopIndexSelection] = useState(null);
     console.log("shopIndexSelection:", shopIndexSelection); //!
+
+    // const [value, setValue] = useState(true);
+    const switchIsOneShop = () => {
+        // console.log("Togle isOneShop!!!"); //!
+        // setValue(!value);
+        dispatch(togleIsOneShop());
+
+    };
 
     // console.log("HomeShopsList-->shopIndex:", shopIndex); //!
 
@@ -22,7 +31,10 @@ export const HomeShopsList = ({ selectShop }) => {
     console.log("conditionallChoicePizzasLocalStorage:", conditionallChoicePizzasLocalStorage); //!
 
     let pizzaMarkets = useSelector(selectAllMarkets);
-    if (pizzaMarkets.length === 0) pizzaMarkets = [...pizzaMarketsJson]
+    if (pizzaMarkets.length === 0) pizzaMarkets = [...pizzaMarketsJson];
+
+    const isOneShop = useSelector(selectIsOneShop);
+    console.log("HomeShopsList-->isOneShop:", isOneShop); //!
 
 
     console.log("HomeShopsList-->allChoicePizzasLocalStorage:", allChoicePizzasLocalStorage); //!
@@ -31,6 +43,14 @@ export const HomeShopsList = ({ selectShop }) => {
     return (
         <>
             <p className={css.headerShops}>Shops:</p>
+            <button
+                className={css.isOneShopButton}
+                type="button"
+                onClick={switchIsOneShop}
+                disabled={false}
+                        >
+                            {isOneShop ? "ONE Shop" : "ALL Shops"}
+                        </button>
             <ul className={css.list}>
                 {pizzaMarkets.map((pizzaMarket, index) => (
                     <li
@@ -62,7 +82,8 @@ export const HomeShopsList = ({ selectShop }) => {
                                         `${css.selectShopButton} ${css.selectShopButtonOpacity}`
                                     }
                                     ${(
-                                        conditionallChoicePizzasLocalStorage 
+                                        isOneShop
+                                        && conditionallChoicePizzasLocalStorage 
                                         && !(allChoicePizzasLocalStorage[0].shopIndex === index) 
                                         // && !(shopIndexSelection === null || index === shopIndexSelection)
                                         )
@@ -82,7 +103,8 @@ export const HomeShopsList = ({ selectShop }) => {
                             // disabled={!(shopIndexSelection === null || index === shopIndexSelection)}
                             // disabled={conditionallChoicePizzasLocalStorage}
                             disabled={
-                                conditionallChoicePizzasLocalStorage 
+                                isOneShop
+                                && conditionallChoicePizzasLocalStorage 
                                 && !(allChoicePizzasLocalStorage[0].shopIndex === index) 
                                 // && !(shopIndexSelection === null || index === shopIndexSelection)
                             }

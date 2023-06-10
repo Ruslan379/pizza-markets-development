@@ -1,6 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
 import {
     getAllMarkets,
+    togleIsOneShop,
 } from './marketOperations';
 
 
@@ -20,6 +21,7 @@ const marketsSlice = createSlice({
     name: 'markets',
     initialState: {
         allMarkets: [],
+        isOneShop: false,
         isLoading: false,
         error: null,
     },
@@ -32,6 +34,11 @@ const marketsSlice = createSlice({
             // console.log("getAllMarkets.fulfilled --> payload:", payload); //!
             state.allMarkets = payload;
             state.isLoading = false;
+            state.error = null;
+        },
+
+        [togleIsOneShop.fulfilled](state, { payload }) {
+            state.isOneShop = !state.isOneShop;
             state.error = null;
         },
     },

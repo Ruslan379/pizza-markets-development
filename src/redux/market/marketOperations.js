@@ -33,3 +33,21 @@ export const getAllMarkets = createAsyncThunk(
         }
     }
 );
+
+
+//! togleIsOneShop @ /markets
+export const togleIsOneShop = createAsyncThunk(
+    'markets/togleIsOneShop',
+    async () => {
+        return null
+        // try {
+        //     const { data } = await axios.get('/markets');
+        //     return data;
+        //     // return null
+        // } catch (error) {
+        //     console.log(error); //!
+        //     toast.error(`Ошибка запроса: ${error.message === "Request failed with status code 404" ? "Нет такой коллекции пользователей" : error.message}`, { position: "top-center", autoClose: 2000 });
+        //     return thunkAPI.rejectWithValue(error.message);
+        // }
+    }
+);
