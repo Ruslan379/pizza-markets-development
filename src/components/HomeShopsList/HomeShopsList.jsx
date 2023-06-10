@@ -61,7 +61,11 @@ export const HomeShopsList = ({ selectShop }) => {
                                         :
                                         `${css.selectShopButton} ${css.selectShopButtonOpacity}`
                                     }
-                                    ${(conditionallChoicePizzasLocalStorage && !(shopIndexSelection === null || index === shopIndexSelection))
+                                    ${(
+                                        conditionallChoicePizzasLocalStorage 
+                                        && !(allChoicePizzasLocalStorage[0].shopIndex === index) 
+                                        // && !(shopIndexSelection === null || index === shopIndexSelection)
+                                        )
                                         ?
                                         `${css.selectShopButton} ${css.selectOnlyOneShopButtonOpacity}`
                                         :
@@ -78,9 +82,9 @@ export const HomeShopsList = ({ selectShop }) => {
                             // disabled={!(shopIndexSelection === null || index === shopIndexSelection)}
                             // disabled={conditionallChoicePizzasLocalStorage}
                             disabled={
-                                conditionallChoicePizzasLocalStorage &&
-                                allChoicePizzasLocalStorage[0].shopIndex === index &&
-                                !(shopIndexSelection === null || index === shopIndexSelection)
+                                conditionallChoicePizzasLocalStorage 
+                                && !(allChoicePizzasLocalStorage[0].shopIndex === index) 
+                                // && !(shopIndexSelection === null || index === shopIndexSelection)
                             }
                         >
                             {pizzaMarket.shop}
