@@ -1,8 +1,8 @@
-import { useState } from "react"; 
+// import { useState } from "react"; 
 import { useDispatch, useSelector } from "react-redux";
 
-import { selectAllMarkets, selectIsOneShop } from 'redux/market/marketSelectors';
-import { togleIsOneShop } from 'redux/market/marketOperations';
+import { selectAllMarkets, selectIsOneShop, selectShopIndex } from 'redux/market/marketSelectors';
+import { togleIsOneShop, setShopIndexSelection } from 'redux/market/marketOperations';
 import pizzaMarketsJson from "db/pizzaMarketsMongoDB.json"; //!!! 
 
 import css from "./HomeShopsList.module.css";
@@ -12,10 +12,11 @@ import css from "./HomeShopsList.module.css";
 
 export const HomeShopsList = ({ selectShop }) => {
     const dispatch = useDispatch();
-    const [shopIndexSelection, setShopIndexSelection] = useState(null);
-    console.log("shopIndexSelection:", shopIndexSelection); //!
 
-    // const [value, setValue] = useState(true);
+    // const [shopIndexSelection, setShopIndexSelection] = useState(null);
+    // console.log("shopIndexSelection:", shopIndexSelection); //!
+
+
     const switchIsOneShop = () => {
         // console.log("Togle isOneShop!!!"); //!
         // setValue(!value);
@@ -36,6 +37,9 @@ export const HomeShopsList = ({ selectShop }) => {
     const isOneShop = useSelector(selectIsOneShop);
     console.log("HomeShopsList-->isOneShop:", isOneShop); //!
 
+    const shopIndexSelection = useSelector(selectShopIndex);
+    console.log("HomeShopsList-->shopIndexSelection:", shopIndexSelection); //!
+
 
     console.log("HomeShopsList-->allChoicePizzasLocalStorage:", allChoicePizzasLocalStorage); //!
 
@@ -44,12 +48,20 @@ export const HomeShopsList = ({ selectShop }) => {
         <>
             <p className={css.headerShops}>Shops:</p>
             <button
-                className={css.isOneShopButton}
+                // className={css.isOneShopButton}
+                className={
+                    `${isOneShop
+                        ?
+                        `${css.isOneShopButton}`
+                        :
+                        `${css.isOneShopButton} ${css.isAllShopButton}`
+                    }`
+                }
                 type="button"
                 onClick={switchIsOneShop}
                 disabled={false}
                         >
-                            {isOneShop ? "ONE Shop" : "ALL Shops"}
+                            {isOneShop ? "Choice of pizza from ONE Shop" : "Choice of pizza from ALL Shops"}
                         </button>
             <ul className={css.list}>
                 {pizzaMarkets.map((pizzaMarket, index) => (
@@ -84,7 +96,8 @@ export const HomeShopsList = ({ selectShop }) => {
                                     ${(
                                         isOneShop
                                         && conditionallChoicePizzasLocalStorage 
-                                        && !(allChoicePizzasLocalStorage[0].shopIndex === index) 
+                                        // && !(allChoicePizzasLocalStorage[0].shopIndex === index)
+                                        && !(shopIndexSelection === index)
                                         // && !(shopIndexSelection === null || index === shopIndexSelection)
                                         )
                                         ?
@@ -97,7 +110,8 @@ export const HomeShopsList = ({ selectShop }) => {
                             type="button"
                             onClick={() => {
                                 selectShop(pizzaMarket._id, index);
-                                setShopIndexSelection(index);
+                                // setShopIndexSelection(index);
+                                dispatch(setShopIndexSelection(index));
                                 console.log("index:", index); //!
                             }}
                             // disabled={!(shopIndexSelection === null || index === shopIndexSelection)}
@@ -105,7 +119,8 @@ export const HomeShopsList = ({ selectShop }) => {
                             disabled={
                                 isOneShop
                                 && conditionallChoicePizzasLocalStorage 
-                                && !(allChoicePizzasLocalStorage[0].shopIndex === index) 
+                                // && !(allChoicePizzasLocalStorage[0].shopIndex === index)
+                                && !(shopIndexSelection === index) 
                                 // && !(shopIndexSelection === null || index === shopIndexSelection)
                             }
                         >

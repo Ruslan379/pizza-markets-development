@@ -25,10 +25,13 @@
         overflow-y: auto;
         width: 100%;
             height: 30vh;
-            min-height: 200px;
+            /* min-height: 200px; */
+            min-height: 230px;
         display: flex;
             flex-direction: column;
-            gap: 20px;
+            align-items: center;
+            /* gap: 20px; */
+            gap: 10px;
         border: 2px solid rgb(120, 196, 130);
             border-radius: 8px;
         box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23);
@@ -96,7 +99,8 @@
 @media screen and (min-width: 480px) and (max-width: 767px) {
     .shops {
         height: 25vh;
-        min-height: 170px;
+        /* min-height: 170px; */
+        min-height: 195px;
         /* outline: 1px solid tomato; */
     }
 }

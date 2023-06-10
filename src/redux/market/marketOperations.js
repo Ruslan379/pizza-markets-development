@@ -42,3 +42,11 @@ export const togleIsOneShop = createAsyncThunk(
         return null
     }
 );
+
+//! togleIsOneShop @ /markets
+export const setShopIndexSelection = createAsyncThunk(
+    'markets/setShopIndexSelection',
+    async (shopIndex) => {
+        return shopIndex
+    }
+);

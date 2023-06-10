@@ -40,7 +40,7 @@ export const HomePage = () => {
             const pizzaAndQuantity = {
             ...pizza,
             quantity: 1,
-            shopIndex
+            // shopIndex
             };
             setAllChoicePizzas([...allChoicePizzas, pizzaAndQuantity]);
             localStorage.setItem("allChoicePizzas", JSON.stringify([...allChoicePizzas, pizzaAndQuantity]));

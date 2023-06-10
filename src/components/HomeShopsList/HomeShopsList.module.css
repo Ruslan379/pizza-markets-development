@@ -8,14 +8,45 @@
         margin-top: 10px;
     }
 
+    .isOneShopButton {
+                /* width: 120px; */
+        width: 90%;
+        text-decoration: none;
+        padding: 8px 16px;
+        /* padding: 8px 8px; */
+        font-weight: 700;
+        cursor: pointer;
+        border: 1px solid #78c482;
+        border-radius: 4px;
+        color: #08b5ff;
+        background-color: #cfe8ff;
+        box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23);
+    }
+    .isOneShopButton:hover,
+    .isOneShopButton:focus {
+        
+        color: #ff8d8d;
+        border: 1px solid #ff8d8d;
+        /* background-color: #cfe8ff; */
+        box-shadow: 12px 12px 18px rgba(255, 141, 141, 0.23);
+    }
+
+    .isAllShopButton {
+        width: 90%;
+        color: #00a171;
+        background-color: #ddfff4;;
+    }
+
     .list {
         flex-grow: 1;
         display: grid;
+        width: 90%;
             /* ! Задаем 2 столбца равной ширины */
             grid-template-columns: 1fr 1fr;
             justify-items:center;
             /* align-items:center; */
-            grid-gap: 7%;
+            /* grid-gap: 7%; */
+            grid-gap: 8px;
             /* gap: 7%; */
         margin: 0;
         padding: 10px;
@@ -59,10 +90,16 @@
 
 /* ! 2.Стили для устройств с шириной экрана от 480px до 767px */
 @media screen and (min-width: 480px) and (max-width: 767px) {
+    .isOneShopButton {
+        width: 90%;
+    }
+    
     .list {
+        width: 90%;
         /* ! Задаем 3 столбца равной ширины */
         grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 2%;
+        /* grid-gap: 2%; */
+        grid-gap: 5%;
         /* gap: 2%; */
     }
 }
@@ -70,6 +107,11 @@
 
 /* ! 3.Стили для устройств с шириной экрана от 768px и и выше */
 @media screen and (min-width: 768px) {
+    .isOneShopButton {
+        /* width: 80%; */
+        width: 120px;
+    }
+    
     .list {
         display: flex;
             flex-direction: column;
