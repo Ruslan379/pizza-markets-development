@@ -84,7 +84,17 @@ export const HomePage = () => {
                     }
                 </>
             </div>
-            <div className={css.pizzas}>
+            <div
+                // className={css.pizzas}
+                className={
+                    `${allPizzas.length > 0
+                        ?
+                        `${css.pizzas}`
+                        :
+                        `${css.pizzas} ${css.pizzas}`
+                    }`
+                }
+            >
                 {allPizzas.length > 0
                     ?
                     (
