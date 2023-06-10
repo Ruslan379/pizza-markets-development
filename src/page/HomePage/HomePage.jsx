@@ -39,7 +39,8 @@ export const HomePage = () => {
         if (findIndexPizza === -1) {
             const pizzaAndQuantity = {
             ...pizza,
-            quantity: 1
+            quantity: 1,
+            shopIndex
             };
             setAllChoicePizzas([...allChoicePizzas, pizzaAndQuantity]);
             localStorage.setItem("allChoicePizzas", JSON.stringify([...allChoicePizzas, pizzaAndQuantity]));
@@ -75,7 +76,10 @@ export const HomePage = () => {
                         )
                         :
                         (
-                            <HomeShopsList selectShop={selectShop}/>
+                            <HomeShopsList
+                                selectShop={selectShop}
+                                // shopIndex={shopIndex}
+                            />
                         )
                     }
                 </>
