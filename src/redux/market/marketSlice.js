@@ -27,8 +27,10 @@ const marketsSlice = createSlice({
     },
     extraReducers: {
         [getAllMarkets.pending]: handlePending,
+        [togleIsOneShop.pending]: handlePending,
 
         [getAllMarkets.rejected]: handleRejected,
+        [togleIsOneShop.rejected]: handleRejected,
 
         [getAllMarkets.fulfilled](state, { payload }) {
             // console.log("getAllMarkets.fulfilled --> payload:", payload); //!
@@ -39,6 +41,7 @@ const marketsSlice = createSlice({
 
         [togleIsOneShop.fulfilled](state, { payload }) {
             state.isOneShop = !state.isOneShop;
+            state.isLoading = false;
             state.error = null;
         },
     },
