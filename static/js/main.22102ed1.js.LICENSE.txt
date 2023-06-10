@@ -135,6 +135,8 @@
 
 //! remote backend 
 
+//! togleIsOneShop @ /markets
+
 //! МАКСИМАЛЬНОЕ значение quantity
 
 //! МИНИМАЛЬНОЕ значение quantity
