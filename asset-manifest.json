@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/pizza-markets-development/static/css/main.5b5e4157.css",
-    "main.js": "/pizza-markets-development/static/js/main.65998eb5.js",
-    "static/media/01-01.PizzaMexico_VremenaGoda.png": "/pizza-markets-development/static/media/01-01.PizzaMexico_VremenaGoda.f93b81d5cae259b8db78.png",
+    "main.js": "/pizza-markets-development/static/js/main.d5a52b8e.js",
+    "static/media/01-02.PizzaMexico_Gavaji.png": "/pizza-markets-development/static/media/01-02.PizzaMexico_Gavaji.8e6952760f447d21b1dd.png",
     "static/media/-large.webp": "/pizza-markets-development/static/media/A48382B1BEBB8CBDB0-large.467687a4c4cc774c90cc.webp",
     "static/media/free-icon-pizza-512-7467230.png": "/pizza-markets-development/static/media/free-icon-pizza-512-7467230.13683e11525bf1a25884.png",
     "index.html": "/pizza-markets-development/index.html",
     "main.5b5e4157.css.map": "/pizza-markets-development/static/css/main.5b5e4157.css.map",
-    "main.65998eb5.js.map": "/pizza-markets-development/static/js/main.65998eb5.js.map"
+    "main.d5a52b8e.js.map": "/pizza-markets-development/static/js/main.d5a52b8e.js.map"
   },
   "entrypoints": [
     "static/css/main.5b5e4157.css",
-    "static/js/main.65998eb5.js"
+    "static/js/main.d5a52b8e.js"
   ]
 }
