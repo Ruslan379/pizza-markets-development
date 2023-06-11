@@ -1,4 +1,6 @@
-// import pictureDefault from "../../images/PizzasImages/01-01.PizzaMexico_VremenaGoda.png"; //!!! 
+import { useState, useEffect } from 'react';
+
+import pictureDefault1 from "../../images/PizzasImages/01-01.PizzaMexico_VremenaGoda.png"; //!-----------------------
 import pictureDefault from "../../images/free-icon-pizza-512-7467230.png"; //!!! 
 
 import pizzaMarketsJson from "db/pizzaMarketsMongoDB.json"; //!!! 
@@ -14,9 +16,12 @@ export const HomePizzasList = ({ allPizzas, addPizzaToCart, shopIndex }) => {
     // console.log("allPizzas:", allPizzas); //!
     // console.log("pizzaMarketsJson[shopIndex]:", pizzaMarketsJson[shopIndex]); //!
 
-    const imgRelativeURL = pizzaMarketsJson[shopIndex].pizzas[0].defaultPicture
+    const imgRelativeURL = pizzaMarketsJson[shopIndex].pizzas[0].defaultPicture1
     console.log("imgRelativeURL:", imgRelativeURL); //!
     
+    const imgBase64RelativeURL = pizzaMarketsJson[shopIndex].pizzas[0].defaultImage.image.$binary.base64
+
+    console.log("imgBase64RelativeURL:", imgBase64RelativeURL); //!
 
     // const imgSrc = `https://github.com/Ruslan379/pizza-markets-development/blob/main/src/images/PizzasImages/${imgRelativeURL}`;
     // const imgSrc = `https://github.com/Ruslan379/pizza-markets-development/blob/main/src/images/${imgRelativeURL}`;
@@ -27,6 +32,42 @@ export const HomePizzasList = ({ allPizzas, addPizzaToCart, shopIndex }) => {
 
     // const imagePath = process.env.REACT_APP_PUBLIC_URL + 'images/PizzasImages/01-01.PizzaMexico_VremenaGoda.png'; 
     // console.log("imagePath:", imagePath); //!
+
+    
+    //!---------------------------------------------------------------------
+    const [userAvatar, setUserAvatar] = useState('');
+    
+    useEffect(() => {
+        const loadImage = async () => {
+            try {
+                const response = await fetch(pictureDefault1);
+                // const response = await fetch("../../images/PizzasImages/01-01.PizzaMexico_VremenaGoda.png"); //! так не работает
+                const blob = await response.blob();
+                const reader = new FileReader();
+                reader.onloadend = () => {
+                    setUserAvatar(reader.result);
+                };
+                reader.readAsDataURL(blob);
+            } catch (error) {
+                console.log('Error loading image:', error);
+            }
+        };
+        loadImage();
+    }, []);
+
+    
+
+    console.log("userAvatar:", userAvatar); //!
+
+    const jsonFile = {
+        imageDef: userAvatar
+    }
+
+    console.log("jsonFile.imageDef:", jsonFile.imageDef); //!
+
+    const jsonFileJSON = JSON.stringify(jsonFile);
+    console.log("jsonFileJSON:", jsonFileJSON); //!
+    //!---------------------------------------------------------------------
 
 
     return (
@@ -46,7 +87,16 @@ export const HomePizzasList = ({ allPizzas, addPizzaToCart, shopIndex }) => {
                                 // src={item.picture}
                                 // src={picture}
                                 // src={pictureDefault}
-                                src={picture || pictureDefault}
+                                //* Рабочий вариант1:
+                                // src={picture || pictureDefault}
+                                //* Рабочий вариант2:
+                                src={picture || userAvatar}
+                                //! НЕ Рабочий вариант1:
+                                // src={picture || imgBase64RelativeURL}
+                                //* Рабочий вариант3:
+                                // src={picture || jsonFile.imageDef}
+
+                        
                                 // src={picture || pizzaMarketsJson[shopIndex].pizzas[index].defaultPicture}
                                 // src="../../images/PizzasImages/01-01.PizzaMexico_VremenaGoda.png"
                                 // src="https://pizzamexico.com.ua/wp-content/uploads/2020/02/4seasons.png"
