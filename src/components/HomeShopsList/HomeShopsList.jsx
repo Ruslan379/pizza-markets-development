@@ -46,7 +46,6 @@ export const HomeShopsList = ({ selectShop }) => {
 
     return (
         <>
-            <p className={css.headerShops}>Shops:</p>
             <button
                 // className={css.isOneShopButton}
                 className={
@@ -60,9 +59,13 @@ export const HomeShopsList = ({ selectShop }) => {
                 type="button"
                 onClick={switchIsOneShop}
                 disabled={false}
-                        >
-                            {isOneShop ? "Choice of pizza from ONE Shop" : "Choice of pizza from ALL Shops"}
-                        </button>
+            >
+                {/* {isOneShop ? "Choice of pizza from ONE Shop" : "Choice of pizza from ALL Shops"} */}
+                {isOneShop ? <p>Choice of pizza from <span className={css.accentShop}>ONE Shop</span></p> : <p>Choice of pizza from <span className={css.accentShop}>ALL Shops</span></p>}
+            </button>
+
+            <p className={css.headerShops}>Shops:</p>
+
             <ul className={css.list}>
                 {pizzaMarkets.map((pizzaMarket, index) => (
                     <li

@@ -1,18 +1,14 @@
 /* import styled from '@emotion/styled'; */
 
 /* ! 1.ОБЩИЕ Стили для устройств с шириной экрана от 0 до 479px */
-    .headerShops {
-        font-size: 20px;
-        text-align: center;
-        margin: 0;
-        margin-top: 10px;
-    }
+    
 
     .isOneShopButton {
         width: 76%;
+        margin-top: 20px;
         text-decoration: none;
         padding: 8px 6px;
-        font-weight: 700;
+        font-weight: 500;
         cursor: pointer;
         border: 1px solid #78c482;
         border-radius: 4px;
@@ -32,7 +28,19 @@
     .isAllShopButton {
         /* width: 75%; */
         color: #00a171;
-        background-color: #ddfff4;;
+        background-color: #ddfff4;
+    }
+
+    .accentShop {
+        font-weight: 900;
+    }
+
+
+    .headerShops {
+        font-size: 20px;
+        text-align: center;
+        margin: 0;
+        margin-top: 10px;
     }
 
     .list {
@@ -117,6 +125,10 @@
         /* width: 80%; */
         width: 120px;
         padding: 8px 16px;
+    }
+
+    .headerShops {
+        margin-top: 60px;
     }
     
     .list {
