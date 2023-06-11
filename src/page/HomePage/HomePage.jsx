@@ -40,7 +40,6 @@ export const HomePage = () => {
             const pizzaAndQuantity = {
             ...pizza,
             quantity: 1,
-            // shopIndex
             };
             setAllChoicePizzas([...allChoicePizzas, pizzaAndQuantity]);
             localStorage.setItem("allChoicePizzas", JSON.stringify([...allChoicePizzas, pizzaAndQuantity]));
@@ -91,7 +90,7 @@ export const HomePage = () => {
                         ?
                         `${css.pizzas}`
                         :
-                        `${css.pizzas} ${css.pizzas}`
+                        `${css.pizzas} ${css.pizzasOverflowHidden}`
                     }`
                 }
             >
@@ -99,9 +98,9 @@ export const HomePage = () => {
                     ?
                     (
                         <HomePizzasList
-                        shopIndex={shopIndex}
                         allPizzas={allPizzas}
                         addPizzaToCart={addPizzaToCart}
+                        shopIndex={shopIndex}
                         />
                     )
                     :

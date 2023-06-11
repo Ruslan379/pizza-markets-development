@@ -8,7 +8,7 @@ import css from "./HomePizzasList.module.css";
 
 // console.log("pizzaMarketsJson:", pizzaMarketsJson); //!
 
-export const HomePizzasList = ({ shopIndex, allPizzas, addPizzaToCart }) => {
+export const HomePizzasList = ({ allPizzas, addPizzaToCart, shopIndex }) => {
     
 
     // console.log("allPizzas:", allPizzas); //!
