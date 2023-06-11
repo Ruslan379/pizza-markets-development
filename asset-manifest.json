@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/pizza-markets-development/static/css/main.5b5e4157.css",
-    "main.js": "/pizza-markets-development/static/js/main.2b177ba7.js",
+    "main.js": "/pizza-markets-development/static/js/main.77a8c6ed.js",
+    "static/media/02-05.MonoPizza_DYABOLA.webp": "/pizza-markets-development/static/media/02-05.MonoPizza_DYABOLA.5439a0899e8caf7a58b4.webp",
     "static/media/-large.webp": "/pizza-markets-development/static/media/A48382B1BEBB8CBDB0-large.467687a4c4cc774c90cc.webp",
-    "static/media/01-05.PizzaMexico_Primavera.jpg": "/pizza-markets-development/static/media/01-05.PizzaMexico_Primavera.2c625724344ccff7d248.jpg",
     "static/media/free-icon-pizza-512-7467230.png": "/pizza-markets-development/static/media/free-icon-pizza-512-7467230.13683e11525bf1a25884.png",
     "index.html": "/pizza-markets-development/index.html",
     "main.5b5e4157.css.map": "/pizza-markets-development/static/css/main.5b5e4157.css.map",
-    "main.2b177ba7.js.map": "/pizza-markets-development/static/js/main.2b177ba7.js.map"
+    "main.77a8c6ed.js.map": "/pizza-markets-development/static/js/main.77a8c6ed.js.map"
   },
   "entrypoints": [
     "static/css/main.5b5e4157.css",
-    "static/js/main.2b177ba7.js"
+    "static/js/main.77a8c6ed.js"
   ]
 }
