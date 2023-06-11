@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 
 import pictureDefault from "../../images/free-icon-pizza-512-7467230.png"; //!!! 
-import pictureDefault1 from "../../images/PizzasImages/02-05.MonoPizza_DYABOLA.webp"; //!-----------------------
+import pictureDefault1 from "../../images/PizzasImages/03-05.StoryPizza_Mexico.webp"; //!-----------------------
 
 
 import pizzaMarketsJson from "db/pizzaMarketsMongoDB.json"; //!!! 
