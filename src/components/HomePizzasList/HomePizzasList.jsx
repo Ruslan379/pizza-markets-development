@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
 
-import pictureDefault1 from "../../images/PizzasImages/01-02.PizzaMexico_Gavaji.png"; //!-----------------------
 import pictureDefault from "../../images/free-icon-pizza-512-7467230.png"; //!!! 
+import pictureDefault1 from "../../images/PizzasImages/01-05.PizzaMexico_Primavera.jpg"; //!-----------------------
+
 
 import pizzaMarketsJson from "db/pizzaMarketsMongoDB.json"; //!!! 
 
@@ -13,18 +14,18 @@ export const HomePizzasList = ({ allPizzas, addPizzaToCart, shopIndex }) => {
     
     // console.log("pizzaMarketsJson:", pizzaMarketsJson); //!
 
-    const imgRelativeURL = pizzaMarketsJson[shopIndex].pizzas[1].defaultImageURL
-    console.log("imgRelativeURL:", imgRelativeURL); //!
+    // const imgRelativeURL = pizzaMarketsJson[shopIndex].pizzas[1].defaultImageURL
+    // console.log("imgRelativeURL:", imgRelativeURL); //!
     
-
     // const defaultImageBase64Json = pizzaMarketsJson[shopIndex].pizzas[1].defaultImage
     // console.log("defaultImageBase64Json:", defaultImageBase64Json); //!
 
-    //todo Not Work = Delete
+    //todo Not Work 
     // const imgSrc = `https://github.com/Ruslan379/pizza-markets-development/blob/main/src/images/PizzasImages/${imgRelativeURL}`;
     // const imgSrc = `https://github.com/Ruslan379/pizza-markets-development/blob/main/src/images/${imgRelativeURL}`;
     // console.log("imgSrc:", imgSrc); //!
 
+    //todo Not Work = Delete
     // const publicURL = process.env.REACT_APP_PUBLIC_URL;
     // console.log("publicURL:", publicURL); //!
 
@@ -69,7 +70,7 @@ export const HomePizzasList = ({ allPizzas, addPizzaToCart, shopIndex }) => {
             {/* {allPizzas.map((item, index) => ( */}
             {allPizzas.map(({ pizza, picture = pictureDefault, price }, index) => {
                 const defaultImageBase64Json = pizzaMarketsJson[shopIndex].pizzas[index].defaultImage
-                console.log("defaultImageBase64Json:", defaultImageBase64Json); //!
+                // console.log("defaultImageBase64Json:", defaultImageBase64Json); //!
                 return <li
                             className={css.listItem}
                             // key={item.pizza}
