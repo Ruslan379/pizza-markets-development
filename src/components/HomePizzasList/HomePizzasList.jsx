@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 
 import pictureDefault from "../../images/free-icon-pizza-512-7467230.png"; //!!! 
-import pictureDefault1 from "../../images/PizzasImages/03-05.StoryPizza_Mexico.webp"; //!-----------------------
+import pictureDefault1 from "../../images/PizzasImages/05-05.PizzaHouse_Americano.webp"; //!-----------------------
 
 
 import pizzaMarketsJson from "db/pizzaMarketsMongoDB.json"; //!!! 
@@ -54,14 +54,11 @@ export const HomePizzasList = ({ allPizzas, addPizzaToCart, shopIndex }) => {
         loadImage();
     }, []);
 
-    // console.log("defaultImageBase64:", defaultImageBase64); //!
-
     const jsonFile = {
         imageDef: defaultImageBase64
     };
     console.log("jsonFile.imageDef:", jsonFile.imageDef); //!
 
-    // console.log("defaultImageBase64Json:", defaultImageBase64Json); //!
     //!__________________________ Преобразование defaultImage в Base64: __________________________
 
 
@@ -70,7 +67,6 @@ export const HomePizzasList = ({ allPizzas, addPizzaToCart, shopIndex }) => {
             {/* {allPizzas.map((item, index) => ( */}
             {allPizzas.map(({ pizza, picture = pictureDefault, price }, index) => {
                 const defaultImageBase64Json = pizzaMarketsJson[shopIndex].pizzas[index].defaultImage
-                // console.log("defaultImageBase64Json:", defaultImageBase64Json); //!
                 return <li
                             className={css.listItem}
                             // key={item.pizza}
