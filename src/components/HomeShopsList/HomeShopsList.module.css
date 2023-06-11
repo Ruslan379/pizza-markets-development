@@ -9,11 +9,9 @@
     }
 
     .isOneShopButton {
-                /* width: 120px; */
-        width: 90%;
+        width: 76%;
         text-decoration: none;
-        padding: 8px 16px;
-        /* padding: 8px 8px; */
+        padding: 8px 6px;
         font-weight: 700;
         cursor: pointer;
         border: 1px solid #78c482;
@@ -32,7 +30,7 @@
     }
 
     .isAllShopButton {
-        width: 90%;
+        /* width: 75%; */
         color: #00a171;
         background-color: #ddfff4;;
     }
@@ -99,7 +97,7 @@
 /* ! 2.Стили для устройств с шириной экрана от 480px до 767px */
 @media screen and (min-width: 480px) and (max-width: 767px) {
     .isOneShopButton {
-        width: 90%;
+        width: 60%;
     }
     
     .list {
@@ -118,6 +116,7 @@
     .isOneShopButton {
         /* width: 80%; */
         width: 120px;
+        padding: 8px 16px;
     }
     
     .list {

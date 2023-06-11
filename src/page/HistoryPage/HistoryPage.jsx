@@ -55,10 +55,12 @@ export const HistoryPage = () => {
         <div className={css.orderHistoryContainer}>
             {isLoading
                 ?
-                <Loader
-                    textOne={"Please wait..."}
-                    textTwo={"Your order is being processed."}
-                />
+                <div className={css.textContainer}>
+                    <Loader
+                        textOne={"Please wait..."}
+                        textTwo={"Your order is being processed."}
+                    />
+                </div>
                 :
                 <>
                     <div className={css.historyData}>
