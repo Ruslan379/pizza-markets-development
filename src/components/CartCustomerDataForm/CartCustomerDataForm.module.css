@@ -44,6 +44,7 @@
         border: 1px solid rgb(71, 181, 255);
         border-radius: 4px;
         color: #29aaff;
+        background-color: rgb(253, 229, 229);
         box-shadow: 8px 8px 18px rgba(59, 43, 14, 0.23);
     }
     .submitButtonForm:hover,
