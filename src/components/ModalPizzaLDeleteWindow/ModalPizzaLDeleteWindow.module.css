@@ -1,0 +1,77 @@
+/* import styled from '@emotion/styled'; */
+
+
+.modalWindow {
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: flex-start; */
+    /* align-items: center; */
+
+    text-align: center;
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    
+
+    color: #ffffff;
+    border: 2px solid #707070;
+    border-radius: 8px;
+    box-shadow: 0px 4px 4px #00000026;
+    background-color: #ffe9da;
+}
+
+.modalTitle {
+    /* display: flex; */
+    /* flex-direction: column; */
+    margin-bottom: 40px;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: #a70000;
+
+}
+
+.modalBtnYes {
+    border: none;
+    font: inherit;
+    cursor: pointer;
+    padding: 8px 48px;
+    margin-right: 10px;
+    outline: none;
+    align-items: center;
+    /* margin-left: auto; */
+    border-radius: 4px;
+    background-color: #810000;
+    color: #ffffff;
+    font-weight: 500;
+    box-shadow: 0px 4px 4px #00000026;
+}
+.modalBtnYes:hover,
+.modalBtnYes:focus {
+    background-color: #be0000;
+}
+
+
+.modalBtnNo {
+    border: none;
+    font: inherit;
+    cursor: pointer;
+    padding: 8px 48px;
+    /* margin-right: 10px; */
+    outline: none;
+    align-items: center;
+    /* margin-left: auto; */
+    border-radius: 4px;
+    background-color: #314200;
+    color: #ffffff;
+    font-weight: 500;
+    box-shadow: 0px 4px 4px #00000026;
+}
+
+.modalBtnNo:hover,
+.modalBtnNo:focus {
+    background-color: #435c00;
+}
+

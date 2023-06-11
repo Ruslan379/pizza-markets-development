@@ -4,6 +4,10 @@ import imageTrash from "images/trash.png";
 import pictureDefault from "../../images/free-icon-pizza-512-7467230.png"; //!!!
 import pizzaMarketsJson from "db/pizzaMarketsMongoDB.json"; //!!!
 
+//! Модальное окно
+// import { ModalPizzaDelete } from 'components/ModalPizzaDelete/ModalPizzaDelete';
+// import { ModalPizzaLDeleteWindow } from 'components/ModalPizzaLDeleteWindow/ModalPizzaLDeleteWindow';
+
 import css from "./CartOrderList.module.css";
 
 
@@ -51,6 +55,13 @@ export const CartOrderList = () => {
         localStorage.setItem("allChoicePizzas", JSON.stringify(allChoicePizzasWithDeleting));
         togle();
     };
+    
+
+    //! Модальное окно
+    // const [showModal, setShowModal] = useState(false);
+    // const toggleModal = () => {
+    //     setShowModal(!showModal);
+    // }
 
 
     return (
@@ -151,9 +162,19 @@ export const CartOrderList = () => {
                                                 </div>
                                             </div>
                                         </div>
-                                    </li>
+                            </li>
+                            // {/* //! Модальное окно */}
+                            // {showModal && (
+                            //     <ModalPizzaDelete onClose={toggleModal}>
+                            //         <ModalPizzaLDeleteWindow
+                            //             index={index}
+                            //             toggleModal={toggleModal}
+                            //         />
+                            //     </ModalPizzaDelete>
+                            // )}
                         })}
                     </ul>
+                    
                 )
                 :
                 (
