@@ -1,37 +1,26 @@
 import { useState, useEffect } from 'react';
 
-import pictureDefault1 from "../../images/PizzasImages/01-01.PizzaMexico_VremenaGoda.png"; //!-----------------------
+import pictureDefault1 from "../../images/PizzasImages/01-02.PizzaMexico_Gavaji.png"; //!-----------------------
 import pictureDefault from "../../images/free-icon-pizza-512-7467230.png"; //!!! 
 
 import pizzaMarketsJson from "db/pizzaMarketsMongoDB.json"; //!!! 
 
-
 import css from "./HomePizzasList.module.css";
 
-// console.log("pizzaMarketsJson:", pizzaMarketsJson); //!
+
 
 export const HomePizzasList = ({ allPizzas, addPizzaToCart, shopIndex }) => {
     
+    // console.log("pizzaMarketsJson:", pizzaMarketsJson); //!
 
-    // console.log("allPizzas:", allPizzas); //!
-    // console.log("pizzaMarketsJson[shopIndex]:", pizzaMarketsJson[shopIndex]); //!
-
-    console.log("pizzaMarketsJson:", pizzaMarketsJson); //!
-    const pizzaMarketsJsonJSON = JSON.stringify(pizzaMarketsJson);
-    const pizzaMarketsJsonJSONtoPARSE = JSON.parse(pizzaMarketsJsonJSON); //! ОШИБКА
-    console.log("pizzaMarketsJsonJSONtoPARSE:", pizzaMarketsJsonJSONtoPARSE); //!
-
-
-    const imgRelativeURL = pizzaMarketsJson[shopIndex].pizzas[0].defaultPicture1
+    const imgRelativeURL = pizzaMarketsJson[shopIndex].pizzas[1].defaultImageURL
     console.log("imgRelativeURL:", imgRelativeURL); //!
     
 
-    // const imgBase64RelativeURL = pizzaMarketsJson[shopIndex].pizzas[0].defaultImage
-    // const imgBase64RelativeURL = pizzaMarketsJson[shopIndex].pizzas[0].defaultImage.image.$binary.base64
-    // const imgBase64RelativeURL = pizzaMarketsJson[shopIndex].pizzas[0].defaultPicture2
-    const imgBase64RelativeURL = pizzaMarketsJsonJSONtoPARSE[shopIndex].pizzas[0].defaultPicture2.imageDef
-    console.log("imgBase64RelativeURL:", imgBase64RelativeURL); //!
+    // const defaultImageBase64Json = pizzaMarketsJson[shopIndex].pizzas[1].defaultImage
+    // console.log("defaultImageBase64Json:", defaultImageBase64Json); //!
 
+    //todo Not Work = Delete
     // const imgSrc = `https://github.com/Ruslan379/pizza-markets-development/blob/main/src/images/PizzasImages/${imgRelativeURL}`;
     // const imgSrc = `https://github.com/Ruslan379/pizza-markets-development/blob/main/src/images/${imgRelativeURL}`;
     // console.log("imgSrc:", imgSrc); //!
@@ -43,8 +32,8 @@ export const HomePizzasList = ({ allPizzas, addPizzaToCart, shopIndex }) => {
     // console.log("imagePath:", imagePath); //!
 
     
-    //!---------------------------------------------------------------------
-    const [userAvatar, setUserAvatar] = useState('');
+    //!----------------------------- Преобразование в Base64: ----------------------------
+    const [defaultImageBase64, setDefaultImageBase64] = useState('');
     
     useEffect(() => {
         const loadImage = async () => {
@@ -54,7 +43,7 @@ export const HomePizzasList = ({ allPizzas, addPizzaToCart, shopIndex }) => {
                 const blob = await response.blob();
                 const reader = new FileReader();
                 reader.onloadend = () => {
-                    setUserAvatar(reader.result);
+                    setDefaultImageBase64(reader.result);
                 };
                 reader.readAsDataURL(blob);
             } catch (error) {
@@ -64,28 +53,23 @@ export const HomePizzasList = ({ allPizzas, addPizzaToCart, shopIndex }) => {
         loadImage();
     }, []);
 
-    console.log("userAvatar:", userAvatar); //!
+    // console.log("defaultImageBase64:", defaultImageBase64); //!
 
     const jsonFile = {
-        imageDef: userAvatar
-    }
+        imageDef: defaultImageBase64
+    };
     console.log("jsonFile.imageDef:", jsonFile.imageDef); //!
 
-    const jsonFileJSON = JSON.stringify(jsonFile);
-    console.log("jsonFileJSON:", jsonFileJSON); //!
-
-    const jsonFileJSONtoPARSE = JSON.parse(jsonFileJSON);
-    console.log("jsonFileJSONtoPARSE:", jsonFileJSONtoPARSE); //!
-
-    console.log("imgBase64RelativeURL:", imgBase64RelativeURL); //!
-    //!---------------------------------------------------------------------
+    // console.log("defaultImageBase64Json:", defaultImageBase64Json); //!
+    //!__________________________ Преобразование в Base64: __________________________
 
 
     return (
         <ul className={css.list}>
             {/* {allPizzas.map((item, index) => ( */}
             {allPizzas.map(({ pizza, picture = pictureDefault, price }, index) => {
-                // console.log("picture:", picture); //!
+                const defaultImageBase64Json = pizzaMarketsJson[shopIndex].pizzas[index].defaultImage
+                console.log("defaultImageBase64Json:", defaultImageBase64Json); //!
                 return <li
                             className={css.listItem}
                             // key={item.pizza}
@@ -101,17 +85,12 @@ export const HomePizzasList = ({ allPizzas, addPizzaToCart, shopIndex }) => {
                                 //* Рабочий вариант1:
                                 // src={picture || pictureDefault}
                                 //* Рабочий вариант2:
-                                // src={picture || userAvatar}
-                                //! НЕ Рабочий вариант1:
-                                src={picture || imgBase64RelativeURL}
+                                // src={picture || defaultImageBase64}
                                 //* Рабочий вариант 3:
                                 // src={picture || jsonFile.imageDef}
-                                //! НЕ Рабочий вариант2:
-                                // src={picture || jsonFileJSON.imageDef}
-                                //* Рабочий вариант 4:
-                                // src={picture || jsonFileJSONtoPARSE.imageDef}
+                                //* ОКОНЧАТЕЛЬНЫЙ Рабочий вариант 5:
+                                src={picture || defaultImageBase64Json}
 
-                        
                                 // src={picture || pizzaMarketsJson[shopIndex].pizzas[index].defaultPicture}
                                 // src="../../images/PizzasImages/01-01.PizzaMexico_VremenaGoda.png"
                                 // src="https://pizzamexico.com.ua/wp-content/uploads/2020/02/4seasons.png"
