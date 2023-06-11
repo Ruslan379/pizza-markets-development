@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 
 import pictureDefault from "../../images/free-icon-pizza-512-7467230.png"; //!!! 
-import pictureDefault1 from "../../images/PizzasImages/01-05.PizzaMexico_Primavera.jpg"; //!-----------------------
+import pictureDefault1 from "../../images/PizzasImages/02-05.MonoPizza_DYABOLA.webp"; //!-----------------------
 
 
 import pizzaMarketsJson from "db/pizzaMarketsMongoDB.json"; //!!! 
@@ -33,7 +33,7 @@ export const HomePizzasList = ({ allPizzas, addPizzaToCart, shopIndex }) => {
     // console.log("imagePath:", imagePath); //!
 
     
-    //!----------------------------- Преобразование в Base64: ----------------------------
+    //!----------------------------- Преобразование defaultImage в Base64: ----------------------------
     const [defaultImageBase64, setDefaultImageBase64] = useState('');
     
     useEffect(() => {
@@ -62,7 +62,7 @@ export const HomePizzasList = ({ allPizzas, addPizzaToCart, shopIndex }) => {
     console.log("jsonFile.imageDef:", jsonFile.imageDef); //!
 
     // console.log("defaultImageBase64Json:", defaultImageBase64Json); //!
-    //!__________________________ Преобразование в Base64: __________________________
+    //!__________________________ Преобразование defaultImage в Base64: __________________________
 
 
     return (
@@ -116,12 +116,12 @@ export const HomePizzasList = ({ allPizzas, addPizzaToCart, shopIndex }) => {
                             <button
                                 className={css.selectPizzaButton}
                                 type="button"
-                                onClick={() => addPizzaToCart(allPizzas[index])}
+                                onClick={() => addPizzaToCart(allPizzas[index], index)}
                             >
                                 add to Cart
                             </button>
                         </li>
-                })}
+            })}
         </ul>
     );
 };

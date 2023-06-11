@@ -34,12 +34,14 @@ export const HomePage = () => {
         setShopIndex(indexShop);
     };
 
-    const addPizzaToCart = pizza => {
+    const addPizzaToCart = (pizza, indexPizza) => {
         const findIndexPizza = allChoicePizzas.findIndex(item => item.pizza === pizza.pizza);
         if (findIndexPizza === -1) {
             const pizzaAndQuantity = {
             ...pizza,
             quantity: 1,
+            indexShop: shopIndex,
+            indexPizza
             };
             setAllChoicePizzas([...allChoicePizzas, pizzaAndQuantity]);
             localStorage.setItem("allChoicePizzas", JSON.stringify([...allChoicePizzas, pizzaAndQuantity]));
