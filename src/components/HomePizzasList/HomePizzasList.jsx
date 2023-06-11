@@ -16,11 +16,20 @@ export const HomePizzasList = ({ allPizzas, addPizzaToCart, shopIndex }) => {
     // console.log("allPizzas:", allPizzas); //!
     // console.log("pizzaMarketsJson[shopIndex]:", pizzaMarketsJson[shopIndex]); //!
 
+    console.log("pizzaMarketsJson:", pizzaMarketsJson); //!
+    const pizzaMarketsJsonJSON = JSON.stringify(pizzaMarketsJson);
+    const pizzaMarketsJsonJSONtoPARSE = JSON.parse(pizzaMarketsJsonJSON); //! ОШИБКА
+    console.log("pizzaMarketsJsonJSONtoPARSE:", pizzaMarketsJsonJSONtoPARSE); //!
+
+
     const imgRelativeURL = pizzaMarketsJson[shopIndex].pizzas[0].defaultPicture1
     console.log("imgRelativeURL:", imgRelativeURL); //!
     
-    const imgBase64RelativeURL = pizzaMarketsJson[shopIndex].pizzas[0].defaultImage.image.$binary.base64
 
+    // const imgBase64RelativeURL = pizzaMarketsJson[shopIndex].pizzas[0].defaultImage
+    // const imgBase64RelativeURL = pizzaMarketsJson[shopIndex].pizzas[0].defaultImage.image.$binary.base64
+    // const imgBase64RelativeURL = pizzaMarketsJson[shopIndex].pizzas[0].defaultPicture2
+    const imgBase64RelativeURL = pizzaMarketsJsonJSONtoPARSE[shopIndex].pizzas[0].defaultPicture2.imageDef
     console.log("imgBase64RelativeURL:", imgBase64RelativeURL); //!
 
     // const imgSrc = `https://github.com/Ruslan379/pizza-markets-development/blob/main/src/images/PizzasImages/${imgRelativeURL}`;
@@ -55,18 +64,20 @@ export const HomePizzasList = ({ allPizzas, addPizzaToCart, shopIndex }) => {
         loadImage();
     }, []);
 
-    
-
     console.log("userAvatar:", userAvatar); //!
 
     const jsonFile = {
         imageDef: userAvatar
     }
-
     console.log("jsonFile.imageDef:", jsonFile.imageDef); //!
 
     const jsonFileJSON = JSON.stringify(jsonFile);
     console.log("jsonFileJSON:", jsonFileJSON); //!
+
+    const jsonFileJSONtoPARSE = JSON.parse(jsonFileJSON);
+    console.log("jsonFileJSONtoPARSE:", jsonFileJSONtoPARSE); //!
+
+    console.log("imgBase64RelativeURL:", imgBase64RelativeURL); //!
     //!---------------------------------------------------------------------
 
 
@@ -90,11 +101,15 @@ export const HomePizzasList = ({ allPizzas, addPizzaToCart, shopIndex }) => {
                                 //* Рабочий вариант1:
                                 // src={picture || pictureDefault}
                                 //* Рабочий вариант2:
-                                src={picture || userAvatar}
+                                // src={picture || userAvatar}
                                 //! НЕ Рабочий вариант1:
-                                // src={picture || imgBase64RelativeURL}
-                                //* Рабочий вариант3:
+                                src={picture || imgBase64RelativeURL}
+                                //* Рабочий вариант 3:
                                 // src={picture || jsonFile.imageDef}
+                                //! НЕ Рабочий вариант2:
+                                // src={picture || jsonFileJSON.imageDef}
+                                //* Рабочий вариант 4:
+                                // src={picture || jsonFileJSONtoPARSE.imageDef}
 
                         
                                 // src={picture || pizzaMarketsJson[shopIndex].pizzas[index].defaultPicture}
