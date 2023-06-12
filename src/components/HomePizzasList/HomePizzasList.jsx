@@ -4,7 +4,10 @@ import pictureDefault from "../../images/free-icon-pizza-512-7467230.png"; //!!!
 import pictureDefault1 from "../../images/PizzasImages/05-05.PizzaHouse_Americano.webp"; //!-----------------------
 
 
-import pizzaMarketsJson from "db/pizzaMarketsMongoDB.json"; //!!! 
+import pizzaMarketsJson from "db/pizzaMarketsMongoDB.json"; //!!!
+
+//! Модальное окно
+import { Modal} from 'components/Modal/Modal';
 
 import css from "./HomePizzasList.module.css";
 
@@ -59,18 +62,40 @@ export const HomePizzasList = ({ allPizzas, addPizzaToCart, shopIndex }) => {
     };
     console.log("jsonFile.imageDef:", jsonFile.imageDef); //!
 
+    let defaultImageBase64Json = null
+    let pictureGlobal = null
     //!__________________________ Преобразование defaultImage в Base64: __________________________
 
+
+    //! Модальное окно
+    const [showModal, setShowModal] = useState(false);
+    // const [deletePizzaIndex, setDeletePizzaIndex] = useState(null);
+    const toggleModal = (index) => {
+        setShowModal(!showModal);
+        // if (index !== null || index !== undefined) setDeletePizzaIndex(index);
+    }
+
+    //! Кликаем в картинку, ищем её largeImageURL, откываем МОДАЛКУ с картинкой
+    const handleBackdropClick = event => {
+        if (event.target.src) {
+            toggleModal();
+            console.log("event.target.src:", event.target.src);
+            // const i = hits.findIndex(hit => hit.webformatURL === event.target.src)
+            // setLargeURL(hits[i].largeImageURL);
+        } else return;
+    };
 
     return (
         <ul className={css.list}>
             {/* {allPizzas.map((item, index) => ( */}
             {allPizzas.map(({ pizza, picture = pictureDefault, price }, index) => {
-                const defaultImageBase64Json = pizzaMarketsJson[shopIndex].pizzas[index].defaultImage
+                defaultImageBase64Json = pizzaMarketsJson[shopIndex].pizzas[index].defaultImage
+                pictureGlobal = picture
                 return <li
                             className={css.listItem}
                             // key={item.pizza}
-                            key={pizza}
+                        key={pizza}
+                        onClick={handleBackdropClick} 
                         >
                             <img
                                 className={css.imagePizza}
@@ -99,6 +124,14 @@ export const HomePizzasList = ({ allPizzas, addPizzaToCart, shopIndex }) => {
                             </button>
                         </li>
             })}
+            {showModal && (
+                <Modal onClose={toggleModal}>
+                    <img
+                        alt=""
+                        src={pictureGlobal || defaultImageBase64Json}
+                    />
+                </Modal>
+            )}
         </ul>
     );
 };
