@@ -5,8 +5,8 @@ import pictureDefault from "../../images/free-icon-pizza-512-7467230.png"; //!!!
 import pizzaMarketsJson from "db/pizzaMarketsMongoDB.json"; //!!!
 
 //! Модальное окно
-// import { ModalPizzaDelete } from 'components/ModalPizzaDelete/ModalPizzaDelete';
-// import { ModalPizzaLDeleteWindow } from 'components/ModalPizzaLDeleteWindow/ModalPizzaLDeleteWindow';
+import { ModalPizzaDelete } from 'components/ModalPizzaDelete/ModalPizzaDelete';
+import { ModalPizzaLDeleteWindow } from 'components/ModalPizzaLDeleteWindow/ModalPizzaLDeleteWindow';
 
 import css from "./CartOrderList.module.css";
 
@@ -40,6 +40,7 @@ export const CartOrderList = () => {
         togle();
     };
 
+    //! Required for a modal window --> Преренесено в 
     const allChoicePizzasLocalStorage = JSON.parse(localStorage.getItem("allChoicePizzas"));
 
     let totalPrice = 0;
@@ -50,18 +51,23 @@ export const CartOrderList = () => {
         }, 0);
     };
 
-    const deletePizza = (index) => {
-        const allChoicePizzasWithDeleting = allChoicePizzasLocalStorage.filter((item) => item !== allChoicePizzasLocalStorage[index]);
-        localStorage.setItem("allChoicePizzas", JSON.stringify(allChoicePizzasWithDeleting));
-        togle();
-    };
+    //! Required for a modal window --> Преренесено в 
+    // const deletePizza = (index) => {
+    //     const allChoicePizzasWithDeleting = allChoicePizzasLocalStorage.filter((item) => item !== allChoicePizzasLocalStorage[index]);
+    //     localStorage.setItem("allChoicePizzas", JSON.stringify(allChoicePizzasWithDeleting));
+    //     togle();
+    // };
     
 
     //! Модальное окно
-    // const [showModal, setShowModal] = useState(false);
-    // const toggleModal = () => {
-    //     setShowModal(!showModal);
-    // }
+    const [showModal, setShowModal] = useState(false);
+    const [deletePizzaIndex, setDeletePizzaIndex] = useState(null);
+    const toggleModal = (index) => {
+        setShowModal(!showModal);
+        if (index !== null || index !== undefined) setDeletePizzaIndex(index);
+    }
+
+    console.log("deletePizzaIndex:", deletePizzaIndex); //!
 
 
     return (
@@ -150,7 +156,9 @@ export const CartOrderList = () => {
                                                     // type="button"
                                                     className={css.pizzaDeleteButton}
                                                     // onClick={toggleModal}
-                                                    onClick={() => deletePizza(index)}
+                                                    // onClick={() => deletePizza(index)}
+                                                    onClick={() => toggleModal(index)}
+                                                    // disabled={isLoading}
                                                 >
                                                     <img
                                                         className={css.trashImage}
@@ -163,16 +171,15 @@ export const CartOrderList = () => {
                                             </div>
                                         </div>
                             </li>
-                            // {/* //! Модальное окно */}
-                            // {showModal && (
-                            //     <ModalPizzaDelete onClose={toggleModal}>
-                            //         <ModalPizzaLDeleteWindow
-                            //             index={index}
-                            //             toggleModal={toggleModal}
-                            //         />
-                            //     </ModalPizzaDelete>
-                            // )}
                         })}
+                        {showModal && (
+                            <ModalPizzaDelete onClose={toggleModal}>
+                                <ModalPizzaLDeleteWindow
+                                    deletePizzaIndex={deletePizzaIndex}
+                                    toggleModal={toggleModal}
+                                />
+                            </ModalPizzaDelete>
+                        )}
                     </ul>
                     
                 )

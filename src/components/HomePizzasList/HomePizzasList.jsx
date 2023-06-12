@@ -75,29 +75,10 @@ export const HomePizzasList = ({ allPizzas, addPizzaToCart, shopIndex }) => {
                             <img
                                 className={css.imagePizza}
                                 alt={"Pizza"}
-                                // src={imagePizza}
-                                // src={item.picture}
-                                // src={picture}
-                                // src={pictureDefault}
-                                //* Рабочий вариант1:
-                                // src={picture || pictureDefault}
-                                //* Рабочий вариант2:
-                                // src={picture || defaultImageBase64}
-                                //* Рабочий вариант 3:
+                                //* Рабочий вариант 1:
                                 // src={picture || jsonFile.imageDef}
-                                //* ОКОНЧАТЕЛЬНЫЙ Рабочий вариант 5:
+                                //* ОКОНЧАТЕЛЬНЫЙ Рабочий вариант 2:
                                 src={picture || defaultImageBase64Json}
-
-                                // src={picture || pizzaMarketsJson[shopIndex].pizzas[index].defaultPicture}
-                                // src="../../images/PizzasImages/01-01.PizzaMexico_VremenaGoda.png"
-                                // src="https://pizzamexico.com.ua/wp-content/uploads/2020/02/4seasons.png"
-                                // src={pizzaMarketsJson[shopIndex].pizzas[index].picture}
-                                // src={pizzaMarketsJson[shopIndex].pizzas[index].defaultPicture}
-                                // src={process.env.REACT_APP_PUBLIC_URL + 'images/PizzasImages/01-01.PizzaMexico_VremenaGoda.png'}
-                                // src={imagePath}
-                                // src={imgSrc}
-                                // src="VremenaGoda.png"
-                                // src="src/images/PizzasImages/01-01.PizzaMexico_VremenaGoda.png"
                                 width="100%"
                             />
                             <p className={css.namePizza}

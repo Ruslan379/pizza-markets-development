@@ -33,14 +33,14 @@
         margin-top: 24px;
         text-align: center;
         font-size: 1.2em;
-        color: blue;
+        color: #0043a7;
     }
 
     .pricePizza {
         display: block;
         margin-top: 7%;
         font-size: 1.3em;
-        color: red;
+        color: #b90000;
     }
 
     .selectPizzaButton {

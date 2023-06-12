@@ -37,10 +37,10 @@ export function ModalPizzaDelete({ children, onClose }) {
 
     return createPortal(
       <div
-        className={css.Overlay1}
+        className={css.overlay}
         onClick={handleBackdropClick}
       >
-          <div className={css.Modal}>
+          <div className={css.modal}>
           {children}
           </div>
       </div>,
