@@ -62,14 +62,14 @@ export const HomePizzasList = ({ allPizzas, addPizzaToCart, shopIndex }) => {
     };
     console.log("jsonFile.imageDef:", jsonFile.imageDef); //!
 
-    let defaultImageBase64Json = null
-    let pictureGlobal = null
+    // let defaultImageBase64Json = null
+    // let pictureGlobal = null
     //!__________________________ Преобразование defaultImage в Base64: __________________________
 
 
     //! Модальное окно
     const [showModal, setShowModal] = useState(false);
-    // const [deletePizzaIndex, setDeletePizzaIndex] = useState(null);
+    const [pizzaURL, setPizzaURL] = useState("");
     const toggleModal = (index) => {
         setShowModal(!showModal);
         // if (index !== null || index !== undefined) setDeletePizzaIndex(index);
@@ -79,9 +79,10 @@ export const HomePizzasList = ({ allPizzas, addPizzaToCart, shopIndex }) => {
     const handleBackdropClick = event => {
         if (event.target.src) {
             toggleModal();
-            console.log("event.target.src:", event.target.src);
+            console.log("event.target.src:", event.target.src); //!
+            // pictureGlobal =  event.target.src
             // const i = hits.findIndex(hit => hit.webformatURL === event.target.src)
-            // setLargeURL(hits[i].largeImageURL);
+            setPizzaURL(event.target.src);
         } else return;
     };
 
@@ -89,8 +90,8 @@ export const HomePizzasList = ({ allPizzas, addPizzaToCart, shopIndex }) => {
         <ul className={css.list}>
             {/* {allPizzas.map((item, index) => ( */}
             {allPizzas.map(({ pizza, picture = pictureDefault, price }, index) => {
-                defaultImageBase64Json = pizzaMarketsJson[shopIndex].pizzas[index].defaultImage
-                pictureGlobal = picture
+                const defaultImageBase64Json = pizzaMarketsJson[shopIndex].pizzas[index].defaultImage
+                // pictureGlobal = picture
                 return <li
                             className={css.listItem}
                             // key={item.pizza}
@@ -128,7 +129,8 @@ export const HomePizzasList = ({ allPizzas, addPizzaToCart, shopIndex }) => {
                 <Modal onClose={toggleModal}>
                     <img
                         alt=""
-                        src={pictureGlobal || defaultImageBase64Json}
+                        // src={pictureGlobal || defaultImageBase64Json}
+                        src={pizzaURL}
                     />
                 </Modal>
             )}
