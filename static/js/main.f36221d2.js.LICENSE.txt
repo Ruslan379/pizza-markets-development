@@ -123,17 +123,13 @@
 
 //!
 
-//! 2-й вариант
-
 //! GET @ /markets
 
 //! GET @ /order
 
-//! NEW
-
 //! POST @ /orders
 
-//! Required for a modal window --> Преренесено в 
+//! Required for a modal window --> Преренесено в ModalPizzaLDeleteWindow
 
 //! axios defaults baseURL
 
