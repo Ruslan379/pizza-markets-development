@@ -29,19 +29,19 @@ export const HomeShopsList = ({ selectShop }) => {
     const allChoicePizzasLocalStorage = JSON.parse(localStorage.getItem("allChoicePizzas"));
     // const conditionallChoicePizzasLocalStorage = !(!allChoicePizzasLocalStorage || !(allChoicePizzasLocalStorage.length > 0)); //! 1-й вариант
     const conditionallChoicePizzasLocalStorage = !!allChoicePizzasLocalStorage && allChoicePizzasLocalStorage.length > 0; //! 2-й вариант
-    console.log("conditionallChoicePizzasLocalStorage:", conditionallChoicePizzasLocalStorage); //!
+    // console.log("conditionallChoicePizzasLocalStorage:", conditionallChoicePizzasLocalStorage); //!
 
     let pizzaMarkets = useSelector(selectAllMarkets);
     if (pizzaMarkets.length === 0) pizzaMarkets = [...pizzaMarketsJson];
 
     const isOneShop = useSelector(selectIsOneShop);
-    console.log("HomeShopsList-->isOneShop:", isOneShop); //!
+    // console.log("HomeShopsList-->isOneShop:", isOneShop); //!
 
     const shopIndexSelection = useSelector(selectShopIndex);
-    console.log("HomeShopsList-->shopIndexSelection:", shopIndexSelection); //!
+    // console.log("HomeShopsList-->shopIndexSelection:", shopIndexSelection); //!
 
 
-    console.log("HomeShopsList-->allChoicePizzasLocalStorage:", allChoicePizzasLocalStorage); //!
+    // console.log("HomeShopsList-->allChoicePizzasLocalStorage:", allChoicePizzasLocalStorage); //!
 
 
     return (
@@ -115,7 +115,7 @@ export const HomeShopsList = ({ selectShop }) => {
                                 selectShop(pizzaMarket._id, index);
                                 // setShopIndexSelection(index);
                                 dispatch(setShopIndexSelection(index));
-                                console.log("index:", index); //!
+                                // console.log("index:", index); //!
                             }}
                             // disabled={!(shopIndexSelection === null || index === shopIndexSelection)}
                             // disabled={conditionallChoicePizzasLocalStorage}

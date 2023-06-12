@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { createPortal } from 'react-dom';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 import css from './ModalPizzaDelete.module.css' 
 
@@ -49,8 +49,8 @@ export function ModalPizzaDelete({ children, onClose }) {
   }
 
 
-// ModalTransactionLDelete.propTypes = {
-//   children: PropTypes.node.isRequired,
-//   onClose: PropTypes.func.isRequired,
-// };
+ModalPizzaDelete.propTypes = {
+  children: PropTypes.node.isRequired,
+  onClose: PropTypes.func.isRequired,
+};
 

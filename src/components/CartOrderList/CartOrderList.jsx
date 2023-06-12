@@ -40,7 +40,7 @@ export const CartOrderList = () => {
         togle();
     };
 
-    //! Required for a modal window --> Преренесено в 
+    //! Required for a modal window --> 
     const allChoicePizzasLocalStorage = JSON.parse(localStorage.getItem("allChoicePizzas"));
 
     let totalPrice = 0;
@@ -51,7 +51,7 @@ export const CartOrderList = () => {
         }, 0);
     };
 
-    //! Required for a modal window --> Преренесено в 
+    //! Required for a modal window --> Преренесено в ModalPizzaLDeleteWindow
     // const deletePizza = (index) => {
     //     const allChoicePizzasWithDeleting = allChoicePizzasLocalStorage.filter((item) => item !== allChoicePizzasLocalStorage[index]);
     //     localStorage.setItem("allChoicePizzas", JSON.stringify(allChoicePizzasWithDeleting));
@@ -67,7 +67,7 @@ export const CartOrderList = () => {
         if (index !== null || index !== undefined) setDeletePizzaIndex(index);
     }
 
-    console.log("deletePizzaIndex:", deletePizzaIndex); //!
+    // console.log("deletePizzaIndex:", deletePizzaIndex); //!
 
 
     return (
@@ -155,10 +155,8 @@ export const CartOrderList = () => {
                                                 <div
                                                     // type="button"
                                                     className={css.pizzaDeleteButton}
-                                                    // onClick={toggleModal}
                                                     // onClick={() => deletePizza(index)}
                                                     onClick={() => toggleModal(index)}
-                                                    // disabled={isLoading}
                                                 >
                                                     <img
                                                         className={css.trashImage}
