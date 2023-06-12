@@ -129,7 +129,11 @@
 
 //! GET @ /order
 
+//! NEW
+
 //! POST @ /orders
+
+//! Required for a modal window --> Преренесено в 
 
 //! axios defaults baseURL
 
