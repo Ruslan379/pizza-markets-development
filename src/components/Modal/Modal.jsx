@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { createPortal } from 'react-dom';
 import PropTypes from 'prop-types';
 
-import css from './ModalPizzaDelete.module.css' 
+import css from './Modal.module.css' 
 
 
 
@@ -10,7 +10,7 @@ import css from './ModalPizzaDelete.module.css'
 const modalRoot = document.querySelector('#modal-root');
 
 
-export function ModalPizzaDelete({ children, onClose }) {
+export function Modal({ children, onClose }) {
 
   useEffect(() => {
     const handleKeyDown = event => {
@@ -49,7 +49,7 @@ export function ModalPizzaDelete({ children, onClose }) {
   }
 
 
-ModalPizzaDelete.propTypes = {
+Modal.propTypes = {
   children: PropTypes.node.isRequired,
   onClose: PropTypes.func.isRequired,
 };

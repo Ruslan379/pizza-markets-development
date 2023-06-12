@@ -5,7 +5,7 @@ import pictureDefault from "../../images/free-icon-pizza-512-7467230.png"; //!!!
 import pizzaMarketsJson from "db/pizzaMarketsMongoDB.json"; //!!!
 
 //! Модальное окно
-import { ModalPizzaDelete } from 'components/ModalPizzaDelete/ModalPizzaDelete';
+import { Modal} from 'components/Modal/Modal';
 import { ModalPizzaLDeleteWindow } from 'components/ModalPizzaLDeleteWindow/ModalPizzaLDeleteWindow';
 
 import css from "./CartOrderList.module.css";
@@ -171,12 +171,12 @@ export const CartOrderList = () => {
                             </li>
                         })}
                         {showModal && (
-                            <ModalPizzaDelete onClose={toggleModal}>
+                            <Modal onClose={toggleModal}>
                                 <ModalPizzaLDeleteWindow
                                     deletePizzaIndex={deletePizzaIndex}
                                     toggleModal={toggleModal}
                                 />
-                            </ModalPizzaDelete>
+                            </Modal>
                         )}
                     </ul>
                     
