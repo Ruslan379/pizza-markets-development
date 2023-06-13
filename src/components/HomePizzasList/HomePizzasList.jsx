@@ -77,7 +77,7 @@ export const HomePizzasList = ({ allPizzas, addPizzaToCart, shopIndex }) => {
     const handleBackdropClick = event => {
         if (event.target.src) {
             toggleModal();
-            console.log("event.target.src:", event.target.src); //!
+            // console.log("event.target.src:", event.target.src); //!
             setPizzaURL(event.target.src);
             // const i = hits.findIndex(hit => hit.webformatURL === event.target.src)
             // setLargeURL(hits[i].largeImageURL);
