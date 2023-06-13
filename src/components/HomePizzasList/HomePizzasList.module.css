@@ -24,6 +24,7 @@
 
     .imagePizza {
         width: 100%;
+        cursor: pointer;
         border-radius: 5px;
         box-shadow: 12px 12px 18px rgba(59, 43, 14, 0.23);
     }

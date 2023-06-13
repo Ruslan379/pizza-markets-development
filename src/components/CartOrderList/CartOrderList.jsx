@@ -171,7 +171,10 @@ export const CartOrderList = () => {
                             </li>
                         })}
                         {showModal && (
-                            <Modal onClose={toggleModal}>
+                            <Modal
+                                onClose={toggleModal}
+                                bgColor={"CartPageBgColor"}
+                            >
                                 <ModalPizzaLDeleteWindow
                                     deletePizzaIndex={deletePizzaIndex}
                                     toggleModal={toggleModal}

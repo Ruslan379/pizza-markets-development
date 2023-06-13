@@ -89,12 +89,13 @@ export const HomePizzasList = ({ allPizzas, addPizzaToCart, shopIndex }) => {
         <ul className={css.list}>
             {/* {allPizzas.map((item, index) => ( */}
             {allPizzas.map(({ pizza, picture = pictureDefault, price }, index) => {
+                // console.log("picture:", picture); //!
                 const defaultImageBase64Json = pizzaMarketsJson[shopIndex].pizzas[index].defaultImage
                 return <li
                             className={css.listItem}
                             // key={item.pizza}
                         key={pizza}
-                        onClick={handleBackdropClick} 
+                        onClick={handleBackdropClick}
                         >
                             <img
                                 className={css.imagePizza}
@@ -124,10 +125,14 @@ export const HomePizzasList = ({ allPizzas, addPizzaToCart, shopIndex }) => {
                         </li>
             })}
             {showModal && (
-                <Modal onClose={toggleModal}>
+                <Modal
+                    onClose={toggleModal}
+                    bgColor={"HomePageBgColor"}
+                >
                     <img
                         alt=""
                         src={pizzaURL}
+                        width="100%"
                     />
                 </Modal>
             )}

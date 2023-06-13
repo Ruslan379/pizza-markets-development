@@ -10,7 +10,8 @@ import css from './Modal.module.css'
 const modalRoot = document.querySelector('#modal-root');
 
 
-export function Modal({ children, onClose }) {
+export function Modal({ children, onClose, bgColor }) {
+  console.log("bgColor:", bgColor); //!
 
   useEffect(() => {
     const handleKeyDown = event => {
@@ -37,7 +38,23 @@ export function Modal({ children, onClose }) {
 
     return createPortal(
       <div
-        className={css.overlay}
+        // className={css.overlay}
+        className={
+                    `
+                      ${(bgColor === "HomePageBgColor")
+                          ?
+                          `${css.overlay} ${css.overlayHomePageBgColor}`
+                          :
+                          `${css.overlay} ${css.overlayDefaultBgColor}`
+                      }
+                      ${(bgColor === "CartPageBgColor")
+                          ?
+                          `${css.overlay} ${css.overlayCartPageBgColor}`
+                          :
+                          `${css.overlay} ${css.overlayDefaultBgColor}`
+                      }
+                    `
+        }
         onClick={handleBackdropClick}
       >
           <div className={css.modal}>

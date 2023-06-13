@@ -10,9 +10,19 @@
   position: fixed;
     top: 0;
     left: 0;
-  background-color: rgba(109, 71, 71, 0.5);
+  /* background-color: rgba(109, 71, 71, 0.5); */
 }
 
+.overlayDefaultBgColor {
+  background-color: rgba(88, 88, 88, 0.5);
+}
+
+.overlayHomePageBgColor {
+  background-color: rgba(109, 108, 71, 0.5);
+}
+.overlayCartPageBgColor {
+  background-color: rgba(109, 71, 71, 0.5);
+}
 .modal {
   /* width: 70vw; */
     /* height: 40vh; */
