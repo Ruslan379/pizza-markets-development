@@ -73,7 +73,7 @@ export const HomePizzasList = ({ allPizzas, addPizzaToCart, shopIndex }) => {
         // if (index !== null || index !== undefined) setDeletePizzaIndex(index);
     }
 
-    //! Кликаем в картинку, ищем её largeImageURL, откываем МОДАЛКУ с картинкой
+    //! Кликаем в картинку, ищем её URL(event.target.src), откываем МОДАЛКУ с картинкой
     const handleBackdropClick = event => {
         if (event.target.src) {
             toggleModal();
@@ -96,6 +96,7 @@ export const HomePizzasList = ({ allPizzas, addPizzaToCart, shopIndex }) => {
                             // key={item.pizza}
                         key={pizza}
                         onClick={handleBackdropClick}
+                        // onClick={() => handleBackdropClick(index)}
                         >
                             <img
                                 className={css.imagePizza}
