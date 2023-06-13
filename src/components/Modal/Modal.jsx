@@ -11,8 +11,6 @@ const modalRoot = document.querySelector('#modal-root');
 
 
 export function Modal({ children, onClose, bgColor }) {
-  console.log("bgColor:", bgColor); //!
-
   useEffect(() => {
     const handleKeyDown = event => {
       if (event.code === 'Escape') {
@@ -27,7 +25,7 @@ export function Modal({ children, onClose, bgColor }) {
     };
   }, [onClose]); 
 
-
+  
   const handleBackdropClick = event => {
     if (event.currentTarget === event.target) {
       onClose();
