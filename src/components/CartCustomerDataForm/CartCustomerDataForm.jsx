@@ -42,6 +42,7 @@ export const CartCustomerDataForm = () => {
     return (
         <>
             <form
+                autoComplete="on"
                 className={css.form}
                 onSubmit={handleSubmit}
             >
